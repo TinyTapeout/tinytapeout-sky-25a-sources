@@ -1,0 +1,117 @@
+name: reharden
+
+on:
+  push:
+  workflow_dispatch:
+    inputs:
+      openlane_tag:
+        description: 'Openlane tag'
+        required: false
+        default: '2.2.9'
+
+jobs:
+  reharden:
+    strategy:
+      fail-fast: false
+      matrix:
+        project:
+          #- tt_um_chip_rom # skip: chip ROM
+          - tt_um_factory_test
+
+    runs-on: ubuntu-latest
+    env:
+      OPENLANE_TAG: ${{ github.event.inputs.openlane_tag || '2.2.9' }}
+      PDK_ROOT: /home/runner/.volare
+      PDK: sky130A
+
+      # Tool versions:
+      MAGIC_VERSION: 8.3.552
+      KLAYOUT_VERSION: 0.29.12
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Checkout tt-support-tools repo
+        uses: actions/checkout@v4
+        with:
+          repository: tinytapeout/tt-support-tools
+          path: ${{ matrix.project }}/tt
+          ref: ttsky25a
+
+      - name: Setup python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        working-directory: ${{ matrix.project }}
+        run: |
+          pip install -r tt/requirements.txt
+
+      - name: Install OpenLane ${{ env.OPENLANE_TAG }}
+        run: |
+          pip install openlane==$OPENLANE_TAG
+
+      - name: Make GDS with OpenLane
+        working-directory: ${{ matrix.project }}
+        run: |
+          git init
+          # tt_tool requires a remote to be set, and some commit to be present
+          git remote add origin https://github.com/TinyTapeout/dummy
+          git config user.email "bot@github.com"
+          git config user.name "Tiny Tapeout Bot"
+          git commit --allow-empty -m "Dummy commit"
+
+          python tt/tt_tool.py --create-user-config --harden --openlane2
+
+          # Fail if the final GDS file doesn't exist
+          if [ ! -f "runs/wokwi/final/gds/${{ matrix.project }}.gds" ]; then
+            exit 1
+          fi
+
+          # Fail is error.log isn't empty
+          if [ -s "runs/wokwi/error.log" ]; then
+            exit 1
+          fi
+
+          export PDK_VERSION=$(cat runs/wokwi/PDK_SOURCES | awk '{print $2}')
+          echo "PDK_VERSION=$PDK_VERSION" >> $GITHUB_ENV
+
+      - name: Set up PDK ${{ env.PDK_VERSION }}
+        working-directory: ${{ matrix.project }}
+        run: |
+          volare enable $PDK_VERSION
+
+      - name: Install magic-vlsi
+        run: |
+          sudo apt-get update && sudo apt-get install -y build-essential git csh libcairo2-dev tcl-dev tk-dev
+          git clone --branch ${MAGIC_VERSION} https://github.com/RTimothyEdwards/magic
+          cd magic && ./configure --with-cairo=no --disable-readline --without-x && make && sudo make install
+
+      - name: Install klayout
+        run: |
+          wget https://github.com/TinyTapeout/klayout/releases/download/klayout_${KLAYOUT_VERSION}-1_amd64.deb
+          sudo apt-get update
+          sudo apt-get install -y ./klayout_${KLAYOUT_VERSION}-1_amd64.deb
+
+      - name: Run tiny tapeout prechecks
+        working-directory: ${{ matrix.project }}/tt/precheck
+        run: |
+          set -o pipefail
+          pip install -r requirements.txt
+          python precheck.py --gds $GDS --lef $LEF
+          cp -R reports ${PROJECT_DIR}/precheck
+          cat reports/results.md | tee -a $GITHUB_STEP_SUMMARY
+        env:
+          PROJECT_DIR: ${{ github.workspace }}/${{ matrix.project }}
+          GDS: ${{ github.workspace }}/${{ matrix.project }}/runs/wokwi/final/gds/${{ matrix.project }}.gds
+          LEF: ${{ github.workspace }}/${{ matrix.project }}/runs/wokwi/final/lef/${{ matrix.project }}.lef
+
+      - name: Publish build logs
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: GDS_${{ matrix.project }}
+          path: |
+            ${{ matrix.project }}/runs/*
+            ${{ matrix.project }}/tt/precheck/*
