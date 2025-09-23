@@ -1,0 +1,80 @@
+magic
+tech sky130A
+magscale 1 1
+timestamp 1737500400
+<< checkpaint >>
+rect 0 0 324 1320
+<< ppolyres >>
+rect 90 -60 126 60
+rect 198 -60 234 60
+rect 90 60 126 180
+rect 198 60 234 180
+rect 90 180 126 300
+rect 198 180 234 300
+rect 90 300 126 420
+rect 198 300 234 420
+rect 90 420 126 540
+rect 198 420 234 540
+rect 90 540 126 660
+rect 198 540 234 660
+rect 90 660 126 780
+rect 198 660 234 780
+rect 90 780 126 900
+rect 198 780 234 900
+rect 90 900 126 1020
+rect 198 900 234 1020
+rect 90 1020 126 1140
+rect 198 1020 234 1140
+<< poly >>
+rect -18 -60 18 60
+rect 306 -60 342 60
+rect -18 60 18 180
+rect 306 60 342 180
+rect -18 180 18 300
+rect 306 180 342 300
+rect -18 300 18 420
+rect 306 300 342 420
+rect -18 420 18 540
+rect 306 420 342 540
+rect -18 540 18 660
+rect 306 540 342 660
+rect -18 660 18 780
+rect 306 660 342 780
+rect -18 780 18 900
+rect 306 780 342 900
+rect -18 900 18 1020
+rect 306 900 342 1020
+rect -18 1020 18 1140
+rect 306 1020 342 1140
+<< xpolycontact >>
+rect 90 -60 126 60
+rect 198 -60 234 60
+rect 90 60 126 180
+rect 198 60 234 180
+rect 90 900 126 1020
+rect 198 900 234 1020
+rect 90 1020 126 1140
+rect 198 1020 234 1140
+<< locali >>
+rect 90 -60 234 60
+rect 90 60 234 180
+rect 90 900 126 1020
+rect 198 900 234 1020
+rect 90 1020 126 1140
+rect 198 1020 234 1140
+rect 90 1140 126 1260
+rect 198 1140 234 1260
+rect -18 1260 126 1380
+rect -18 1260 126 1380
+rect 198 1260 342 1380
+rect 198 1260 342 1380
+<< pwell >>
+rect -18 -60 342 1380
+<< labels >>
+flabel locali s -18 1260 126 1380 0 FreeSans 400 0 0 0 N
+port 1 nsew signal bidirectional
+flabel locali s 198 1260 342 1380 0 FreeSans 400 0 0 0 P
+port 2 nsew signal bidirectional
+<< properties >>
+string FIXED_BBOX 0 0 324 1320
+<< end >>

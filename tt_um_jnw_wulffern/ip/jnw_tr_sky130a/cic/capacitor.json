@@ -1,0 +1,78 @@
+{
+    "cells" : [
+        { "name" : "CAPX1",
+          "boundaryIgnoreRouting": 0,
+          "abstract" : 0,
+          "meta" : {
+              "symbol" : "cic/cap"
+          },
+          "parseSubckt": {
+                "devices": [
+                    {
+                        "class": "mimcap",
+                        "deviceName": "mim",
+                        "name": "C1",
+                        "nodes": [
+                            "B",
+                            "A"
+                        ],
+                        "properties": {
+                            "L": 5,
+                            "W": 5
+                        }
+                    }
+                ],
+                "instances": [
+                ],
+                "name": "CAPX1",
+                "nodes": [
+                    "A",
+                    "B"
+                ],
+                "properties": {
+                }
+            },
+          "afterNew" :{
+              "addRectangles" : [
+                  ["M4",0,0,54000,54000,""],
+                  ["MIM",2000,2000,50000,50000,""],
+                  ["MIMC",3000,3000,48000,48000,""],
+                  ["M5",0,0,54000,54000,""]
+              ],
+              "addPortRectangles" : [
+                  ["M4",0,0,54000,5000,"","A"],
+                  ["M5",0,0,54000,5000,"","B"]
+              ]
+          },
+          "afterRoute" : {
+              "addPortOnRects" : [
+                  ["A","M4"],
+                  ["B","M5"]
+              ]
+          }
+
+        },
+        { "name" : "CAPX4",
+          "boundaryIgnoreRouting": 0,
+          "abstract" : 0,
+          "meta" : {
+              "symbol" : "cic/cap"
+          },
+          "beforeRoute" : {
+              "addConnectivityRoutes" : [ ["M4", "^A$","||","onTopL,track-4,routeWidth=cap_width"],
+                                          ["M4", "^A$","||","onTopR,track-4,routeWidth=cap_width"],
+                                          ["M4", "^A$","-","onTopR,track-4,routeWidth=cap_width"],
+                                          ["M5", "^B$","||","onTopL,track-4,routeWidth=cap_width"],
+                                          ["M5", "^B$","||","onTopR,track-4,routeWidth=cap_width"],
+                                          ["M5", "^B$","-","onTopR,track-4,routeWidth=cap_width"]
+                                        ]
+          },
+          "afterRoute" : {
+              "addPortOnRects" : [
+                  ["A","M4"],
+                  ["B","M5"]
+              ]
+          }
+        }
+    ]
+}

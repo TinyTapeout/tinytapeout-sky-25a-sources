@@ -1,0 +1,44 @@
+name: test
+on: [push, workflow_dispatch]
+
+jobs:
+  test:
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+
+      - name: Install iverilog
+        run: sudo apt-get update && sudo apt-get install -y iverilog
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install Python packages
+        run: pip install -r test/requirements.txt
+
+      - name: Run cocotb tests
+        run: |
+          cd test
+          make clean
+          make SIM=icarus
+        # This way cocotb exits non-zero if test fails
+
+      - name: Test Summary
+        uses: test-summary/action@v2.3
+        with:
+          paths: "test/results.xml"
+        if: always()
+
+      - name: Upload waveforms and results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: test-artifacts
+          path: |
+            test/*.vcd
+            test/results.xml

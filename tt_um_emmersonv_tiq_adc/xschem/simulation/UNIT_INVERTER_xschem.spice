@@ -1,0 +1,6 @@
+** sch_path: /foss/designs/analog-circuit-design/sky25a-TIQ_ADC/xschem/UNIT_INVERTER.sch
+.subckt UNIT_INVERTER Vin Vout VDD GND
+*.PININFO Vout:O Vin:I VDD:B GND:B
+XM1 Vout Vin GND GND sky130_fd_pr__nfet_01v8 L=0.15 W=0.42 nf=1 m=1
+XM2 Vout Vin VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=0.9 nf=1 m=1
+.ends

@@ -1,0 +1,35 @@
+[*]
+[*] GTKWave Analyzer v3.4.0 (w)1999-2022 BSI
+[*] Thu Jul 17 09:44:04 2025
+[*]
+[dumpfile] "/foss/designs/ttsky25a-frequency-counter/test/tb.vcd"
+[dumpfile_mtime] "Thu Jul 17 09:43:39 2025"
+[dumpfile_size] 491743
+[savefile] "/foss/designs/ttsky25a-frequency-counter/test/tb.gtkw"
+[timestart] 135609000
+[size] 2005 889
+[pos] 664 568
+*-18.234533 136822000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] tb.
+[treeopen] tb.tt_um_frequency_counter.
+[sst_width] 314
+[signals_width] 230
+[sst_expanded] 1
+[sst_vpaned_height] 269
+@28
+tb.clk
+tb.debug_mode
+@24
+tb.period[11:0]
+@28
+tb.period_load
+tb.reset
+tb.rst_n
+tb.signal
+tb.digit
+@22
+tb.segments[6:0]
+@24
+tb.tt_um_frequency_counter.frequency_counter.period[11:0]
+[pattern_trace] 1
+[pattern_trace] 0

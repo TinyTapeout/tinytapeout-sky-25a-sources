@@ -1,0 +1,20 @@
+* Measure temp_to_current_tb
+.control
+
+load {cicname}.raw
+
+echo "MEAS_START"
+
+let iout = -i(v.xdut.v1)
+
+set fend = .raw
+foreach vtemp -40 -20 0 20 40 60 80 100 120
+    option temp=$vtemp
+    load {cicname}_$vtemp$fend
+    meas tran iout_meas find iout at=5n
+
+
+* meas tran iout_meas find iout at=5n
+
+echo "MEAS_END"
+.endc

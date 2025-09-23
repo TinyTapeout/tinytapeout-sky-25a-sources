@@ -1,0 +1,9 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1752761699
+use DAC  x1
+timestamp 1752679897
+transform 1 0 53 0 1 3436
+box -2462 -2574 9149 3152
+<< end >>

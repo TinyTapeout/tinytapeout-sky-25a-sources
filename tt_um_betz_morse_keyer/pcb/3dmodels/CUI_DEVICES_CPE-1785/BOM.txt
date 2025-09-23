@@ -1,0 +1,3 @@
+3DX_CUI_DEVICES_Supplier: CUI Devices
+3DX_CUI_DEVICES_Description: 17 mm, 20 V, 85 dB, Through Hole, Piezo Audio Transducer Buzzer
+3DX_CUI_DEVICES_Model Number: CPE-1785

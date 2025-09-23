@@ -1,0 +1,36 @@
+# Clock and Reset
+set_io clk 44
+set_frequency clk 24.0
+set_io rst_n 38
+# Always enabled
+
+
+# Bidirectional uio[0..7]
+set_io uio[0] 47
+set_io uio[1] 48
+set_io uio[2] 3
+set_io uio[3] 2
+set_io uio[4] 40
+set_io uio[5] 41
+set_io uio[6] 23
+set_io uio[7] 25
+
+# Dedicated inputs
+set_io ui_in[0] 4
+set_io ui_in[1] 6
+set_io ui_in[2] 9
+set_io ui_in[3] 10
+set_io ui_in[4] 32
+set_io ui_in[5] 34
+set_io ui_in[6] 11
+set_io ui_in[7] 12
+
+# LED outputs
+set_io uo_out[0] 43
+set_io uo_out[1] 42
+set_io uo_out[2] 45
+set_io uo_out[3] 46
+set_io uo_out[4] 18
+set_io uo_out[5] 19
+set_io uo_out[6] 20
+set_io uo_out[7] 21

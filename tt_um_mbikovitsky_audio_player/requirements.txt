@@ -1,0 +1,17 @@
+ruff~=0.9.6
+mypy~=1.17.0
+pandas-stubs
+
+amaranth[builtin-yosys]~=0.5.7
+glasgow[builtin-toolchain] @ git+https://github.com/GlasgowEmbedded/glasgow@d7db593e8025406432dd963766c31c5660047be7#subdirectory=software
+
+-e ./verilog/glasgow
+
+pandas~=2.2
+matplotlib~=3.10
+pillow~=11.1
+
+cocotb[bus]~=1.9
+pytest~=8.3
+pytest-repeat~=0.9.3
+pytest-xdist~=3.6

@@ -1,0 +1,71 @@
+[*]
+[*] GTKWave Analyzer v3.4.0 (w)1999-2022 BSI
+[*] Sun Jul 20 20:29:55 2025
+[*]
+[dumpfile] "/home/dt/Documents/z2a/tt-sky25a-led-matrix-driver/test/tb.vcd"
+[dumpfile_mtime] "Sun Jul 20 20:27:54 2025"
+[dumpfile_size] 954596
+[savefile] "/home/dt/Documents/z2a/tt-sky25a-led-matrix-driver/test/tb.gtkw"
+[timestart] 878000000
+[size] 1920 1033
+[pos] -1 -1
+*-25.434532 1149400000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] tb.
+[sst_width] 297
+[signals_width] 230
+[sst_expanded] 1
+[sst_vpaned_height] 310
+@28
+tb.user_project.ena
+tb.user_project.rst_n
+tb.user_project.clk
+@200
+-
+-
+-Inputs
+@28
+tb.SCK
+@800022
+[color] 1
+tb.user_project.ui_in[7:0]
+@200
+-CS
+@28
+(5)tb.user_project.ui_in[7:0]
+@200
+-SDI
+@28
+(6)tb.user_project.ui_in[7:0]
+@200
+-
+-
+@1001200
+-group_end
+@200
+-Output Pins
+@800022
+[color] 1
+tb.uo_out[7:0]
+@200
+-LED2 (!CS)
+@28
+(5)tb.uo_out[7:0]
+@200
+-LED1 (Driver Ready)
+@28
+(6)tb.uo_out[7:0]
+@200
+-DIN
+@28
+(7)tb.uo_out[7:0]
+@c00029
+tb.user_project.status[1:0]
+@29
+(0)tb.user_project.status[1:0]
+(1)tb.user_project.status[1:0]
+@1401201
+-group_end
+@1001200
+-group_end
+[pattern_trace] 1
+[pattern_trace] 0

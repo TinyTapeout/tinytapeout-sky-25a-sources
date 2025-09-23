@@ -1,0 +1,166 @@
+magic
+tech sky130A
+magscale 1 1
+timestamp 1737500400
+<< checkpaint >>
+rect 0 0 990 1920
+<< locali >>
+rect 630 265 705 295
+rect 705 435 795 465
+rect 705 265 735 465
+rect 765 465 810 495
+rect 630 505 705 535
+rect 705 705 810 735
+rect 705 1665 810 1695
+rect 705 505 735 1695
+rect 180 945 255 975
+rect 255 505 360 535
+rect 255 505 285 975
+rect 195 1315 255 1345
+rect 255 505 360 535
+rect 255 505 285 1345
+rect 180 1345 225 1375
+rect 360 745 435 775
+rect 360 985 435 1015
+rect 435 745 465 1015
+rect 180 1825 255 1855
+rect 255 1705 360 1735
+rect 255 1705 285 1855
+rect 765 625 855 655
+rect 135 225 225 255
+rect 315 1865 405 1895
+rect 315 1705 405 1735
+rect 135 1505 225 1535
+<< m1 >>
+rect 810 945 885 975
+rect 810 1345 885 1375
+rect 630 265 885 295
+rect 885 265 915 1375
+rect 195 675 255 705
+rect 255 345 360 375
+rect 255 345 285 705
+rect 180 705 225 735
+rect 360 1385 435 1415
+rect 360 1705 435 1735
+rect 435 1385 465 1735
+rect 180 1105 255 1135
+rect 255 985 360 1015
+rect 255 985 285 1135
+rect 630 1145 705 1175
+rect 705 865 810 895
+rect 705 1265 810 1295
+rect 705 865 735 1295
+rect 630 1865 705 1895
+rect 705 1585 810 1615
+rect 705 1585 735 1895
+rect 75 305 180 335
+rect 75 1505 180 1535
+rect 75 305 105 1535
+<< m2 >>
+rect 180 1665 255 1695
+rect 255 1345 810 1375
+rect 255 1345 285 1695
+<< m3 >>
+rect 585 0 673 1920
+rect 315 0 403 1920
+rect 585 0 673 1920
+rect 315 0 403 1920
+use JNWTR_TAPCELLB_CV XA0 
+transform 1 0 0 0 1 0
+box 0 0 990 160
+use JNWTR_NDX1_CV XA1 
+transform 1 0 0 0 1 160
+box 0 160 990 400
+use JNWTR_IVX1_CV XA2 
+transform 1 0 0 0 1 400
+box 0 400 990 560
+use JNWTR_IVTRIX1_CV XA3 
+transform 1 0 0 0 1 560
+box 0 560 990 800
+use JNWTR_IVTRIX1_CV XA4 
+transform 1 0 0 0 1 800
+box 0 800 990 1040
+use JNWTR_IVX1_CV XA5 
+transform 1 0 0 0 1 1040
+box 0 1040 990 1200
+use JNWTR_IVTRIX1_CV XA6 
+transform 1 0 0 0 1 1200
+box 0 1200 990 1440
+use JNWTR_NDTRIX1_CV XA7 
+transform 1 0 0 0 1 1440
+box 0 1440 990 1760
+use JNWTR_IVX1_CV XA8 
+transform 1 0 0 0 1 1760
+box 0 1760 990 1920
+use JNWTR_cut_M1M2_2x1 xcut0 
+transform 1 0 765 0 1 945
+box 765 945 853 979
+use JNWTR_cut_M1M2_2x1 xcut1 
+transform 1 0 765 0 1 1345
+box 765 1345 853 1379
+use JNWTR_cut_M1M2_2x1 xcut2 
+transform 1 0 585 0 1 265
+box 585 265 673 299
+use JNWTR_cut_M1M2_2x1 xcut3 
+transform 1 0 135 0 1 705
+box 135 705 223 739
+use JNWTR_cut_M1M2_2x1 xcut4 
+transform 1 0 315 0 1 345
+box 315 345 403 379
+use JNWTR_cut_M1M3_2x1 xcut5 
+transform 1 0 135 0 1 1665
+box 135 1665 223 1699
+use JNWTR_cut_M1M3_2x1 xcut6 
+transform 1 0 765 0 1 1345
+box 765 1345 853 1379
+use JNWTR_cut_M1M2_2x1 xcut7 
+transform 1 0 315 0 1 1385
+box 315 1385 403 1419
+use JNWTR_cut_M1M2_2x1 xcut8 
+transform 1 0 315 0 1 1705
+box 315 1705 403 1739
+use JNWTR_cut_M1M2_2x1 xcut9 
+transform 1 0 135 0 1 1105
+box 135 1105 223 1139
+use JNWTR_cut_M1M2_2x1 xcut10 
+transform 1 0 315 0 1 985
+box 315 985 403 1019
+use JNWTR_cut_M1M2_2x1 xcut11 
+transform 1 0 585 0 1 1145
+box 585 1145 673 1179
+use JNWTR_cut_M1M2_2x1 xcut12 
+transform 1 0 765 0 1 865
+box 765 865 853 899
+use JNWTR_cut_M1M2_2x1 xcut13 
+transform 1 0 765 0 1 1265
+box 765 1265 853 1299
+use JNWTR_cut_M1M2_2x1 xcut14 
+transform 1 0 585 0 1 1865
+box 585 1865 673 1899
+use JNWTR_cut_M1M2_2x1 xcut15 
+transform 1 0 765 0 1 1585
+box 765 1585 853 1619
+use JNWTR_cut_M1M2_2x1 xcut16 
+transform 1 0 135 0 1 305
+box 135 305 223 339
+use JNWTR_cut_M1M2_2x1 xcut17 
+transform 1 0 135 0 1 1505
+box 135 1505 223 1539
+<< labels >>
+flabel locali s 765 625 855 655 0 FreeSans 400 0 0 0 D
+port 1 nsew signal bidirectional
+flabel locali s 135 225 225 255 0 FreeSans 400 0 0 0 CK
+port 2 nsew signal bidirectional
+flabel locali s 315 1865 405 1895 0 FreeSans 400 0 0 0 Q
+port 4 nsew signal bidirectional
+flabel locali s 315 1705 405 1735 0 FreeSans 400 0 0 0 QN
+port 5 nsew signal bidirectional
+flabel m3 s 585 0 673 1920 0 FreeSans 400 0 0 0 AVDD
+port 6 nsew signal bidirectional
+flabel m3 s 315 0 403 1920 0 FreeSans 400 0 0 0 AVSS
+port 7 nsew signal bidirectional
+flabel locali s 135 1505 225 1535 0 FreeSans 400 0 0 0 RN
+port 3 nsew signal bidirectional
+<< properties >>
+string FIXED_BBOX 0 0 990 1920
+<< end >>

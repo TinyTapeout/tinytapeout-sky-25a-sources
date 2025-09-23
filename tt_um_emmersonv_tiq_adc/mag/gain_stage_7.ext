@@ -1,0 +1,335 @@
+timestamp 1755723063
+version 8.3
+tech sky130A
+style ngspice()
+scale 1000 1 500000
+resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
+use gain_stage gain_stage_6 1 0 0 0 1 -5906
+use gain_stage gain_stage_5 1 0 0 0 1 -4922
+use gain_stage gain_stage_4 1 0 0 0 1 -3938
+use gain_stage gain_stage_3 1 0 0 0 1 -2954
+use gain_stage gain_stage_2 1 0 0 0 1 -1970
+use gain_stage gain_stage_1 1 0 0 0 1 -984
+use gain_stage gain_stage_0 1 0 0 0 1 0
+node "m1_0_n5890#" 1 323.222 0 -5890 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 132048 1908 0 0 0 0 0 0 0 0 0 0
+node "m1_0_n4906#" 1 188.05 0 -4906 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 133620 1912 0 0 0 0 0 0 0 0 0 0
+node "m1_0_n3922#" 1 187.419 0 -3922 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 132048 1908 0 0 0 0 0 0 0 0 0 0
+node "m1_0_n2940#" 1 187.734 0 -2940 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 133620 1912 0 0 0 0 0 0 0 0 0 0
+node "m1_n2_n1954#" 1 189.168 -2 -1954 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 134300 1920 0 0 0 0 0 0 0 0 0 0
+node "m1_0_n968#" 1 188.129 0 -968 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 132048 1908 0 0 0 0 0 0 0 0 0 0
+node "m1_0_16#" 1 187.142 0 16 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 132048 1908 0 0 0 0 0 0 0 0 0 0
+node "li_0_n5890#" 60 466.029 0 -5890 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 132048 1908 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_738_n5530#" 15 26.9851 738 -5530 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1920 176 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_0_n5542#" 13 44.4989 0 -5542 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4488 268 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_0_n4906#" 59 417.552 0 -4906 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 133620 1912 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_738_n4546#" 15 26.9544 738 -4546 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1920 176 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_0_n4558#" 13 44.4549 0 -4558 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4488 268 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_0_n3922#" 60 415.333 0 -3922 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 132048 1908 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_738_n3562#" 15 26.977 738 -3562 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1920 176 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_0_n3574#" 13 44.4872 0 -3574 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4488 268 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_0_n2940#" 59 417.512 0 -2940 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 133620 1912 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_738_n2578#" 15 26.9851 738 -2578 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1920 176 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_0_n2590#" 13 44.4989 0 -2590 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4488 268 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_n2_n1954#" 59 419.859 -2 -1954 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 134300 1920 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_738_n1594#" 15 26.9625 738 -1594 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1920 176 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_0_n1606#" 13 44.4666 0 -1606 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4488 268 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_0_n968#" 60 415.572 0 -968 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 132048 1908 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_738_n608#" 15 26.9851 738 -608 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1920 176 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_0_n620#" 13 44.4989 0 -620 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4488 268 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_0_16#" 60 437.32 0 16 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 132048 1908 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_738_376#" 15 29.6813 738 376 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1920 176 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_0_364#" 13 48.2975 0 364 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4488 268 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_200_n5142#" 32448 371.317 200 -5142 nw 0 0 0 0 10368 1152 0 0 10368 1152 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 10368 1152 135536 1920 0 0 0 0 0 0 0 0 0 0
+node "w_200_n4158#" 32448 370.998 200 -4158 nw 0 0 0 0 10368 1152 0 0 10368 1152 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 10368 1152 135536 1920 0 0 0 0 0 0 0 0 0 0
+node "w_200_n3174#" 32448 370.616 200 -3174 nw 0 0 0 0 10368 1152 0 0 10368 1152 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 10368 1152 135536 1920 0 0 0 0 0 0 0 0 0 0
+node "w_200_n2190#" 32448 370.971 200 -2190 nw 0 0 0 0 10368 1152 0 0 10368 1152 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 10368 1152 135536 1920 0 0 0 0 0 0 0 0 0 0
+node "w_200_n1206#" 32448 371.539 200 -1206 nw 0 0 0 0 10368 1152 0 0 10368 1152 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 10368 1152 135536 1920 0 0 0 0 0 0 0 0 0 0
+node "w_200_n220#" 32448 371.415 200 -220 nw 0 0 0 0 10368 1152 0 0 10368 1152 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 10368 1152 135536 1920 0 0 0 0 0 0 0 0 0 0
+node "w_200_764#" 32448 531.281 200 764 nw 0 0 0 0 10368 1152 0 0 10368 1152 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 10368 1152 135536 1920 0 0 0 0 0 0 0 0 0 0
+substrate "a_n2_n1954#" 0 0 -2 -1954 ppd 0 0 0 0 0 0 0 0 0 0 929732 13376 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "li_738_n608#" "m1_0_n968#" 0.608934
+cap "li_0_n968#" "li_n2_n1954#" 15.9526
+cap "w_200_n5142#" "w_200_n4158#" 0.102088
+cap "li_n2_n1954#" "m1_n2_n1954#" 383.426
+cap "w_200_n4158#" "m1_0_n4906#" 57.64
+cap "li_0_n4558#" "m1_0_n4906#" 1.44005
+cap "li_738_n2578#" "w_200_n2190#" 0.741363
+cap "li_738_n2578#" "li_0_n2590#" 1.45714
+cap "m1_0_16#" "w_200_764#" 57.4485
+cap "li_738_n3562#" "m1_0_n3922#" 0.608934
+cap "li_738_n608#" "li_0_n620#" 1.45714
+cap "li_0_364#" "li_0_16#" 8.09135
+cap "w_200_764#" "li_738_376#" 0.741363
+cap "li_738_n4546#" "m1_0_n4906#" 0.618909
+cap "li_738_n608#" "w_200_n220#" 0.733836
+cap "li_738_n3562#" "li_0_n3922#" 5.56364
+cap "w_200_n3174#" "li_738_n3562#" 0.741363
+cap "w_200_n5142#" "li_0_n5890#" 8.31385
+cap "li_n2_n1954#" "li_0_n2590#" 2.82383
+cap "li_n2_n1954#" "w_200_n2190#" 59.5916
+cap "li_0_n5890#" "m1_0_n5890#" 376.997
+cap "li_0_n2940#" "li_0_n3922#" 15.9905
+cap "li_0_n5542#" "li_738_n5530#" 1.45714
+cap "m1_n2_n1954#" "w_200_n2190#" 244.169
+cap "w_200_n3174#" "li_0_n2940#" 60.5432
+cap "li_738_n608#" "li_0_16#" 2
+cap "li_0_n4906#" "li_0_n5542#" 2.82383
+cap "li_0_n3574#" "m1_0_n3922#" 1.4168
+cap "m1_0_n2940#" "li_0_n2590#" 1.4168
+cap "m1_0_n2940#" "w_200_n2190#" 57.4485
+cap "m1_0_16#" "li_738_376#" 0.608934
+cap "li_738_n608#" "li_0_n968#" 5.56364
+cap "w_200_n1206#" "li_738_n1594#" 0.741363
+cap "li_0_n3574#" "li_0_n3922#" 8.09135
+cap "w_200_764#" "w_200_n220#" 0.102326
+cap "w_200_n3174#" "li_0_n3574#" 1.33408
+cap "li_0_n4906#" "li_738_n5530#" 2
+cap "m1_0_n968#" "m1_0_16#" 0.101617
+cap "m1_0_n968#" "w_200_n1206#" 240.167
+cap "w_200_n2190#" "li_0_n2590#" 1.33408
+cap "li_0_n4906#" "w_200_n4158#" 8.34817
+cap "w_200_764#" "li_0_16#" 8.31385
+cap "li_0_n4906#" "li_0_n4558#" 8.1699
+cap "m1_0_16#" "li_0_n620#" 0.0061131
+cap "li_738_n3562#" "li_0_n2940#" 2.00656
+cap "w_200_n1206#" "li_0_n1606#" 1.33408
+cap "li_0_n1606#" "li_738_n1594#" 1.45714
+cap "li_0_n5890#" "li_0_n5542#" 8.09135
+cap "w_200_n4158#" "li_0_n4558#" 1.33408
+cap "w_200_n3174#" "li_n2_n1954#" 0.00246343
+cap "m1_0_16#" "w_200_n220#" 246.4
+cap "w_200_n1206#" "w_200_n220#" 0.101617
+cap "li_738_n4546#" "li_0_n4906#" 5.61468
+cap "w_200_n3174#" "m1_0_n2940#" 247.029
+cap "m1_0_n968#" "li_0_n620#" 1.4168
+cap "li_738_n4546#" "w_200_n4158#" 0.741363
+cap "li_738_n3562#" "li_0_n3574#" 1.45714
+cap "li_0_n5890#" "li_738_n5530#" 5.56364
+cap "m1_0_n968#" "w_200_n220#" 57.1126
+cap "m1_0_16#" "li_0_16#" 376.997
+cap "w_200_n5142#" "m1_0_n5890#" 57.4485
+cap "li_738_n4546#" "li_0_n4558#" 1.45714
+cap "w_200_n5142#" "m1_0_n4906#" 243.549
+cap "li_0_n4906#" "li_0_n5890#" 15.9526
+cap "li_0_n2940#" "li_0_n3574#" 2.83333
+cap "li_738_376#" "li_0_16#" 5.56364
+cap "w_200_n4158#" "m1_0_n3922#" 243.549
+cap "li_0_n2940#" "li_738_n2578#" 5.56364
+cap "li_0_n968#" "w_200_n1206#" 58.4731
+cap "w_200_n1206#" "li_n2_n1954#" 8.35638
+cap "li_0_n968#" "li_738_n1594#" 1.99349
+cap "w_200_764#" "li_0_364#" 1.33408
+cap "li_n2_n1954#" "li_738_n1594#" 5.61468
+cap "li_0_n4906#" "li_0_n3922#" 15.9905
+cap "w_200_n1206#" "m1_n2_n1954#" 57.7867
+cap "li_738_n1594#" "m1_n2_n1954#" 0.618909
+cap "w_200_n3174#" "w_200_n2190#" 0.102088
+cap "li_0_n620#" "w_200_n220#" 1.28
+cap "w_200_n4158#" "li_0_n3922#" 59.4943
+cap "w_200_n3174#" "w_200_n4158#" 0.102088
+cap "li_0_n968#" "m1_0_n968#" 376.997
+cap "li_0_n4558#" "li_0_n3922#" 2.82383
+cap "li_0_n2940#" "li_n2_n1954#" 15.9526
+cap "li_0_n620#" "li_0_16#" 2.82383
+cap "li_0_n2940#" "m1_0_n2940#" 381.485
+cap "li_738_n4546#" "li_0_n3922#" 2
+cap "m1_0_16#" "li_0_364#" 1.4168
+cap "w_200_n220#" "li_0_16#" 60.1867
+cap "li_0_n968#" "li_0_n1606#" 2.81438
+cap "li_0_n1606#" "li_n2_n1954#" 8.1699
+cap "li_0_n968#" "li_0_n620#" 8.09135
+cap "li_738_376#" "li_0_364#" 1.45714
+cap "li_0_n1606#" "m1_n2_n1954#" 1.44005
+cap "w_200_n5142#" "li_0_n5542#" 1.33408
+cap "li_0_n968#" "w_200_n220#" 8.29154
+cap "li_0_n5542#" "m1_0_n5890#" 1.4168
+cap "li_n2_n1954#" "w_200_n220#" 0.00048584
+cap "li_0_n3922#" "m1_0_n3922#" 376.997
+cap "w_200_n3174#" "m1_0_n3922#" 57.4485
+cap "li_n2_n1954#" "li_738_n2578#" 2
+cap "li_738_n2578#" "m1_0_n2940#" 0.608934
+cap "w_200_n5142#" "li_738_n5530#" 0.741363
+cap "li_0_n968#" "li_0_16#" 15.9526
+cap "li_0_n2940#" "li_0_n2590#" 8.09135
+cap "li_0_n2940#" "w_200_n2190#" 8.31385
+cap "li_738_n5530#" "m1_0_n5890#" 0.608934
+cap "w_200_n3174#" "li_0_n3922#" 8.31385
+cap "w_200_n5142#" "li_0_n4906#" 59.4943
+cap "li_0_n4906#" "m1_0_n4906#" 381.485
+cap "gain_stage_6/inverter_p1_n0o42_1/sky130_fd_pr__nfet_01v8_PNPQML_0/a_15_n42#" "gain_stage_6/VGND" 0.806211
+cap "gain_stage_5/inverter_p1_n0o42_1/sky130_fd_pr__nfet_01v8_PNPQML_0/a_15_n42#" "gain_stage_6/VGND" 0.733471
+cap "gain_stage_5/inverter_p1_n0o42_1/sky130_fd_pr__nfet_01v8_PNPQML_0/a_15_n42#" "gain_stage_6/VDPWR" 5.3054
+cap "gain_stage_5/out" "gain_stage_6/VGND" -5.75123
+cap "gain_stage_6/in" "gain_stage_6/VGND" -11.5258
+cap "gain_stage_5/out" "gain_stage_5/in" -1.45714
+cap "gain_stage_6/VDPWR" "gain_stage_6/VGND" 83.6008
+cap "gain_stage_6/in" "gain_stage_6/VDPWR" -1.33408
+cap "gain_stage_5/inverter_p1_n0o42_0/sky130_fd_pr__nfet_01v8_PNPQML_0/a_15_n42#" "gain_stage_6/VGND" 0.733471
+cap "gain_stage_5/in" "gain_stage_6/VGND" -9.35884
+cap "gain_stage_6/in" "gain_stage_5/in" 3.29982
+cap "gain_stage_6/in" "gain_stage_6/out" -1.45714
+cap "gain_stage_5/inverter_p1_n0o42_0/sky130_fd_pr__nfet_01v8_PNPQML_0/a_15_n42#" "gain_stage_6/VDPWR" 5.3054
+cap "gain_stage_5/in" "gain_stage_6/VDPWR" 4.26387
+cap "gain_stage_6/out" "gain_stage_6/VGND" -8.17257
+cap "gain_stage_6/out" "gain_stage_6/VDPWR" -0.741363
+cap "gain_stage_6/inverter_p1_n0o42_0/sky130_fd_pr__nfet_01v8_PNPQML_0/a_15_n42#" "gain_stage_6/VGND" 0.806211
+cap "gain_stage_5/VDPWR" "gain_stage_6/VGND" -33.9034
+cap "gain_stage_6/inverter_p1_n0o42_0/sky130_fd_pr__nfet_01v8_PNPQML_0/a_15_n42#" "gain_stage_5/inverter_p1_n0o42_0/sky130_fd_pr__nfet_01v8_PNPQML_0/a_15_n42#" 3.29982
+cap "gain_stage_6/inverter_p1_n0o42_1/sky130_fd_pr__nfet_01v8_PNPQML_0/a_15_n42#" "gain_stage_5/inverter_p1_n0o42_1/sky130_fd_pr__nfet_01v8_PNPQML_0/a_15_n42#" 3.29982
+cap "gain_stage_5/VDPWR" "gain_stage_4/inverter_p1_n0o42_1/sky130_fd_pr__nfet_01v8_PNPQML_0/a_15_n42#" 5.3054
+cap "gain_stage_5/VDPWR" "gain_stage_6/VGND" 117.426
+cap "gain_stage_6/VGND" "gain_stage_4/VDPWR" -65.7624
+cap "gain_stage_3/inverter_p1_n0o42_1/sky130_fd_pr__nfet_01v8_PNPQML_0/a_15_n42#" "gain_stage_4/inverter_p1_n0o42_1/sky130_fd_pr__nfet_01v8_PNPQML_0/a_15_n42#" 1.64991
+cap "gain_stage_6/VGND" "gain_stage_4/inverter_p1_n0o42_0/sky130_fd_pr__nfet_01v8_PNPQML_0/a_15_n42#" 0.812663
+cap "gain_stage_3/in" "gain_stage_4/in" 1.64991
+cap "gain_stage_4/inverter_p1_n0o42_1/sky130_fd_pr__nfet_01v8_PNPQML_0/a_15_n42#" "gain_stage_6/VGND" 0.812663
+cap "gain_stage_4/out" "gain_stage_4/in" -1.45714
+cap "gain_stage_5/in" "gain_stage_4/in" 2.68965
+cap "gain_stage_4/VDPWR" "gain_stage_4/in" -1.33408
+cap "gain_stage_5/inverter_p1_n0o42_0/sky130_fd_pr__nfet_01v8_PNPQML_0/a_15_n42#" "gain_stage_4/inverter_p1_n0o42_0/sky130_fd_pr__nfet_01v8_PNPQML_0/a_15_n42#" 2.68965
+cap "gain_stage_5/VDPWR" "gain_stage_4/in" 4.26387
+cap "gain_stage_6/VGND" "gain_stage_5/inverter_p1_n0o42_1/sky130_fd_pr__nfet_01v8_PNPQML_0/a_15_n42#" 0.492172
+cap "gain_stage_4/inverter_p1_n0o42_1/sky130_fd_pr__nfet_01v8_PNPQML_0/a_15_n42#" "gain_stage_5/inverter_p1_n0o42_1/sky130_fd_pr__nfet_01v8_PNPQML_0/a_15_n42#" 2.68965
+cap "gain_stage_4/out" "gain_stage_4/VDPWR" -0.741363
+cap "gain_stage_5/VDPWR" "gain_stage_5/in" -1.33408
+cap "gain_stage_5/inverter_p1_n0o42_0/sky130_fd_pr__nfet_01v8_PNPQML_0/a_15_n42#" "gain_stage_6/VGND" 0.492172
+cap "gain_stage_5/VDPWR" "gain_stage_5/out" -0.25908
+cap "gain_stage_6/VGND" "gain_stage_4/in" -10.1122
+cap "gain_stage_6/VGND" "gain_stage_5/in" -2.33165
+cap "gain_stage_4/out" "gain_stage_6/VGND" -7.17585
+cap "gain_stage_3/inverter_p1_n0o42_0/sky130_fd_pr__nfet_01v8_PNPQML_0/a_15_n42#" "gain_stage_4/inverter_p1_n0o42_0/sky130_fd_pr__nfet_01v8_PNPQML_0/a_15_n42#" 1.64991
+cap "gain_stage_5/out" "gain_stage_6/VGND" -1
+cap "gain_stage_5/VDPWR" "gain_stage_4/inverter_p1_n0o42_0/sky130_fd_pr__nfet_01v8_PNPQML_0/a_15_n42#" 5.3054
+cap "gain_stage_2/VDPWR" "gain_stage_4/VGND" -33.9034
+cap "gain_stage_4/VDPWR" "gain_stage_4/VGND" 150
+cap "gain_stage_3/inverter_p1_n0o42_1/sky130_fd_pr__nfet_01v8_PNPQML_0/a_15_n42#" "gain_stage_4/VDPWR" 5.3054
+cap "gain_stage_4/in" "gain_stage_3/in" 1.64991
+cap "gain_stage_3/in" "gain_stage_3/out" -1.45714
+cap "gain_stage_3/inverter_p1_n0o42_0/sky130_fd_pr__nfet_01v8_PNPQML_0/a_15_n42#" "gain_stage_4/VDPWR" 5.3054
+cap "gain_stage_4/out" "gain_stage_4/VGND" -1.00328
+cap "gain_stage_3/in" "gain_stage_4/VGND" -11.4997
+cap "gain_stage_2/in" "gain_stage_3/in" 2.11323
+cap "gain_stage_4/in" "gain_stage_4/VGND" -1.41667
+cap "gain_stage_2/out" "gain_stage_4/VGND" -2.93604
+cap "gain_stage_2/inverter_p1_n0o42_0/sky130_fd_pr__nfet_01v8_PNPQML_0/a_15_n42#" "gain_stage_4/VGND" 0.710462
+cap "gain_stage_4/VGND" "gain_stage_3/out" -8.17257
+cap "gain_stage_2/inverter_p1_n0o42_1/sky130_fd_pr__nfet_01v8_PNPQML_0/a_15_n42#" "gain_stage_4/VGND" 0.710462
+cap "gain_stage_3/inverter_p1_n0o42_1/sky130_fd_pr__nfet_01v8_PNPQML_0/a_15_n42#" "gain_stage_2/inverter_p1_n0o42_1/sky130_fd_pr__nfet_01v8_PNPQML_0/a_15_n42#" 2.11323
+cap "gain_stage_3/inverter_p1_n0o42_0/sky130_fd_pr__nfet_01v8_PNPQML_0/a_15_n42#" "gain_stage_2/inverter_p1_n0o42_0/sky130_fd_pr__nfet_01v8_PNPQML_0/a_15_n42#" 2.11323
+cap "gain_stage_3/in" "gain_stage_3/VDPWR" -1.33408
+cap "gain_stage_4/inverter_p1_n0o42_0/sky130_fd_pr__nfet_01v8_PNPQML_0/a_15_n42#" "gain_stage_3/inverter_p1_n0o42_0/sky130_fd_pr__nfet_01v8_PNPQML_0/a_15_n42#" 1.64991
+cap "gain_stage_3/VDPWR" "gain_stage_3/out" -0.741363
+cap "gain_stage_2/inverter_p1_n0o42_1/sky130_fd_pr__nfet_01v8_PNPQML_0/a_15_n42#" "gain_stage_3/VDPWR" 1.205
+cap "gain_stage_2/inverter_p1_n0o42_0/sky130_fd_pr__nfet_01v8_PNPQML_0/a_15_n42#" "gain_stage_3/VDPWR" 1.205
+cap "gain_stage_2/in" "gain_stage_4/VGND" -5.30476
+cap "gain_stage_3/in" "gain_stage_4/VDPWR" 4.26387
+cap "gain_stage_3/inverter_p1_n0o42_1/sky130_fd_pr__nfet_01v8_PNPQML_0/a_15_n42#" "gain_stage_4/VGND" 0.832284
+cap "gain_stage_3/inverter_p1_n0o42_0/sky130_fd_pr__nfet_01v8_PNPQML_0/a_15_n42#" "gain_stage_4/VGND" 0.832284
+cap "gain_stage_3/VDPWR" "gain_stage_4/VGND" 83.6008
+cap "gain_stage_3/inverter_p1_n0o42_1/sky130_fd_pr__nfet_01v8_PNPQML_0/a_15_n42#" "gain_stage_4/inverter_p1_n0o42_1/sky130_fd_pr__nfet_01v8_PNPQML_0/a_15_n42#" 1.64991
+cap "gain_stage_2/in" "gain_stage_3/VDPWR" 1.205
+cap "gain_stage_2/out" "gain_stage_2/VDPWR" -0.741363
+cap "gain_stage_3/VGND" "gain_stage_1/VDPWR" -33.8281
+cap "gain_stage_3/VGND" "gain_stage_2/in" -6.07328
+cap "gain_stage_1/inverter_p1_n0o42_0/sky130_fd_pr__nfet_01v8_PNPQML_0/a_15_n42#" "gain_stage_2/inverter_p1_n0o42_0/sky130_fd_pr__nfet_01v8_PNPQML_0/a_15_n42#" 3.29116
+cap "gain_stage_2/in" "gain_stage_3/VDPWR" 3.05886
+cap "gain_stage_1/in" "gain_stage_2/in" 3.29116
+cap "gain_stage_1/in" "gain_stage_1/VDPWR" -0.678127
+cap "gain_stage_1/in" "gain_stage_3/VGND" -10.392
+cap "gain_stage_3/in" "gain_stage_2/in" 1.18659
+cap "gain_stage_1/inverter_p1_n0o42_1/sky130_fd_pr__nfet_01v8_PNPQML_0/a_15_n42#" "gain_stage_1/VDPWR" 0.0114723
+cap "gain_stage_1/inverter_p1_n0o42_0/sky130_fd_pr__nfet_01v8_PNPQML_0/a_15_n42#" "gain_stage_1/VDPWR" 0.0114723
+cap "gain_stage_1/inverter_p1_n0o42_1/sky130_fd_pr__nfet_01v8_PNPQML_0/a_15_n42#" "gain_stage_3/VGND" 0.528103
+cap "gain_stage_3/inverter_p1_n0o42_1/sky130_fd_pr__nfet_01v8_PNPQML_0/a_15_n42#" "gain_stage_2/inverter_p1_n0o42_1/sky130_fd_pr__nfet_01v8_PNPQML_0/a_15_n42#" 1.18659
+cap "gain_stage_1/inverter_p1_n0o42_1/sky130_fd_pr__nfet_01v8_PNPQML_0/a_15_n42#" "gain_stage_0/inverter_p1_n0o42_1/sky130_fd_pr__nfet_01v8_PNPQML_0/a_15_n42#" 1.18659
+cap "gain_stage_2/in" "gain_stage_2/VDPWR" -1.33408
+cap "gain_stage_3/VGND" "gain_stage_2/inverter_p1_n0o42_1/sky130_fd_pr__nfet_01v8_PNPQML_0/a_15_n42#" 0.818199
+cap "gain_stage_3/VGND" "gain_stage_1/inverter_p1_n0o42_0/sky130_fd_pr__nfet_01v8_PNPQML_0/a_15_n42#" 0.528103
+cap "gain_stage_3/VDPWR" "gain_stage_2/inverter_p1_n0o42_1/sky130_fd_pr__nfet_01v8_PNPQML_0/a_15_n42#" 4.1004
+cap "gain_stage_3/VGND" "gain_stage_2/VDPWR" 115.554
+cap "gain_stage_1/in" "gain_stage_2/VDPWR" 4.2302
+cap "gain_stage_1/out" "gain_stage_1/VDPWR" -0.4776
+cap "gain_stage_2/out" "gain_stage_2/in" -1.45714
+cap "gain_stage_1/out" "gain_stage_3/VGND" -7.17257
+cap "gain_stage_1/inverter_p1_n0o42_1/sky130_fd_pr__nfet_01v8_PNPQML_0/a_15_n42#" "gain_stage_2/inverter_p1_n0o42_1/sky130_fd_pr__nfet_01v8_PNPQML_0/a_15_n42#" 3.29116
+cap "gain_stage_1/in" "gain_stage_1/out" -1.45714
+cap "gain_stage_2/out" "gain_stage_3/VGND" -4.80868
+cap "gain_stage_1/inverter_p1_n0o42_1/sky130_fd_pr__nfet_01v8_PNPQML_0/a_15_n42#" "gain_stage_2/VDPWR" 5.26443
+cap "gain_stage_3/inverter_p1_n0o42_0/sky130_fd_pr__nfet_01v8_PNPQML_0/a_15_n42#" "gain_stage_2/inverter_p1_n0o42_0/sky130_fd_pr__nfet_01v8_PNPQML_0/a_15_n42#" 1.18659
+cap "gain_stage_1/inverter_p1_n0o42_0/sky130_fd_pr__nfet_01v8_PNPQML_0/a_15_n42#" "gain_stage_2/VDPWR" 5.26443
+cap "gain_stage_0/inverter_p1_n0o42_0/sky130_fd_pr__nfet_01v8_PNPQML_0/a_15_n42#" "gain_stage_1/inverter_p1_n0o42_0/sky130_fd_pr__nfet_01v8_PNPQML_0/a_15_n42#" 1.18659
+cap "gain_stage_1/in" "gain_stage_0/in" 1.18659
+cap "gain_stage_3/VGND" "gain_stage_2/inverter_p1_n0o42_0/sky130_fd_pr__nfet_01v8_PNPQML_0/a_15_n42#" 0.818199
+cap "gain_stage_3/VDPWR" "gain_stage_2/inverter_p1_n0o42_0/sky130_fd_pr__nfet_01v8_PNPQML_0/a_15_n42#" 4.1004
+cap "gain_stage_1/out" "gain_stage_1/VGND" -1
+cap "gain_stage_0/VDPWR" "gain_stage_0/out" -0.741363
+cap "gain_stage_0/inverter_p1_n0o42_0/sky130_fd_pr__nfet_01v8_PNPQML_0/a_15_n42#" "gain_stage_1/inverter_p1_n0o42_0/sky130_fd_pr__nfet_01v8_PNPQML_0/a_15_n42#" 2.11323
+cap "gain_stage_1/inverter_p1_n0o42_1/sky130_fd_pr__nfet_01v8_PNPQML_0/a_15_n42#" "gain_stage_1/VGND" 0.272815
+cap "gain_stage_0/in" "gain_stage_0/out" -1.45714
+cap "gain_stage_1/VGND" "gain_stage_0/out" -6.17257
+cap "gain_stage_1/VDPWR" "gain_stage_1/out" -0.256237
+cap "gain_stage_0/VDPWR" "gain_stage_1/VGND" -65.7624
+cap "gain_stage_1/inverter_p1_n0o42_0/sky130_fd_pr__nfet_01v8_PNPQML_0/a_15_n42#" "gain_stage_1/VGND" 0.272815
+cap "gain_stage_0/VDPWR" "gain_stage_0/in" -1.33408
+cap "gain_stage_1/VDPWR" "gain_stage_1/inverter_p1_n0o42_1/sky130_fd_pr__nfet_01v8_PNPQML_0/a_15_n42#" 0.00740757
+cap "gain_stage_1/VDPWR" "gain_stage_0/inverter_p1_n0o42_1/sky130_fd_pr__nfet_01v8_PNPQML_0/a_15_n42#" 5.32362
+cap "gain_stage_0/in" "gain_stage_1/VGND" -9.50815
+cap "gain_stage_0/inverter_p1_n0o42_0/sky130_fd_pr__nfet_01v8_PNPQML_0/a_15_n42#" "gain_stage_1/VDPWR" 5.32362
+cap "gain_stage_1/inverter_p1_n0o42_0/sky130_fd_pr__nfet_01v8_PNPQML_0/a_15_n42#" "gain_stage_1/VDPWR" 0.00740757
+cap "gain_stage_1/in" "gain_stage_1/VGND" -1.14521
+cap "gain_stage_1/in" "gain_stage_0/in" 2.11323
+cap "gain_stage_1/VDPWR" "gain_stage_1/VGND" 118.064
+cap "gain_stage_0/inverter_p1_n0o42_1/sky130_fd_pr__nfet_01v8_PNPQML_0/a_15_n42#" "gain_stage_1/inverter_p1_n0o42_1/sky130_fd_pr__nfet_01v8_PNPQML_0/a_15_n42#" 2.11323
+cap "gain_stage_1/VDPWR" "gain_stage_0/in" 4.28189
+cap "gain_stage_1/in" "gain_stage_1/VDPWR" -0.583167
+merge "gain_stage_2/in" "li_0_n1606#" -54.3626 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -4488 -268 0 0 0 0 0 0 0 0 0 0 0 0
+merge "gain_stage_3/VDPWR" "w_200_n2190#" -642.247 0 0 0 0 -10368 -1152 0 0 -10368 -1152 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -10368 -1152 -135192 -1916 0 0 0 0 0 0 0 0 0 0
+merge "gain_stage_2/inverter_p1_n0o42_2/a_n80_n228#" "gain_stage_0/VSUBS" -6173.41 0 0 0 0 0 0 0 0 0 0 -929052 -13368 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -924744 -13380 -924336 -13356 0 0 0 0 0 0 0 0 0 0
+merge "gain_stage_0/VSUBS" "gain_stage_0/VGND"
+merge "gain_stage_0/VGND" "m1_0_16#"
+merge "m1_0_16#" "li_0_16#"
+merge "li_0_16#" "gain_stage_1/VSUBS"
+merge "gain_stage_1/VSUBS" "gain_stage_1/VGND"
+merge "gain_stage_1/VGND" "m1_0_n968#"
+merge "m1_0_n968#" "li_0_n968#"
+merge "li_0_n968#" "gain_stage_2/VSUBS"
+merge "gain_stage_2/VSUBS" "gain_stage_2/VGND"
+merge "gain_stage_2/VGND" "m1_n2_n1954#"
+merge "m1_n2_n1954#" "li_n2_n1954#"
+merge "li_n2_n1954#" "gain_stage_3/VSUBS"
+merge "gain_stage_3/VSUBS" "gain_stage_3/VGND"
+merge "gain_stage_3/VGND" "m1_0_n2940#"
+merge "m1_0_n2940#" "li_0_n2940#"
+merge "li_0_n2940#" "gain_stage_4/VSUBS"
+merge "gain_stage_4/VSUBS" "gain_stage_4/VGND"
+merge "gain_stage_4/VGND" "m1_0_n3922#"
+merge "m1_0_n3922#" "li_0_n3922#"
+merge "li_0_n3922#" "gain_stage_5/VSUBS"
+merge "gain_stage_5/VSUBS" "gain_stage_5/VGND"
+merge "gain_stage_5/VGND" "m1_0_n4906#"
+merge "m1_0_n4906#" "li_0_n4906#"
+merge "li_0_n4906#" "gain_stage_6/VSUBS"
+merge "gain_stage_6/VSUBS" "gain_stage_6/VGND"
+merge "gain_stage_6/VGND" "m1_0_n5890#"
+merge "m1_0_n5890#" "li_0_n5890#"
+merge "li_0_n5890#" "a_n2_n1954#"
+merge "gain_stage_4/VDPWR" "w_200_n3174#" -641.662 0 0 0 0 -10368 -1152 0 0 -10368 -1152 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -10368 -1152 -135192 -1916 0 0 0 0 0 0 0 0 0 0
+merge "gain_stage_5/in" "li_0_n4558#" -53.099 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -4488 -268 0 0 0 0 0 0 0 0 0 0 0 0
+merge "gain_stage_6/out" "li_738_n5530#" -26.9851 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1920 -176 0 0 0 0 0 0 0 0 0 0 0 0
+merge "gain_stage_1/VDPWR" "gain_stage_1/w_488_722#" -640.132 0 0 0 0 -10368 -1152 0 0 -10368 -1152 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -10368 -1152 -133280 -1908 0 0 0 0 0 0 0 0 0 0
+merge "gain_stage_1/w_488_722#" "w_200_n220#"
+merge "gain_stage_2/VDPWR" "w_200_n1206#" -641.427 0 0 0 0 -10368 -1152 0 0 -10368 -1152 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -10368 -1152 -135192 -1916 0 0 0 0 0 0 0 0 0 0
+merge "gain_stage_0/VDPWR" "w_200_764#" -530.363 0 0 0 0 -10368 -1152 0 0 -10368 -1152 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -10368 -1152 -135192 -1916 0 0 0 0 0 0 0 0 0 0
+merge "gain_stage_0/in" "li_0_364#" -54.8009 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -4488 -268 0 0 0 0 0 0 0 0 0 0 0 0
+merge "gain_stage_3/out" "li_738_n2578#" -26.9851 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1920 -176 0 0 0 0 0 0 0 0 0 0 0 0
+merge "gain_stage_4/in" "li_0_n3574#" -54.392 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -4488 -268 0 0 0 0 0 0 0 0 0 0 0 0
+merge "gain_stage_2/out" "li_738_n1594#" -26.9625 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1920 -176 0 0 0 0 0 0 0 0 0 0 0 0
+merge "gain_stage_6/in" "li_0_n5542#" -47.9003 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -4488 -268 0 0 0 0 0 0 0 0 0 0 0 0
+merge "gain_stage_5/out" "li_738_n4546#" -39.4187 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1920 -224 0 0 0 0 0 0 0 0 0 0 0 0
+merge "gain_stage_3/in" "li_0_n2590#" -54.4037 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -4488 -268 0 0 0 0 0 0 0 0 0 0 0 0
+merge "gain_stage_5/VDPWR" "w_200_n4158#" -642.044 0 0 0 0 -10368 -1152 0 0 -10368 -1152 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -10368 -1152 -135192 -1916 0 0 0 0 0 0 0 0 0 0
+merge "gain_stage_0/out" "li_738_376#" -29.6813 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1920 -176 0 0 0 0 0 0 0 0 0 0 0 0
+merge "gain_stage_1/out" "li_738_n608#" -26.9851 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1920 -176 0 0 0 0 0 0 0 0 0 0 0 0
+merge "gain_stage_4/out" "li_738_n3562#" -26.977 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1920 -176 0 0 0 0 0 0 0 0 0 0 0 0
+merge "gain_stage_1/in" "li_0_n620#" -54.3701 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -4488 -268 0 0 0 0 0 0 0 0 0 0 0 0
+merge "gain_stage_6/VDPWR" "w_200_n5142#" -642.247 0 0 0 0 -10368 -1152 0 0 -10368 -1152 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -10368 -1152 -135192 -1916 0 0 0 0 0 0 0 0 0 0

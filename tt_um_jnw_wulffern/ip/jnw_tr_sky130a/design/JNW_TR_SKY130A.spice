@@ -1,0 +1,347 @@
+
+*-------------------------------------------------------------
+* JNWTR_PCHDL <class 'cicpy.core.layoutcell.LayoutCell'>
+*-------------------------------------------------------------
+.SUBCKT JNWTR_PCHDL D G S B
+M1 D G S B sky130_fd_pr__pfet_01v8  l=0.16  nf=1  w=0.9  
+.ENDS
+
+*-------------------------------------------------------------
+* JNWTR_NCHDL <class 'cicpy.core.layoutcell.LayoutCell'>
+*-------------------------------------------------------------
+.SUBCKT JNWTR_NCHDL D G S B
+M1 D G S B sky130_fd_pr__nfet_01v8  l=0.16  nf=1  w=0.9  
+.ENDS
+
+*-------------------------------------------------------------
+* JNWTR_RES2 <class 'cicpy.core.layoutcell.LayoutCell'>
+*-------------------------------------------------------------
+.SUBCKT JNWTR_RES2 N P B
+R1 N P B sky130_fd_pr__res_high_po  l=7.2  w=0.36  
+.ENDS
+
+*-------------------------------------------------------------
+* JNWTR_RES4 <class 'cicpy.core.layoutcell.LayoutCell'>
+*-------------------------------------------------------------
+.SUBCKT JNWTR_RES4 N P B
+R1 N P B sky130_fd_pr__res_high_po  l=7.2  w=0.36  
+.ENDS
+
+*-------------------------------------------------------------
+* JNWTR_RES8 <class 'cicpy.core.layoutcell.LayoutCell'>
+*-------------------------------------------------------------
+.SUBCKT JNWTR_RES8 N P B
+R1 N P B sky130_fd_pr__res_high_po  l=7.2  w=0.36  
+.ENDS
+
+*-------------------------------------------------------------
+* JNWTR_RES16 <class 'cicpy.core.layoutcell.LayoutCell'>
+*-------------------------------------------------------------
+.SUBCKT JNWTR_RES16 N P B
+R1 N P B sky130_fd_pr__res_high_po  l=7.2  w=0.36  
+.ENDS
+
+*-------------------------------------------------------------
+* JNWTR_RPPO2 <class 'cicpy.core.layoutcell.LayoutCell'>
+*-------------------------------------------------------------
+.SUBCKT JNWTR_RPPO2 P N B
+XA1 N P B JNWTR_RES2
+.ENDS
+
+*-------------------------------------------------------------
+* JNWTR_RPPO4 <class 'cicpy.core.layoutcell.LayoutCell'>
+*-------------------------------------------------------------
+.SUBCKT JNWTR_RPPO4 P N B
+XA1 N P B JNWTR_RES4
+.ENDS
+
+*-------------------------------------------------------------
+* JNWTR_RPPO8 <class 'cicpy.core.layoutcell.LayoutCell'>
+*-------------------------------------------------------------
+.SUBCKT JNWTR_RPPO8 P N B
+XA1 N P B JNWTR_RES8
+.ENDS
+
+*-------------------------------------------------------------
+* JNWTR_RPPO16 <class 'cicpy.core.layoutcell.LayoutCell'>
+*-------------------------------------------------------------
+.SUBCKT JNWTR_RPPO16 P N B
+XA1 N P B JNWTR_RES16
+.ENDS
+
+*-------------------------------------------------------------
+* JNWTR_TAPCELLB_CV <class 'cicpy.core.layoutcell.LayoutCell'>
+*-------------------------------------------------------------
+.SUBCKT JNWTR_TAPCELLB_CV AVDD AVSS
+XMN1 AVSS AVSS AVSS AVSS JNWTR_NCHDL
+XMP1 AVDD AVDD AVDD AVDD JNWTR_PCHDL
+.ENDS
+
+*-------------------------------------------------------------
+* JNWTR_TIEH_CV <class 'cicpy.core.layoutcell.LayoutCell'>
+*-------------------------------------------------------------
+.SUBCKT JNWTR_TIEH_CV Y AVDD AVSS
+XMN0 A A AVSS AVSS JNWTR_NCHDL
+XMP0 Y A AVDD AVDD JNWTR_PCHDL
+.ENDS
+
+*-------------------------------------------------------------
+* JNWTR_TIEL_CV <class 'cicpy.core.layoutcell.LayoutCell'>
+*-------------------------------------------------------------
+.SUBCKT JNWTR_TIEL_CV Y AVDD AVSS
+XMN0 Y A AVSS AVSS JNWTR_NCHDL
+XMP0 A A AVDD AVDD JNWTR_PCHDL
+.ENDS
+
+*-------------------------------------------------------------
+* JNWTR_IVX1_CV <class 'cicpy.core.layoutcell.LayoutCell'>
+*-------------------------------------------------------------
+.SUBCKT JNWTR_IVX1_CV A Y AVDD AVSS
+XMN0 Y A AVSS AVSS JNWTR_NCHDL
+XMP0 Y A AVDD AVDD JNWTR_PCHDL
+.ENDS
+
+*-------------------------------------------------------------
+* JNWTR_IVX2_CV <class 'cicpy.core.layoutcell.LayoutCell'>
+*-------------------------------------------------------------
+.SUBCKT JNWTR_IVX2_CV A Y AVDD AVSS
+XMN0 Y A AVSS AVSS JNWTR_NCHDL
+XMN1 AVSS A Y AVSS JNWTR_NCHDL
+XMP0 Y A AVDD AVDD JNWTR_PCHDL
+XMP1 AVDD A Y AVDD JNWTR_PCHDL
+.ENDS
+
+*-------------------------------------------------------------
+* JNWTR_IVX4_CV <class 'cicpy.core.layoutcell.LayoutCell'>
+*-------------------------------------------------------------
+.SUBCKT JNWTR_IVX4_CV A Y AVDD AVSS
+XMN0 Y A AVSS AVSS JNWTR_NCHDL
+XMN1 AVSS A Y AVSS JNWTR_NCHDL
+XMN2 Y A AVSS AVSS JNWTR_NCHDL
+XMN3 AVSS A Y AVSS JNWTR_NCHDL
+XMP0 Y A AVDD AVDD JNWTR_PCHDL
+XMP1 AVDD A Y AVDD JNWTR_PCHDL
+XMP2 Y A AVDD AVDD JNWTR_PCHDL
+XMP3 AVDD A Y AVDD JNWTR_PCHDL
+.ENDS
+
+*-------------------------------------------------------------
+* JNWTR_IVX8_CV <class 'cicpy.core.layoutcell.LayoutCell'>
+*-------------------------------------------------------------
+.SUBCKT JNWTR_IVX8_CV A Y AVDD AVSS
+XMN0 Y A AVSS AVSS JNWTR_NCHDL
+XMN1 AVSS A Y AVSS JNWTR_NCHDL
+XMN2 Y A AVSS AVSS JNWTR_NCHDL
+XMN3 AVSS A Y AVSS JNWTR_NCHDL
+XMN4 Y A AVSS AVSS JNWTR_NCHDL
+XMN5 AVSS A Y AVSS JNWTR_NCHDL
+XMN6 Y A AVSS AVSS JNWTR_NCHDL
+XMN7 AVSS A Y AVSS JNWTR_NCHDL
+XMP0 Y A AVDD AVDD JNWTR_PCHDL
+XMP1 AVDD A Y AVDD JNWTR_PCHDL
+XMP2 Y A AVDD AVDD JNWTR_PCHDL
+XMP3 AVDD A Y AVDD JNWTR_PCHDL
+XMP4 Y A AVDD AVDD JNWTR_PCHDL
+XMP5 AVDD A Y AVDD JNWTR_PCHDL
+XMP6 Y A AVDD AVDD JNWTR_PCHDL
+XMP7 AVDD A Y AVDD JNWTR_PCHDL
+.ENDS
+
+*-------------------------------------------------------------
+* JNWTR_BFX1_CV <class 'cicpy.core.layoutcell.LayoutCell'>
+*-------------------------------------------------------------
+.SUBCKT JNWTR_BFX1_CV A Y AVDD AVSS
+XMN0 AVSS A B AVSS JNWTR_NCHDL
+XMN1 Y B AVSS AVSS JNWTR_NCHDL
+XMP0 AVDD A B AVDD JNWTR_PCHDL
+XMP1 Y B AVDD AVDD JNWTR_PCHDL
+.ENDS
+
+*-------------------------------------------------------------
+* JNWTR_NRX1_CV <class 'cicpy.core.layoutcell.LayoutCell'>
+*-------------------------------------------------------------
+.SUBCKT JNWTR_NRX1_CV A B Y AVDD AVSS
+XMN0 Y A AVSS AVSS JNWTR_NCHDL
+XMN1 AVSS B Y AVSS JNWTR_NCHDL
+XMP0 N1 A AVDD AVDD JNWTR_PCHDL
+XMP1 Y B N1 AVDD JNWTR_PCHDL
+.ENDS
+
+*-------------------------------------------------------------
+* JNWTR_NDX1_CV <class 'cicpy.core.layoutcell.LayoutCell'>
+*-------------------------------------------------------------
+.SUBCKT JNWTR_NDX1_CV A B Y AVDD AVSS
+XMN0 N1 A AVSS AVSS JNWTR_NCHDL
+XMN1 Y B N1 AVSS JNWTR_NCHDL
+XMP0 Y A AVDD AVDD JNWTR_PCHDL
+XMP1 AVDD B Y AVDD JNWTR_PCHDL
+.ENDS
+
+*-------------------------------------------------------------
+* JNWTR_ORX1_CV <class 'cicpy.core.layoutcell.LayoutCell'>
+*-------------------------------------------------------------
+.SUBCKT JNWTR_ORX1_CV A B Y AVDD AVSS
+XA1 A B YN AVDD AVSS JNWTR_NRX1_CV
+XA2 YN Y AVDD AVSS JNWTR_IVX1_CV
+.ENDS
+
+*-------------------------------------------------------------
+* JNWTR_ANX1_CV <class 'cicpy.core.layoutcell.LayoutCell'>
+*-------------------------------------------------------------
+.SUBCKT JNWTR_ANX1_CV A B Y AVDD AVSS
+XA1 A B YN AVDD AVSS JNWTR_NDX1_CV
+XA2 YN Y AVDD AVSS JNWTR_IVX1_CV
+.ENDS
+
+*-------------------------------------------------------------
+* JNWTR_DFTSPCX1_CV <class 'cicpy.core.layoutcell.LayoutCell'>
+*-------------------------------------------------------------
+.SUBCKT JNWTR_DFTSPCX1_CV D CK Q AVDD AVSS
+XMN0 N1 D AVSS AVSS JNWTR_NCHDL
+XMN2 N2 CK Q AVSS JNWTR_NCHDL
+XMN1 AVSS N1 N2 AVSS JNWTR_NCHDL
+XMP1 N3 D AVDD AVDD JNWTR_PCHDL
+XMP0 N1 CK N3 AVDD JNWTR_PCHDL
+XMP2 Q N1 AVDD AVDD JNWTR_PCHDL
+.ENDS
+
+*-------------------------------------------------------------
+* JNWTR_IVTRIX1_CV <class 'cicpy.core.layoutcell.LayoutCell'>
+*-------------------------------------------------------------
+.SUBCKT JNWTR_IVTRIX1_CV A C CN Y AVDD AVSS
+XMN0 N1 A AVSS AVSS JNWTR_NCHDL
+XMN1 Y C N1 AVSS JNWTR_NCHDL
+XMP0 N2 A AVDD AVDD JNWTR_PCHDL
+XMP1 Y CN N2 AVDD JNWTR_PCHDL
+.ENDS
+
+*-------------------------------------------------------------
+* JNWTR_NDTRIX1_CV <class 'cicpy.core.layoutcell.LayoutCell'>
+*-------------------------------------------------------------
+.SUBCKT JNWTR_NDTRIX1_CV A C CN RN Y AVDD AVSS
+XMN2 N1 RN AVSS AVSS JNWTR_NCHDL
+XMN0 N2 A N1 AVSS JNWTR_NCHDL
+XMN1 Y C N2 AVSS JNWTR_NCHDL
+XMP2 AVDD RN N2 AVDD JNWTR_PCHDL
+XMP0 N2 A AVDD AVDD JNWTR_PCHDL
+XMP1 Y CN N2 AVDD JNWTR_PCHDL
+.ENDS
+
+*-------------------------------------------------------------
+* JNWTR_DFRNQNX1_CV <class 'cicpy.core.layoutcell.LayoutCell'>
+*-------------------------------------------------------------
+.SUBCKT JNWTR_DFRNQNX1_CV D CK RN Q QN AVDD AVSS
+XA0 AVDD AVSS JNWTR_TAPCELLB_CV
+XA1 CK RN CKN AVDD AVSS JNWTR_NDX1_CV
+XA2 CKN CKB AVDD AVSS JNWTR_IVX1_CV
+XA3 D CKN CKB A0 AVDD AVSS JNWTR_IVTRIX1_CV
+XA4 A1 CKB CKN A0 AVDD AVSS JNWTR_IVTRIX1_CV
+XA5 A0 A1 AVDD AVSS JNWTR_IVX1_CV
+XA6 A1 CKB CKN QN AVDD AVSS JNWTR_IVTRIX1_CV
+XA7 Q CKN CKB RN QN AVDD AVSS JNWTR_NDTRIX1_CV
+XA8 QN Q AVDD AVSS JNWTR_IVX1_CV
+.ENDS
+
+*-------------------------------------------------------------
+* JNWTR_SCX1_CV <class 'cicpy.core.layoutcell.LayoutCell'>
+*-------------------------------------------------------------
+.SUBCKT JNWTR_SCX1_CV A Y AVDD AVSS
+XA2 N1 A AVSS AVSS JNWTR_NCHDL
+XA3 SCO A N1 AVSS JNWTR_NCHDL
+XA4a AVDD SCO N1 AVSS JNWTR_NCHDL
+XA4b AVDD SCO N1 AVSS JNWTR_NCHDL
+XA5 Y SCO AVSS AVSS JNWTR_NCHDL
+XB0 N2 A AVDD AVDD JNWTR_PCHDL
+XB1 SCO A N2 AVDD JNWTR_PCHDL
+XB3a N2 SCO AVSS AVDD JNWTR_PCHDL
+XB3b N2 SCO AVSS AVDD JNWTR_PCHDL
+XB4 Y SCO AVDD AVDD JNWTR_PCHDL
+.ENDS
+
+*-------------------------------------------------------------
+* JNWTR_CAPX1 <class 'cicpy.core.layoutcell.LayoutCell'>
+*-------------------------------------------------------------
+.SUBCKT JNWTR_CAPX1 A B
+C1 B A sky130_fd_pr__cap_mim_m3_1  
+.ENDS
+
+*-------------------------------------------------------------
+* JNWTR_CAPX4 <class 'cicpy.core.layoutcell.LayoutCell'>
+*-------------------------------------------------------------
+.SUBCKT JNWTR_CAPX4 A B
+XA1 A B JNWTR_CAPX1
+XA2 A B JNWTR_CAPX1
+XB1 A B JNWTR_CAPX1
+XB2 A B JNWTR_CAPX1
+.ENDS
+
+*-------------------------------------------------------------
+* JNWTR_TGX2_CV <class 'cicpy.core.layoutcell.LayoutCell'>
+*-------------------------------------------------------------
+.SUBCKT JNWTR_TGX2_CV A C B AVDD AVSS
+XMN0 AVSS C CN AVSS JNWTR_NCHDL
+XMN1 B C A AVSS JNWTR_NCHDL
+XMN1b B C A AVSS JNWTR_NCHDL
+XMP0 AVDD C CN AVDD JNWTR_PCHDL
+XMP1 B CN A AVDD JNWTR_PCHDL
+XMP1b B CN A AVDD JNWTR_PCHDL
+.ENDS
+
+*-------------------------------------------------------------
+* JNWTR_DFTRIX1_CV <class 'cicpy.core.layoutcell.LayoutCell'>
+*-------------------------------------------------------------
+.SUBCKT JNWTR_DFTRIX1_CV D CK C CN Y AVDD AVSS
+XA3 AVDD AVSS JNWTR_TAPCELLB_CV
+XA2 D CK C NC QN AVDD AVSS JNWTR_DFRNQNX1_CV
+XA0 QN C CN Y AVDD AVSS JNWTR_IVTRIX1_CV
+.ENDS
+
+*-------------------------------------------------------------
+* JNWTR_CKDIV2_CV <class 'cicpy.core.layoutcell.LayoutCell'>
+*-------------------------------------------------------------
+.SUBCKT JNWTR_CKDIV2_CV AVDD AVSS CKI CKO CKO50DC RN
+XA12v AVDD AVSS JNWTR_TAPCELLB_CV
+XA1 CKI CKIB AVDD AVSS JNWTR_BFX1_CV
+XA2 CKIB CKIN AVDD AVSS JNWTR_IVX1_CV
+XA4 QNI CKIN RN CKO50DC QN AVDD AVSS JNWTR_DFRNQNX1_CV
+XA3 CKO50DC QNI AVDD AVSS JNWTR_IVX1_CV
+XA5 CKO50DC CKI CKO AVDD AVSS JNWTR_ANX1_CV
+.ENDS
+
+*-------------------------------------------------------------
+* JNWTR_TOP <class 'cicpy.core.layoutcell.LayoutCell'>
+*-------------------------------------------------------------
+.SUBCKT JNWTR_TOP AVDD AVSS
+XA0 AVDD AVSS JNWTR_TAPCELLB_CV
+XA1 Y1 AVDD AVSS JNWTR_TIEH_CV
+XA2 Y2 AVDD AVSS JNWTR_TIEL_CV
+XB0 AVDD AVSS JNWTR_TAPCELLB_CV
+XB3 A3 Y3 AVDD AVSS JNWTR_IVX1_CV
+XB4 A4 Y4 AVDD AVSS JNWTR_IVX2_CV
+XB5 A5 Y5 AVDD AVSS JNWTR_IVX4_CV
+XB6 A6 Y6 AVDD AVSS JNWTR_IVX8_CV
+XC0 AVDD AVSS JNWTR_TAPCELLB_CV
+XC7 A7 Y7 AVDD AVSS JNWTR_BFX1_CV
+XD0 AVDD AVSS JNWTR_TAPCELLB_CV
+XD8 A8 B8 Y8 AVDD AVSS JNWTR_NRX1_CV
+XD9 A9 B9 Y9 AVDD AVSS JNWTR_NDX1_CV
+XD10 A10 B10 Y10 AVDD AVSS JNWTR_ORX1_CV
+XD11 A11 B11 Y11 AVDD AVSS JNWTR_ANX1_CV
+XE0 AVDD AVSS JNWTR_TAPCELLB_CV
+XE12 A12 Y12 AVDD AVSS JNWTR_SCX1_CV
+XG0 AVDD AVSS JNWTR_TAPCELLB_CV
+XG1 A16 C16 B16 AVDD AVSS JNWTR_TGX2_CV
+XH1 P17 N17 AVSS JNWTR_RPPO2
+XI1 P18 N18 AVSS JNWTR_RPPO4
+XJ1 P19 N19 AVSS JNWTR_RPPO8
+XK1 P20 N20 AVSS JNWTR_RPPO16
+XL0 AVDD AVSS JNWTR_TAPCELLB_CV
+XL1 AVDD AVSS CKI21 CKO21 CKO50DC21 RN21 JNWTR_CKDIV2_CV
+XM0 AVDD AVSS JNWTR_TAPCELLB_CV
+XM1 D22 CK22 C22 CN22 Y22 AVDD AVSS JNWTR_DFTRIX1_CV
+XM2 D23 CK23 Q23 AVDD AVSS JNWTR_DFTSPCX1_CV
+XN0 AVDD AVSS JNWTR_TAPCELLB_CV
+XN2 D25 CK25 RN25 Q25 QN25 AVDD AVSS JNWTR_DFRNQNX1_CV
+XO1 A26 B26 JNWTR_CAPX4
+XO0 A27 B27 JNWTR_CAPX1
+.ENDS

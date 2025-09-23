@@ -1,0 +1,8 @@
+Incrementer Simulation
+.include "pdk_lib.spice"
+
+* instantiate the register file
+*  
+Xreg CLK VPWR RSTN ADDR_A VGND ADDR_B VGND D0 D1 D2 D3 WEN0 WEN1 VGND VGND VGND VGND VGND VGND OE0 OE1 OE2 OE3 OE4 OE5 OE6 OE7 UIO0 UIO1 UIO2 UIO3 UIO4 UIO5 UIO6 UIO7 Q0A Q1A Q2A Q3A Q0B Q1B Q2B Q3B VPWR VGND  tt_um_flat
+*Xreg CLK DIN WEN Q VPWR VGND tt_um_flat
+

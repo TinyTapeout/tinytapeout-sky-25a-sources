@@ -1,0 +1,97 @@
+** sch_path: /home/ttuser/tt10-DAC-main/DAC/xschem/tt_um_DAC-mainDL.sch
+**.subckt tt_um_DAC-mainDL OUT OUT
+*.opin OUT
+*.opin OUT
+Vref net4 GND 1.8
+V0 D0 GND PULSE(1.8 0 1n 100p 100p 10u 20u)
+V1 D2 GND PULSE(1.8 0 1n 100p 100p 40u 80u)
+V3 D3 GND PULSE(1.8 0 1n 100p 100p 80u 160u)
+V4 D1 GND PULSE(1.8 0 1n 100p 100p 20u 40u)
+Vref1 net2 GND 1.8
+x1 D3 D2 D0 D1 net4 net5 net1 net3 DAC
+Vmeas net2 net1 0
+.save i(vmeas)
+Vref2 net3 GND 0
+R1 OUT net5 500 m=1
+C1 net5 GND 5p m=1
+Vref3 net9 GND 1.8
+V2 D0 GND PULSE(1.8 0 1n 100p 100p 10u 20u)
+V5 D2 GND PULSE(1.8 0 1n 100p 100p 40u 80u)
+V6 D3 GND PULSE(1.8 0 1n 100p 100p 80u 160u)
+V7 D1 GND PULSE(1.8 0 1n 100p 100p 20u 40u)
+Vref4 net7 GND 1.8
+x2 D3 D2 D0 D1 net9 net10 net6 net8 tt_um_DAC-mainDL_parax
+Vmeas1 net7 net6 0
+.save i(vmeas1)
+Vref5 net8 GND 0
+R2 OUT net10 500 m=1
+C2 net10 GND 5p m=1
+**** begin user architecture code
+
+
+
+.option savecurrents
+.control
+save all
+  op
+  remzerovec
+  write untitled-3.raw
+  set appendwrite
+  tran 2n 160u
+  remzerovec
+  write untitled-3.raw
+  set appendwrite
+
+.endc
+
+
+
+
+** opencircuitdesign pdks install
+.lib /home/ttuser/pdk/sky130A/libs.tech/ngspice/sky130.lib.spice tt
+
+
+**** end user architecture code
+**.ends
+
+* expanding   symbol:  DAC.sym # of pins=8
+** sym_path: /home/ttuser/tt10-DAC-main/DAC/xschem/DAC.sym
+** sch_path: /home/ttuser/tt10-DAC-main/DAC/xschem/DAC.sch
+.subckt DAC D3 D2 D0 D1 Vref OUT VDD VSS
+*.ipin D0
+*.ipin D1
+*.ipin D2
+*.ipin D3
+*.iopin Vref
+*.opin OUT
+*.iopin VDD
+*.iopin VSS
+XR3 net5 Vref VSS sky130_fd_pr__res_xhigh_po_0p35 L=16 mult=1 m=1
+XR4 G net5 VSS sky130_fd_pr__res_xhigh_po_0p35 L=16 mult=1 m=1
+XR5 VDD OUT VSS sky130_fd_pr__res_xhigh_po_0p69 L=1.75 mult=1 m=1
+XM6 OUT D0 net4 VSS sky130_fd_pr__nfet_01v8_lvt L=0.18 W=6 nf=3 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM1 OUT D1 net1 VSS sky130_fd_pr__nfet_01v8_lvt L=0.18 W=6 nf=3 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM2 OUT D2 net2 VSS sky130_fd_pr__nfet_01v8_lvt L=0.18 W=6 nf=3 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM3 OUT D3 net3 VSS sky130_fd_pr__nfet_01v8_lvt L=0.18 W=6 nf=3 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM4 G G VSS VSS sky130_fd_pr__nfet_01v8_lvt L=0.18 W=8 nf=3 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM5 net4 G VSS VSS sky130_fd_pr__nfet_01v8_lvt L=0.18 W=8 nf=3 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM7 net1 G VSS VSS sky130_fd_pr__nfet_01v8_lvt L=0.18 W=16 nf=6 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM8 net2 G VSS VSS sky130_fd_pr__nfet_01v8_lvt L=0.18 W=33 nf=12 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM9 net3 G VSS VSS sky130_fd_pr__nfet_01v8_lvt L=0.18 W=69 nf=24 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+.ends
+
+
+* expanding   symbol:  tt_um_DAC-mainDL_parax.sym # of pins=8
+** sym_path: /home/ttuser/tt10-DAC-main/DAC/xschem/DAC.sym
+.include /home/ttuser/tt10-DAC-main/DAC/mag/tt_um_DAC-mainDL.sim.spice
+.GLOBAL GND
+.end

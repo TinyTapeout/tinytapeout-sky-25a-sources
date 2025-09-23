@@ -1,0 +1,100 @@
+[*]
+[*] GTKWave Analyzer v3.4.0 (w)1999-2022 BSI
+[*] Thu Dec 12 13:33:53 2024
+[*]
+[dumpfile] "/Users/virantha/dev/tinytapeout/tt10-enigma/test/tb.vcd"
+[dumpfile_mtime] "Thu Dec 12 13:25:00 2024"
+[dumpfile_size] 25476346
+[savefile] "/Users/virantha/dev/tinytapeout/tt10-enigma/test/tb.gtkw"
+[timestart] 3030300000
+[size] 1840 1078
+[pos] 439 50
+*-26.000000 3150000001 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+[markername] AA
+[markername] BB
+[markername] CC
+[markername] DD
+[markername] EE
+[markername] FF
+[markername] GG
+[markername] HH
+[markername] II
+[markername] JJ
+[markername] KK
+[markername] LL
+[markername] MM
+[markername] NN
+[markername] OO
+[markername] PP
+[markername] QQ
+[markername] RR
+[markername] SS
+[markername] TT
+[markername] UU
+[markername] VV
+[markername] WW
+[markername] XX
+[markername] YY
+[markername] ZZ
+[treeopen] tb.
+[treeopen] tb.user_project.
+[treeopen] tb.user_project.enigma.
+[sst_width] 240
+[signals_width] 292
+[sst_expanded] 1
+[sst_vpaned_height] 244
+@28
+tb.clk
+tb.rst_n
+@800022
+tb.ui_in[7:0]
+@c00024
+#{CMD} (0)tb.ui_in[7:0] (1)tb.ui_in[7:0] (2)tb.ui_in[7:0]
+@28
+(0)tb.ui_in[7:0]
+(1)tb.ui_in[7:0]
+(2)tb.ui_in[7:0]
+@1401200
+-group_end
+@c00024
+#{DIN} (3)tb.ui_in[7:0] (4)tb.ui_in[7:0] (5)tb.ui_in[7:0] (6)tb.ui_in[7:0] (7)tb.ui_in[7:0]
+@28
+(3)tb.ui_in[7:0]
+(4)tb.ui_in[7:0]
+(5)tb.ui_in[7:0]
+(6)tb.ui_in[7:0]
+(7)tb.ui_in[7:0]
+@1401200
+-group_end
+@c00024
+#{DOUT} (3)tb.uio_out[7:0] (4)tb.uio_out[7:0] (5)tb.uio_out[7:0] (6)tb.uio_out[7:0] (7)tb.uio_out[7:0]
+@28
+(3)tb.uio_out[7:0]
+(4)tb.uio_out[7:0]
+(5)tb.uio_out[7:0]
+(6)tb.uio_out[7:0]
+(7)tb.uio_out[7:0]
+@1401204
+-group_end
+@24
+tb.user_project.enigma.lcd.din[4:0]
+@28
+(2)tb.uio_out[7:0]
+@c00025
+#{DEBUG} (3)tb.uio_out[7:0] (4)tb.uio_out[7:0] (5)tb.uio_out[7:0] (6)tb.uio_out[7:0] (7)tb.uio_out[7:0]
+@28
+(3)tb.uio_out[7:0]
+(4)tb.uio_out[7:0]
+(5)tb.uio_out[7:0]
+(6)tb.uio_out[7:0]
+(7)tb.uio_out[7:0]
+@1401201
+-group_end
+@1001200
+-group_end
+@c00028
+tb.uo_out[7:0]
+@1401208
+-group_end
+[pattern_trace] 1
+[pattern_trace] 0

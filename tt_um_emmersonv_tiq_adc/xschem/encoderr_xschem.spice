@@ -1,0 +1,9 @@
+** sch_path: /foss/designs/analog-circuit-design/sky25a-TIQ_ADC/xschem/encoder_parax.sch
+.include /foss/designs/analog-circuit-design/sky25a-TIQ_ADC/xschem/encoderr.spice
+.subckt encoderr VPWR VGND clk t0 t1 t2 t3 t4 t5 t6 o0 o1 o2
+*.PININFO VPWR:B VGND:B clk:I t0:I t1:I t2:I t3:I t4:I t5:I t6:I o0:O o1:O o2:O
+x1 VGND VPWR clk o0 o1 o2 t0 t1 t2 t3 t4 t5 t6 encoderr
+**** begin user architecture code
+*test
+**** end user architecture code
+.ends

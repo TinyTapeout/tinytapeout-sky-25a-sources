@@ -1,0 +1,235 @@
+** sch_path: /home/eserlis/one_class_tt_official.sch
+.subckt one_class_tt_official Vdd Vr Vss Vin3 Vin2 Vin1 Vin4 En Iout0 Iout1
+.iopin Vdd
+.iopin Vr
+.iopin Vss
+.iopin Vin3
+.iopin Vin2
+.iopin Vin1
+.iopin Vin4
+.iopin En
+.iopin Iout0
+.iopin Iout1
+x5 Vdd Iout00 Vr Vdac0 Ibias Vss bump_final_tt
+x2 Vdd Iout01 Vr Vdac0 Iout00 Vss bump_final_tt
+x6 Vdd Iout10 Vref4 Vdac1 Ibias Vss bump_final_tt
+x7 Vdd Iout11 Vref4 Vdac1 Iout10 Vss bump_final_tt
+x11 Vdd En Ibias Vss ref_gen_tt
+x3 Vref2 Vdd Vref1 Vss Vref3 Vref4 vol_ref_gen_tt
+x1 Vdd Vss Vin1dac Vin2dac Vin3dac Vin4dac Vdac0 Vdac1 dac_tt
+x4 Iout11 Iclass1 Vss ccm_nmos_tt
+x8 Iout01 Iclass0 Vss ccm_nmos_tt
+x12 Vdd Vss Iout0 Iout1 Iclass0 Iclass1 Ibias wta_pmos_tt
+x9 Vss Vdd Vin3dac Vin3 inv_layout_tt
+x10 Vss Vdd Vin4dac Vin4 inv_layout_tt
+x13 Vss Vdd Vin1dac Vin1 inv_layout_tt
+x14 Vss Vdd Vin2dac Vin2 inv_layout_tt
+.ends
+
+* expanding   symbol:  /home/eserlis/bump_final_tt.sym # of pins=6
+** sym_path: /home/eserlis/bump_final_tt.sym
+** sch_path: /home/eserlis/bump_final_tt.sch
+.subckt bump_final_tt Vdd Iout Vr Vin Ibias Vss
+*.iopin Vss
+*.iopin Vin
+*.iopin Vr
+*.iopin Ibias
+*.iopin Iout
+*.iopin Vdd
+XM3 Ibias Ibias Vss Vss sky130_fd_pr__nfet_01v8 L=1.6 W=0.4 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM4 net1 Ibias Vss Vss sky130_fd_pr__nfet_01v8 L=1.6 W=0.4 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM5 net2 Vin net1 Vss sky130_fd_pr__nfet_01v8 L=1.6 W=1.2 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM6 net3 Vr net1 Vss sky130_fd_pr__nfet_01v8 L=1.6 W=1.2 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM13 net2 net2 Vdd Vdd sky130_fd_pr__pfet_01v8 L=1.6 W=0.5 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM14 net4 net2 Vdd Vdd sky130_fd_pr__pfet_01v8 L=1.6 W=0.5 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM15 Iout net3 net4 Vdd sky130_fd_pr__pfet_01v8 L=1.6 W=0.6 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM16 net5 net3 Vdd Vdd sky130_fd_pr__pfet_01v8 L=1.6 W=0.5 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM17 Iout net2 net5 Vdd sky130_fd_pr__pfet_01v8 L=1.6 W=0.6 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM18 net3 net3 Vdd Vdd sky130_fd_pr__pfet_01v8 L=1.6 W=0.5 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+.ends
+
+
+* expanding   symbol:  /home/eserlis/ref_gen_tt.sym # of pins=4
+** sym_path: /home/eserlis/ref_gen_tt.sym
+** sch_path: /home/eserlis/ref_gen_tt.sch
+.subckt ref_gen_tt Vdd En Iout Vss
+*.iopin Vdd
+*.iopin En
+*.iopin Iout
+*.iopin Vss
+XM17 net1 net1 Vdd Vdd sky130_fd_pr__pfet_01v8 L=0.5 W=0.5 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM1 Iout net1 Vdd Vdd sky130_fd_pr__pfet_01v8 L=1.0 W=1.0 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=2 m=2
+XM5 net1 En Vss Vss sky130_fd_pr__nfet_01v8 L=0.5 W=0.5 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+.ends
+
+
+* expanding   symbol:  /home/eserlis/vol_ref_gen_tt.sym # of pins=6
+** sym_path: /home/eserlis/vol_ref_gen_tt.sym
+** sch_path: /home/eserlis/vol_ref_gen_tt.sch
+.subckt vol_ref_gen_tt Vref2 Vdd Vref1 Vss Vref3 Vref4
+*.iopin Vdd
+*.iopin Vref1
+*.iopin Vss
+*.iopin Vref2
+*.iopin Vref3
+*.iopin Vref4
+XM17 net1 net1 Vdd Vdd sky130_fd_pr__pfet_01v8 L=1.6 W=0.5 nf=2 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=2 m=2
+XM2 Vref1 Vref1 net1 Vdd sky130_fd_pr__pfet_01v8 L=1.6 W=0.5 nf=2 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=2 m=2
+XM1 Vref2 Vref2 Vref1 Vdd sky130_fd_pr__pfet_01v8 L=1.6 W=0.5 nf=2 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=2 m=2
+XM3 Vref3 Vref3 Vref2 Vdd sky130_fd_pr__pfet_01v8 L=1.6 W=0.5 nf=2 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=2 m=2
+XM4 Vref4 Vref4 Vref3 Vdd sky130_fd_pr__pfet_01v8 L=1.6 W=0.5 nf=2 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=2 m=2
+XM5 Vss Vss Vref4 Vdd sky130_fd_pr__pfet_01v8 L=1.6 W=0.5 nf=2 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=2 m=2
+.ends
+
+
+* expanding   symbol:  /home/eserlis/dac_tt.sym # of pins=8
+** sym_path: /home/eserlis/dac_tt.sym
+** sch_path: /home/eserlis/dac_tt.sch
+.subckt dac_tt Vdd Vss Vin1 Vin2 Vin3 Vin4 Vout1 Vout2
+*.iopin Vdd
+*.iopin Vss
+*.iopin Vin1
+*.iopin Vout1
+*.iopin Vout2
+*.iopin Vin2
+*.iopin Vin3
+*.iopin Vin4
+XM4 Vg Vg Vdd Vdd sky130_fd_pr__pfet_01v8 L=0.3 W=1 nf=3 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=10 m=10
+R4 Vss Vout1 sky130_fd_pr__res_generic_po W=1 L=1 m=0.01
+R1 Vss Vout2 sky130_fd_pr__res_generic_po W=1 L=1 m=0.01
+XM31 Vg Vdd Vss Vss sky130_fd_pr__nfet_01v8 L=0.3 W=5 nf=3 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=2 m=2
+x1 Vss Vdd net2 Vin4 inv_layout_tt
+XM15 net3 Vg net1 Vdd sky130_fd_pr__pfet_01v8 L=0.3 W=5 nf=2 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM18 Vout1 Vg net3 Vdd sky130_fd_pr__pfet_01v8 L=0.3 W=5 nf=2 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+x2 Vss Vdd net4 Vin3 inv_layout_tt
+x3 Vss Vdd net5 Vin2 inv_layout_tt
+x5 Vss Vdd net6 Vin1 inv_layout_tt
+x8 net1 Vg Vdd Vin1 net6 Vout1 Vout2 dac_inside_tt
+x9 Vdd net7 Vg Vdd Vin4 net2 Vout1 Vout2 dac_inside_tt_v2
+x4 net7 net8 Vg Vdd Vin3 net4 Vout1 Vout2 dac_inside_tt_v2
+x6 net8 net1 Vg Vdd Vin2 net5 Vout1 Vout2 dac_inside_tt_v2
+.ends
+
+
+* expanding   symbol:  /home/eserlis/ccm_nmos_tt.sym # of pins=3
+** sym_path: /home/eserlis/ccm_nmos_tt.sym
+** sch_path: /home/eserlis/ccm_nmos_tt.sch
+.subckt ccm_nmos_tt Iin Iout Vss
+*.iopin Vss
+*.iopin Iin
+*.iopin Iout
+XM3 net1 net1 Vss Vss sky130_fd_pr__nfet_01v8 L=1.6 W=0.5 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM4 net2 net1 Vss Vss sky130_fd_pr__nfet_01v8 L=1.6 W=0.5 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM1 Iin Iin net1 Vss sky130_fd_pr__nfet_01v8 L=1.6 W=0.5 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM2 Iout Iin net2 Vss sky130_fd_pr__nfet_01v8 L=1.6 W=0.5 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+.ends
+
+
+* expanding   symbol:  /home/eserlis/wta_pmos_tt.sym # of pins=7
+** sym_path: /home/eserlis/wta_pmos_tt.sym
+** sch_path: /home/eserlis/wta_pmos_tt.sch
+.subckt wta_pmos_tt Vdd Vss Iout1 Iout2 Iin1 Iin2 Ibias
+*.iopin Vdd
+*.iopin Vss
+*.iopin Iout1
+*.iopin Iout2
+*.iopin Iin1
+*.iopin Iin2
+*.iopin Ibias
+XM11 Iout1 Iin1 Ibias Vdd sky130_fd_pr__pfet_01v8 L=1.6 W=0.5 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM5 Iin1 Ibias Vdd Vdd sky130_fd_pr__pfet_01v8 L=1.6 W=0.5 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM6 Iout2 Iin2 Ibias Vdd sky130_fd_pr__pfet_01v8 L=1.6 W=0.5 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM7 Iin2 Ibias Vdd Vdd sky130_fd_pr__pfet_01v8 L=1.6 W=0.5 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+R2 Vss Iout1 sky130_fd_pr__res_generic_po W=10 L=10 m=0.001
+R1 Vss Iout2 sky130_fd_pr__res_generic_po W=10 L=10 m=0.001
+.ends
+
+
+* expanding   symbol:  /home/eserlis/inv_layout_tt.sym # of pins=4
+** sym_path: /home/eserlis/inv_layout_tt.sym
+** sch_path: /home/eserlis/inv_layout_tt.sch
+.subckt inv_layout_tt Vss Vdd Out In
+*.iopin Vdd
+*.iopin Vss
+*.iopin In
+*.iopin Out
+XM11 Out In Vdd Vdd sky130_fd_pr__pfet_01v8 L=0.5 W=2 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM2 Out In Vss Vss sky130_fd_pr__nfet_01v8 L=0.5 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+.ends
+
+
+* expanding   symbol:  /home/eserlis/dac_inside_tt.sym # of pins=7
+** sym_path: /home/eserlis/dac_inside_tt.sym
+** sch_path: /home/eserlis/dac_inside_tt.sch
+.subckt dac_inside_tt Vupper Vg Vdd Vin Vindot Vout1 Vout2
+*.iopin Vg
+*.iopin Vin
+*.iopin Vdd
+*.iopin Vout1
+*.iopin Vout2
+*.iopin Vupper
+*.iopin Vindot
+XM8 net1 Vg Vupper Vdd sky130_fd_pr__pfet_01v8 L=0.3 W=5 nf=2 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM5 Vout2 Vindot net1 Vdd sky130_fd_pr__pfet_01v8 L=0.3 W=5 nf=2 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM3 Vout1 Vin net1 Vdd sky130_fd_pr__pfet_01v8 L=0.3 W=5 nf=2 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+.ends
+
+
+* expanding   symbol:  /home/eserlis/dac_inside_tt_v2.sym # of pins=8
+** sym_path: /home/eserlis/dac_inside_tt_v2.sym
+** sch_path: /home/eserlis/dac_inside_tt_v2.sch
+.subckt dac_inside_tt_v2 Vupper Vupper_out Vg Vdd Vin Vindot Vout1 Vout2
+*.iopin Vg
+*.iopin Vin
+*.iopin Vdd
+*.iopin Vout1
+*.iopin Vout2
+*.iopin Vupper
+*.iopin Vindot
+*.iopin Vupper_out
+XM8 net1 Vg Vupper Vdd sky130_fd_pr__pfet_01v8 L=0.3 W=5 nf=2 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM5 Vout2 Vindot net1 Vdd sky130_fd_pr__pfet_01v8 L=0.3 W=5 nf=2 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM3 Vout1 Vin net1 Vdd sky130_fd_pr__pfet_01v8 L=0.3 W=5 nf=2 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM1 Vupper_out Vg Vupper Vdd sky130_fd_pr__pfet_01v8 L=0.3 W=5 nf=2 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+.ends
+.end

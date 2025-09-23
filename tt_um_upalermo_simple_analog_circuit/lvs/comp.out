@@ -1,0 +1,158 @@
+
+Circuit 1 cell sky130_fd_pr__res_high_po_0p35 and Circuit 2 cell sky130_fd_pr__res_high_po_0p35 are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__res_high_po_0p35 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__res_high_po_0p35 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__res_high_po_0p35  |Circuit 2: sky130_fd_pr__res_high_po_0p35  
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__res_high_po_0p35 and sky130_fd_pr__res_high_po_0p35 are equivalent.
+
+Circuit 1 cell sky130_fd_pr__nfet_01v8 and Circuit 2 cell sky130_fd_pr__nfet_01v8 are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__nfet_01v8         |Circuit 2: sky130_fd_pr__nfet_01v8         
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__nfet_01v8 and sky130_fd_pr__nfet_01v8 are equivalent.
+Flattening unmatched subcell sky130_fd_pr__res_high_po_0p35_RCHFKS in circuit currentmirror (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_2HULJ6 in circuit currentmirror (0)(2 instances)
+
+Class currentmirror (0):  Merged 6 parallel devices.
+Class currentmirror (0):  Merged 3 series devices.
+Class currentmirror (1):  Merged 3 series devices.
+Subcircuit summary:
+Circuit 1: currentmirror                   |Circuit 2: currentmirror                   
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__res_high_po_0p35 (4->1)      |sky130_fd_pr__res_high_po_0p35 (4->1)      
+sky130_fd_pr__nfet_01v8 (8->2)             |sky130_fd_pr__nfet_01v8 (2)                
+Number of devices: 3                       |Number of devices: 3                       
+Number of nets: 4                          |Number of nets: 4                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: currentmirror                   |Circuit 2: currentmirror                   
+-------------------------------------------|-------------------------------------------
+VSS                                        |VSS                                        
+IOUT                                       |IOUT                                       
+VDD                                        |VDD                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes currentmirror and currentmirror are equivalent.
+
+Cell tt_um_upalermo_simple_analog_circuit (0) disconnected node: clk
+Cell tt_um_upalermo_simple_analog_circuit (0) disconnected node: ena
+Cell tt_um_upalermo_simple_analog_circuit (0) disconnected node: rst_n
+Cell tt_um_upalermo_simple_analog_circuit (0) disconnected node: ua[1]
+Cell tt_um_upalermo_simple_analog_circuit (0) disconnected node: ua[2]
+Cell tt_um_upalermo_simple_analog_circuit (0) disconnected node: ua[3]
+Cell tt_um_upalermo_simple_analog_circuit (0) disconnected node: ua[4]
+Cell tt_um_upalermo_simple_analog_circuit (0) disconnected node: ua[5]
+Cell tt_um_upalermo_simple_analog_circuit (0) disconnected node: ua[6]
+Cell tt_um_upalermo_simple_analog_circuit (0) disconnected node: ua[7]
+Cell tt_um_upalermo_simple_analog_circuit (0) disconnected node: ui_in[0]
+Cell tt_um_upalermo_simple_analog_circuit (0) disconnected node: ui_in[1]
+Cell tt_um_upalermo_simple_analog_circuit (0) disconnected node: ui_in[2]
+Cell tt_um_upalermo_simple_analog_circuit (0) disconnected node: ui_in[3]
+Cell tt_um_upalermo_simple_analog_circuit (0) disconnected node: ui_in[4]
+Cell tt_um_upalermo_simple_analog_circuit (0) disconnected node: ui_in[5]
+Cell tt_um_upalermo_simple_analog_circuit (0) disconnected node: ui_in[6]
+Cell tt_um_upalermo_simple_analog_circuit (0) disconnected node: ui_in[7]
+Cell tt_um_upalermo_simple_analog_circuit (0) disconnected node: uio_in[0]
+Cell tt_um_upalermo_simple_analog_circuit (0) disconnected node: uio_in[1]
+Cell tt_um_upalermo_simple_analog_circuit (0) disconnected node: uio_in[2]
+Cell tt_um_upalermo_simple_analog_circuit (0) disconnected node: uio_in[3]
+Cell tt_um_upalermo_simple_analog_circuit (0) disconnected node: uio_in[4]
+Cell tt_um_upalermo_simple_analog_circuit (0) disconnected node: uio_in[5]
+Cell tt_um_upalermo_simple_analog_circuit (0) disconnected node: uio_in[6]
+Cell tt_um_upalermo_simple_analog_circuit (0) disconnected node: uio_in[7]
+Cell tt_um_upalermo_simple_analog_circuit (0) disconnected node: uio_oe[0]
+Cell tt_um_upalermo_simple_analog_circuit (0) disconnected node: uio_oe[1]
+Cell tt_um_upalermo_simple_analog_circuit (0) disconnected node: uio_oe[2]
+Cell tt_um_upalermo_simple_analog_circuit (0) disconnected node: uio_oe[3]
+Cell tt_um_upalermo_simple_analog_circuit (0) disconnected node: uio_oe[4]
+Cell tt_um_upalermo_simple_analog_circuit (0) disconnected node: uio_oe[5]
+Cell tt_um_upalermo_simple_analog_circuit (0) disconnected node: uio_oe[6]
+Cell tt_um_upalermo_simple_analog_circuit (0) disconnected node: uio_oe[7]
+Cell tt_um_upalermo_simple_analog_circuit (0) disconnected node: uio_out[0]
+Cell tt_um_upalermo_simple_analog_circuit (0) disconnected node: uio_out[1]
+Cell tt_um_upalermo_simple_analog_circuit (0) disconnected node: uio_out[2]
+Cell tt_um_upalermo_simple_analog_circuit (0) disconnected node: uio_out[3]
+Cell tt_um_upalermo_simple_analog_circuit (0) disconnected node: uio_out[4]
+Cell tt_um_upalermo_simple_analog_circuit (0) disconnected node: uio_out[5]
+Cell tt_um_upalermo_simple_analog_circuit (0) disconnected node: uio_out[6]
+Cell tt_um_upalermo_simple_analog_circuit (0) disconnected node: uio_out[7]
+Cell tt_um_upalermo_simple_analog_circuit (0) disconnected node: uo_out[0]
+Cell tt_um_upalermo_simple_analog_circuit (0) disconnected node: uo_out[1]
+Cell tt_um_upalermo_simple_analog_circuit (0) disconnected node: uo_out[2]
+Cell tt_um_upalermo_simple_analog_circuit (0) disconnected node: uo_out[3]
+Cell tt_um_upalermo_simple_analog_circuit (0) disconnected node: uo_out[4]
+Cell tt_um_upalermo_simple_analog_circuit (0) disconnected node: uo_out[5]
+Cell tt_um_upalermo_simple_analog_circuit (0) disconnected node: uo_out[6]
+Cell tt_um_upalermo_simple_analog_circuit (0) disconnected node: uo_out[7]
+Cell tt_um_upalermo_simple_analog_circuit (1) disconnected node: uio_in[7]
+Cell tt_um_upalermo_simple_analog_circuit (1) disconnected node: ui_in[7]
+Cell tt_um_upalermo_simple_analog_circuit (1) disconnected node: uio_in[6]
+Cell tt_um_upalermo_simple_analog_circuit (1) disconnected node: ui_in[6]
+Cell tt_um_upalermo_simple_analog_circuit (1) disconnected node: uio_in[5]
+Cell tt_um_upalermo_simple_analog_circuit (1) disconnected node: ui_in[5]
+Cell tt_um_upalermo_simple_analog_circuit (1) disconnected node: uio_in[4]
+Cell tt_um_upalermo_simple_analog_circuit (1) disconnected node: ui_in[4]
+Cell tt_um_upalermo_simple_analog_circuit (1) disconnected node: uio_in[3]
+Cell tt_um_upalermo_simple_analog_circuit (1) disconnected node: ui_in[3]
+Cell tt_um_upalermo_simple_analog_circuit (1) disconnected node: uio_in[2]
+Cell tt_um_upalermo_simple_analog_circuit (1) disconnected node: ui_in[2]
+Cell tt_um_upalermo_simple_analog_circuit (1) disconnected node: ui_in[1]
+Cell tt_um_upalermo_simple_analog_circuit (1) disconnected node: uio_in[1]
+Cell tt_um_upalermo_simple_analog_circuit (1) disconnected node: uio_in[0]
+Cell tt_um_upalermo_simple_analog_circuit (1) disconnected node: ui_in[0]
+Subcircuit summary:
+Circuit 1: tt_um_upalermo_simple_analog_ci |Circuit 2: tt_um_upalermo_simple_analog_ci 
+-------------------------------------------|-------------------------------------------
+currentmirror (1)                          |currentmirror (1)                          
+Number of devices: 1                       |Number of devices: 1                       
+Number of nets: 3                          |Number of nets: 3                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely with port errors.
+
+Subcircuit pins:
+Circuit 1: tt_um_upalermo_simple_analog_ci |Circuit 2: tt_um_upalermo_simple_analog_ci 
+-------------------------------------------|-------------------------------------------
+VDPWR                                      |VDPWR                                      
+ua[0]                                      |ua[0]                                      
+VGND                                       |VGND                                       
+ui_in[0]                                   |ui_in[0]                                   
+ui_in[1]                                   |ui_in[1]                                   
+ui_in[2]                                   |ui_in[2]                                   
+ui_in[3]                                   |ui_in[3]                                   
+ui_in[4]                                   |ui_in[4]                                   
+ui_in[5]                                   |ui_in[5]                                   
+ui_in[6]                                   |ui_in[6]                                   
+ui_in[7]                                   |ui_in[7]                                   
+uio_in[0]                                  |uio_in[0]                                  
+uio_in[1]                                  |uio_in[1]                                  
+uio_in[2]                                  |uio_in[2]                                  
+uio_in[3]                                  |uio_in[3]                                  
+uio_in[4]                                  |uio_in[4]                                  
+uio_in[5]                                  |uio_in[5]                                  
+uio_in[6]                                  |uio_in[6]                                  
+uio_in[7]                                  |uio_in[7]                                  
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes tt_um_upalermo_simple_analog_circuit and tt_um_upalermo_simple_analog_circuit are equivalent.
+
+Final result: Circuits match uniquely.
+.

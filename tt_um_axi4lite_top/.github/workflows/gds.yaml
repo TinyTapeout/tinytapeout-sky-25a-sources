@@ -1,0 +1,69 @@
+name: gds
+
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  # -----------------------
+  # Build GDS
+  # -----------------------
+  gds:
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+
+      - name: Build GDS
+        uses: TinyTapeout/tt-gds-action@ttsky25a
+        with:
+          pdk: sky130
+          tools-ref: ttsky25a
+
+  # -----------------------
+  # Precheck
+  # -----------------------
+  precheck:
+    needs: gds
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Run Tiny Tapeout Precheck
+        uses: TinyTapeout/tt-gds-action/precheck@ttsky25a
+        with:
+          pdk: sky130
+          tools-ref: ttsky25a
+
+  # -----------------------
+  # Gate-level simulation test
+  # -----------------------
+  gl_test:
+    needs: gds
+    runs-on: ubuntu-24.04
+    env:
+      COCOTB_RESOLVE_X: ZEROS  # ✅ Fix: was ZERO
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+
+      - name: Run GL Test
+        uses: TinyTapeout/tt-gds-action/gl_test@ttsky25a
+        with:
+          pdk: sky130
+
+  # -----------------------
+  # Viewer
+  # -----------------------
+  viewer:
+    needs: gds
+    runs-on: ubuntu-24.04
+    permissions:
+      pages: write      # Deploy to GitHub Pages
+      id-token: write   # Verify deployment source
+    steps:
+      - uses: TinyTapeout/tt-gds-action/viewer@ttsky25a
+        with:
+          pdk: sky130

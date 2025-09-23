@@ -1,0 +1,34 @@
+v {xschem version=3.4.5 file_version=1.2
+}
+G {}
+K {type=subcircuit
+format="@name @pinlist @symname"
+template="name=x1"
+}
+V {}
+S {}
+E {}
+L 4 -130 -80 130 -80 {}
+L 4 -130 80 130 80 {}
+L 4 -130 -80 -130 80 {}
+L 4 130 -80 130 80 {}
+L 4 -150 -10 -130 -10 {}
+L 4 -150 10 -130 10 {}
+L 4 -150 30 -130 30 {}
+L 7 -150 -70 -130 -70 {}
+L 7 -150 -50 -130 -50 {}
+L 7 -150 70 -130 70 {}
+B 5 -152.5 67.5 -147.5 72.5 {name=VGND dir=inout sim_pinnumber=0}
+B 5 -152.5 -52.5 -147.5 -47.5 {name=VDPWR dir=inout sim_pinnumber=1}
+B 5 -152.5 -72.5 -147.5 -67.5 {name=VAPWR dir=inout sim_pinnumber=2}
+B 5 -152.5 27.5 -147.5 32.5 {name=ena_1v8_n dir=in sim_pinnumber=3}
+B 5 -152.5 7.5 -147.5 12.5 {name=ena_3v3_n dir=in sim_pinnumber=4}
+B 5 -152.5 -12.5 -147.5 -7.5 {name=ibias dir=in sim_pinnumber=5}
+T {@symname} -72 -6 0 0 0.3 0.3 {}
+T {@name} 135 -92 0 0 0.2 0.2 {}
+T {VAPWR} -85 -74 0 1 0.2 0.2 {}
+T {VDPWR} -85 -54 0 1 0.2 0.2 {}
+T {ibias} -125 -14 0 0 0.2 0.2 {}
+T {ena_3v3_n} -125 6 0 0 0.2 0.2 {}
+T {ena_1v8_n} -125 26 0 0 0.2 0.2 {}
+T {VGND} -95 66 0 1 0.2 0.2 {}

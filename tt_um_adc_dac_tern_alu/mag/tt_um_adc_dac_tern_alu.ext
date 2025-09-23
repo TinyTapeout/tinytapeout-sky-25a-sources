@@ -1,0 +1,303 @@
+timestamp 1757910387
+version 8.3
+tech sky130A
+style ngspice()
+scale 1000 1 500000
+resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
+use digital digital_0 1 0 2082 0 1 25986
+port "ua[0]" 3 30362 0 30542 200 m4
+port "ua[1]" 4 26498 0 26678 200 m4
+port "ua[2]" 5 22634 0 22814 200 m4
+port "ua[3]" 6 18770 0 18950 200 m4
+port "ua[4]" 7 14906 0 15086 200 m4
+port "ua[5]" 8 11042 0 11222 200 m4
+port "ua[6]" 9 7178 0 7358 200 m4
+port "ua[7]" 10 3314 0 3494 200 m4
+port "VGND" 52 800 1000 1200 44152 m4
+port "VDPWR" 51 200 1000 600 44152 m4
+port "ena" 1 29318 44952 29378 45152 m4
+port "clk" 0 28766 44952 28826 45152 m4
+port "rst_n" 2 28214 44952 28274 45152 m4
+port "ui_in[0]" 11 27662 44952 27722 45152 m4
+port "ui_in[1]" 12 27110 44952 27170 45152 m4
+port "ui_in[2]" 13 26558 44952 26618 45152 m4
+port "ui_in[3]" 14 26006 44952 26066 45152 m4
+port "ui_in[4]" 15 25454 44952 25514 45152 m4
+port "ui_in[5]" 16 24902 44952 24962 45152 m4
+port "ui_in[6]" 17 24350 44952 24410 45152 m4
+port "ui_in[7]" 18 23798 44952 23858 45152 m4
+port "uio_in[0]" 19 23246 44952 23306 45152 m4
+port "uio_in[1]" 20 22694 44952 22754 45152 m4
+port "uio_in[2]" 21 22142 44952 22202 45152 m4
+port "uio_in[3]" 22 21590 44952 21650 45152 m4
+port "uio_in[4]" 23 21038 44952 21098 45152 m4
+port "uio_in[5]" 24 20486 44952 20546 45152 m4
+port "uio_in[6]" 25 19934 44952 19994 45152 m4
+port "uio_in[7]" 26 19382 44952 19442 45152 m4
+port "uo_out[0]" 43 18830 44952 18890 45152 m4
+port "uo_out[1]" 44 18278 44952 18338 45152 m4
+port "uo_out[2]" 45 17726 44952 17786 45152 m4
+port "uo_out[3]" 46 17174 44952 17234 45152 m4
+port "uo_out[4]" 47 16622 44952 16682 45152 m4
+port "uo_out[5]" 48 16070 44952 16130 45152 m4
+port "uo_out[6]" 49 15518 44952 15578 45152 m4
+port "uo_out[7]" 50 14966 44952 15026 45152 m4
+port "uio_out[0]" 35 14414 44952 14474 45152 m4
+port "uio_out[1]" 36 13862 44952 13922 45152 m4
+port "uio_out[2]" 37 13310 44952 13370 45152 m4
+port "uio_out[3]" 38 12758 44952 12818 45152 m4
+port "uio_out[7]" 42 10550 44952 10610 45152 m4
+port "uio_out[6]" 41 11102 44952 11162 45152 m4
+port "uio_out[5]" 40 11654 44952 11714 45152 m4
+port "uio_out[4]" 39 12206 44952 12266 45152 m4
+port "uio_oe[3]" 30 8342 44952 8402 45152 m4
+port "uio_oe[2]" 29 8894 44952 8954 45152 m4
+port "uio_oe[1]" 28 9446 44952 9506 45152 m4
+port "uio_oe[0]" 27 9998 44952 10058 45152 m4
+port "uio_oe[7]" 34 6134 44952 6194 45152 m4
+port "uio_oe[6]" 33 6686 44952 6746 45152 m4
+port "uio_oe[5]" 32 7238 44952 7298 45152 m4
+port "uio_oe[4]" 31 7790 44952 7850 45152 m4
+node "ua[0]" 0 252.199 30362 0 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 89856 1272 0 0 0 0
+node "ua[1]" 0 146.962 26498 0 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 36000 760 0 0 0 0
+node "ua[2]" 0 146.962 22634 0 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 36000 760 0 0 0 0
+node "ua[3]" 0 146.962 18770 0 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 36000 760 0 0 0 0
+node "ua[4]" 0 146.962 14906 0 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 36000 760 0 0 0 0
+node "ua[5]" 0 148.581 11042 0 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 36720 768 0 0 0 0
+node "ua[6]" 0 148.581 7178 0 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 36720 768 0 0 0 0
+node "ua[7]" 0 148.581 3314 0 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 36720 768 0 0 0 0
+node "VGND" 0 12536.6 800 1000 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 17261514 87116 0 0 0 0
+node "VDPWR" 0 12536.4 200 1000 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 17262532 87112 0 0 0 0
+node "ena" 0 70.3847 29318 44952 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 12000 520 0 0 0 0
+node "clk" 0 42.8754 28766 44952 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 12000 520 0 0 0 0
+node "rst_n" 0 42.8754 28214 44952 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 12000 520 0 0 0 0
+node "ui_in[0]" 0 42.8754 27662 44952 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 12000 520 0 0 0 0
+node "ui_in[1]" 0 42.8754 27110 44952 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 12000 520 0 0 0 0
+node "ui_in[2]" 0 42.8754 26558 44952 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 12000 520 0 0 0 0
+node "ui_in[3]" 0 42.8754 26006 44952 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 12000 520 0 0 0 0
+node "ui_in[4]" 0 42.8754 25454 44952 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 12000 520 0 0 0 0
+node "ui_in[5]" 0 42.8754 24902 44952 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 12000 520 0 0 0 0
+node "ui_in[6]" 0 42.8754 24350 44952 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 12000 520 0 0 0 0
+node "ui_in[7]" 0 42.8754 23798 44952 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 12000 520 0 0 0 0
+node "uio_in[0]" 0 42.8754 23246 44952 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 12000 520 0 0 0 0
+node "uio_in[1]" 0 42.8754 22694 44952 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 12000 520 0 0 0 0
+node "uio_in[2]" 0 42.8754 22142 44952 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 12000 520 0 0 0 0
+node "uio_in[3]" 0 42.8754 21590 44952 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 12000 520 0 0 0 0
+node "uio_in[4]" 0 42.8754 21038 44952 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 12000 520 0 0 0 0
+node "uio_in[5]" 0 42.8754 20486 44952 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 12000 520 0 0 0 0
+node "uio_in[6]" 0 42.8754 19934 44952 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 12000 520 0 0 0 0
+node "uio_in[7]" 0 42.8699 19382 44952 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 12000 520 0 0 0 0
+node "uo_out[0]" 0 43.2506 18830 44952 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 12066 522 0 0 0 0
+node "uo_out[1]" 0 42.8754 18278 44952 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 12000 520 0 0 0 0
+node "uo_out[2]" 0 42.8754 17726 44952 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 12000 520 0 0 0 0
+node "uo_out[3]" 0 42.8754 17174 44952 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 12000 520 0 0 0 0
+node "uo_out[4]" 0 42.8754 16622 44952 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 12000 520 0 0 0 0
+node "uo_out[5]" 0 42.8754 16070 44952 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 12000 520 0 0 0 0
+node "uo_out[6]" 0 42.8754 15518 44952 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 12000 520 0 0 0 0
+node "uo_out[7]" 0 42.8754 14966 44952 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 12000 520 0 0 0 0
+node "uio_out[0]" 0 42.8754 14414 44952 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 12000 520 0 0 0 0
+node "uio_out[1]" 0 42.8754 13862 44952 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 12000 520 0 0 0 0
+node "uio_out[2]" 0 42.8754 13310 44952 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 12000 520 0 0 0 0
+node "uio_out[3]" 0 42.8754 12758 44952 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 12000 520 0 0 0 0
+node "uio_out[7]" 2 730.21 10550 44952 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 138960 4752 0 0 0 0
+equiv "uio_out[7]" "uio_out[6]"
+equiv "uio_out[7]" "uio_out[5]"
+equiv "uio_out[7]" "uio_out[4]"
+node "uio_oe[3]" 1 716.895 8342 44952 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 213536 4364 0 0 0 0
+equiv "uio_oe[3]" "uio_oe[2]"
+equiv "uio_oe[3]" "uio_oe[1]"
+equiv "uio_oe[3]" "uio_oe[0]"
+node "uio_oe[7]" 1 746.735 6134 44952 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 213984 4372 0 0 0 0
+equiv "uio_oe[7]" "uio_oe[6]"
+equiv "uio_oe[7]" "uio_oe[5]"
+equiv "uio_oe[7]" "uio_oe[4]"
+substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "uio_out[7]" "uio_oe[3]" 31.0231
+cap "ui_in[7]" "uio_in[0]" 31.0231
+cap "uio_out[0]" "uo_out[7]" 31.0231
+cap "clk" "rst_n" 31.0231
+cap "uio_in[1]" "uio_in[2]" 31.0231
+cap "ena" "clk" 31.0231
+cap "uo_out[1]" "uo_out[0]" 31.0231
+cap "ui_in[6]" "ui_in[5]" 31.0231
+cap "uio_oe[7]" "uio_oe[3]" 31.0231
+cap "uio_in[6]" "uio_in[7]" 31.0231
+cap "uio_in[7]" "uo_out[0]" 31.04
+cap "ui_in[7]" "ui_in[6]" 31.0231
+cap "uio_in[6]" "uio_in[5]" 31.0231
+cap "uio_out[2]" "uio_out[1]" 31.0231
+cap "uo_out[1]" "uo_out[2]" 31.0231
+cap "uo_out[4]" "uo_out[3]" 31.0231
+cap "uio_in[4]" "uio_in[3]" 31.0231
+cap "ui_in[4]" "ui_in[5]" 31.0231
+cap "uio_out[2]" "uio_out[3]" 31.0231
+cap "ui_in[0]" "ui_in[1]" 31.0231
+cap "ui_in[0]" "rst_n" 31.0231
+cap "VGND" "VDPWR" 12919.6
+cap "uio_out[0]" "uio_out[1]" 31.0231
+cap "uo_out[5]" "uo_out[4]" 31.0231
+cap "uio_in[2]" "uio_in[3]" 31.0231
+cap "uo_out[7]" "uo_out[6]" 31.0231
+cap "ui_in[2]" "ui_in[1]" 31.0231
+cap "uio_in[5]" "uio_in[4]" 31.0231
+cap "uio_in[1]" "uio_in[0]" 31.0231
+cap "ui_in[3]" "ui_in[2]" 31.0231
+cap "ui_in[3]" "ui_in[4]" 31.0231
+cap "uio_out[7]" "uio_out[3]" 31.0231
+cap "uo_out[2]" "uo_out[3]" 31.0231
+cap "uo_out[5]" "uo_out[6]" 31.0231
+cap "VGND" "digital_0/tern_dac[0]" 1.61278
+cap "VGND" "digital_0/ui_in[0]" 0.618233
+cap "VGND" "digital_0/ui_in[0]" 0.259433
+cap "digital_0/ui_in[0]" "VDPWR" 0.0367536
+cap "VGND" "digital_0/tern_dac[0]" 0.676781
+cap "VDPWR" "digital_0/tern_dac[0]" 0.095879
+cap "digital_0/tern_dac[3]" "VGND" 1.15583
+cap "digital_0/ui_in[1]" "VGND" 1.61278
+cap "digital_0/ui_in[0]" "VGND" 0.994549
+cap "digital_0/ui_in[0]" "VGND" 0.417348
+cap "VDPWR" "digital_0/ui_in[0]" 0.0591254
+cap "digital_0/ui_in[1]" "VGND" 0.676781
+cap "VDPWR" "digital_0/ui_in[1]" 0.095879
+cap "digital_0/tern_dac[3]" "VGND" 0.485027
+cap "VDPWR" "digital_0/tern_dac[3]" 0.0687133
+cap "digital_0/tern_dac[3]" "VGND" 0.456955
+cap "VGND" "digital_0/tern_dac[3]" 0.191755
+cap "digital_0/tern_dac[3]" "VDPWR" 0.0271657
+cap "VGND" "digital_0/uio_in[4]" 1.61278
+cap "digital_0/uio_in[4]" "VDPWR" 0.095879
+cap "digital_0/uio_in[4]" "VGND" 0.676781
+cap "VGND" "digital_0/uio_in[0]" 0.802623
+cap "digital_0/ui_in[4]" "VGND" 1.61278
+cap "digital_0/tern_dac[1]" "VGND" 1.61278
+cap "digital_0/tern_dac[1]" "VDPWR" 0.095879
+cap "VGND" "digital_0/uio_in[0]" 0.703422
+cap "digital_0/ui_in[4]" "VDPWR" 0.095879
+cap "digital_0/tern_dac[1]" "VGND" 0.676781
+cap "digital_0/ui_in[4]" "VGND" 0.676781
+cap "digital_0/ui_in[5]" "VGND" 1.61278
+cap "digital_0/tern_dac[2]" "VGND" 1.61278
+cap "digital_0/uio_in[0]" "VGND" 0.869366
+cap "digital_0/tern_dac[2]" "VDPWR" 0.095879
+cap "digital_0/ui_in[5]" "VDPWR" 0.095879
+cap "VGND" "digital_0/uio_in[0]" 0.751691
+cap "VGND" "digital_0/tern_dac[2]" 0.676781
+cap "digital_0/ui_in[5]" "VGND" 0.676781
+cap "VGND" "digital_0/tern_dac[8]" 1.61278
+cap "digital_0/uio_in[0]" "VGND" 0.869366
+cap "VGND" "digital_0/tern_dac[5]" 1.61278
+cap "VGND" "digital_0/tern_dac[5]" 0.676781
+cap "VDPWR" "digital_0/tern_dac[5]" 0.095879
+cap "digital_0/tern_dac[8]" "VGND" 0.676781
+cap "VGND" "digital_0/uio_in[0]" 0.751691
+cap "digital_0/tern_dac[8]" "VDPWR" 0.095879
+cap "digital_0/uo_out[4]" "VGND" 1.61278
+cap "digital_0/uo_out[3]" "VGND" 1.61278
+cap "digital_0/uio_in[0]" "VGND" 0.869366
+cap "digital_0/uo_out[3]" "VDPWR" 0.095879
+cap "digital_0/uo_out[4]" "VGND" 0.676781
+cap "VGND" "digital_0/uio_in[0]" 0.751691
+cap "digital_0/uo_out[4]" "VDPWR" 0.095879
+cap "digital_0/uo_out[3]" "VGND" 0.676781
+cap "digital_0/tern_dac[6]" "VGND" 1.61427
+cap "digital_0/uio_in[0]" "VGND" 0.914707
+cap "digital_0/buffi_conn" "VGND" 1.14097
+cap "digital_0/tern_dac[6]" "VDPWR" 0.095879
+cap "digital_0/tern_dac[6]" "VGND" 0.67768
+cap "VDPWR" "digital_0/buffi_conn" 0.265546
+cap "VGND" "digital_0/buffi_conn" 2.20678
+cap "digital_0/uio_in[0]" "VGND" 0.625287
+cap "digital_0/uio_in[0]" "VGND" 0.827915
+cap "digital_0/buffi_conn" "VGND" 2.03708
+cap "VGND" "digital_0/buffi_conn" 7.32495
+cap "VDPWR" "digital_0/buffi_conn" 0.917109
+cap "digital_0/flash_adc_inp[1]" "uio_oe[7]" 5.58651
+cap "uio_oe[7]" "digital_0/compr2" 0.494317
+cap "uio_oe[7]" "digital_0/flash_adc_inp[1]" 3.56918
+cap "uio_oe[3]" "digital_0/flash_adc_inp[1]" 1.49534
+cap "digital_0/uo_out[0]" "uio_oe[7]" 1.65907
+cap "digital_0/uo_out[2]" "uio_oe[3]" 0.504384
+cap "uio_oe[3]" "digital_0/tern_dac[12]" 0.504384
+cap "digital_0/flash_adc_inp[1]" "uio_oe[3]" 7.37439
+cap "digital_0/uo_out[1]" "uio_oe[3]" 0.51338
+cap "digital_0/flash_adc_inp[1]" "uio_out[7]" 3.3986
+cap "uio_oe[3]" "digital_0/flash_adc_inp[1]" 0.500521
+cap "uio_out[7]" "digital_0/ui_in[7]" 0.777576
+cap "uio_out[7]" "digital_0/flash_adc_inp[1]" 3.29315
+cap "uio_out[7]" "digital_0/ui_in[6]" 0.293543
+cap "digital_0/flash_adc_inp[1]" "uio_out[3]" 0.362446
+cap "digital_0/flash_adc_inp[1]" "uio_out[1]" 0.51778
+cap "digital_0/flash_adc_inp[11]" "uio_out[1]" 0.262506
+cap "digital_0/flash_adc_inp[1]" "uio_out[3]" 0.155334
+cap "digital_0/flash_adc_inp[1]" "uio_out[2]" 0.51778
+cap "digital_0/flash_adc_inp[13]" "uo_out[6]" 0.259468
+cap "digital_0/flash_adc_inp[1]" "uo_out[7]" 0.51778
+cap "digital_0/flash_adc_inp[1]" "uio_out[0]" 0.51778
+cap "uo_out[7]" "digital_0/flash_adc_inp[9]" 0.725158
+cap "digital_0/flash_adc_inp[1]" "uo_out[6]" 0.51778
+cap "uo_out[5]" "digital_0/flash_adc_inp[1]" 0.51778
+cap "uo_out[4]" "digital_0/flash_adc_inp[1]" 0.51778
+cap "uo_out[3]" "digital_0/flash_adc_inp[1]" 0.51778
+cap "uo_out[2]" "digital_0/flash_adc_inp[1]" 0.548547
+cap "uo_out[1]" "digital_0/flash_adc_inp[1]" 0.572074
+cap "uio_oe[7]" "digital_0/flash_adc_inp[1]" 4.99834
+cap "digital_0/flash_adc_inp[3]" "uio_oe[7]" 1.08161
+cap "uio_oe[7]" "digital_0/compr2" 4.01003
+cap "uio_oe[7]" "digital_0/flash_adc_inp[9]" 0.881805
+cap "uio_oe[3]" "digital_0/flash_adc_inp[9]" 0.216142
+cap "uio_oe[3]" "digital_0/flash_adc_inp[3]" 0.265637
+cap "digital_0/uo_out[2]" "uio_oe[3]" 4.09094
+cap "uio_oe[3]" "digital_0/flash_adc_inp[1]" 1.25592
+cap "uio_oe[7]" "digital_0/flash_adc_inp[9]" 0.53709
+cap "uio_oe[7]" "digital_0/flash_adc_inp[3]" 0.659116
+cap "uio_oe[7]" "digital_0/flash_adc_inp[1]" 3.06428
+cap "uio_oe[7]" "digital_0/uo_out[0]" 4.90201
+cap "uio_oe[3]" "digital_0/flash_adc_inp[3]" 1.43088
+cap "uio_oe[3]" "digital_0/flash_adc_inp[9]" 1.16512
+cap "digital_0/flash_adc_inp[1]" "uio_oe[3]" 6.70573
+cap "digital_0/uo_out[1]" "uio_oe[3]" 4.1058
+cap "digital_0/tern_dac[12]" "uio_oe[3]" 4.09094
+cap "digital_0/flash_adc_inp[9]" "uio_out[7]" 0.726344
+cap "digital_0/flash_adc_inp[1]" "uio_out[7]" 4.33924
+cap "digital_0/flash_adc_inp[3]" "uio_out[7]" 0.894599
+cap "digital_0/flash_adc_inp[9]" "uio_oe[3]" 0.0503412
+cap "uio_oe[3]" "digital_0/flash_adc_inp[1]" 0.307038
+cap "digital_0/ui_in[7]" "uio_out[7]" 4.33973
+cap "uio_oe[3]" "digital_0/flash_adc_inp[3]" 0.0621056
+cap "digital_0/flash_adc_inp[3]" "uio_out[7]" 0.906899
+cap "uio_out[3]" "digital_0/flash_adc_inp[9]" 0.036454
+cap "uio_out[3]" "digital_0/flash_adc_inp[1]" 0.222338
+cap "digital_0/flash_adc_inp[9]" "uio_out[7]" 0.736717
+cap "digital_0/ui_in[6]" "uio_out[7]" 4.22385
+cap "digital_0/flash_adc_inp[1]" "uio_out[7]" 4.36896
+cap "uio_out[3]" "digital_0/flash_adc_inp[3]" 0.044973
+cap "uio_out[1]" "digital_0/flash_adc_inp[9]" 0.0520772
+cap "digital_0/flash_adc_inp[9]" "uio_out[2]" 0.0520772
+cap "digital_0/flash_adc_inp[1]" "uio_out[3]" 0.0952876
+cap "digital_0/flash_adc_inp[3]" "uio_out[3]" 0.0192742
+cap "uio_out[1]" "digital_0/flash_adc_inp[11]" 0.0863662
+cap "digital_0/flash_adc_inp[9]" "uio_out[3]" 0.0156231
+cap "digital_0/flash_adc_inp[1]" "uio_out[2]" 0.317625
+cap "uio_out[1]" "digital_0/flash_adc_inp[1]" 0.317625
+cap "uio_out[1]" "digital_0/flash_adc_inp[3]" 0.0642472
+cap "digital_0/flash_adc_inp[3]" "uio_out[2]" 0.0642472
+cap "digital_0/flash_adc_inp[1]" "uo_out[6]" 0.317625
+cap "digital_0/flash_adc_inp[13]" "uo_out[6]" 0.201725
+cap "digital_0/flash_adc_inp[1]" "uo_out[7]" 0.317625
+cap "digital_0/flash_adc_inp[1]" "uio_out[0]" 0.317625
+cap "digital_0/flash_adc_inp[9]" "uo_out[7]" 3.52045
+cap "digital_0/flash_adc_inp[9]" "uio_out[0]" 0.0520772
+cap "digital_0/flash_adc_inp[3]" "uo_out[6]" 0.0642472
+cap "digital_0/flash_adc_inp[3]" "uo_out[7]" 0.0642472
+cap "digital_0/flash_adc_inp[3]" "uio_out[0]" 0.0642472
+cap "digital_0/flash_adc_inp[1]" "uo_out[5]" 0.317625
+cap "digital_0/flash_adc_inp[1]" "uo_out[4]" 0.317625
+cap "digital_0/flash_adc_inp[3]" "uo_out[5]" 0.0642472
+cap "digital_0/flash_adc_inp[3]" "uo_out[4]" 0.0642472
+cap "uo_out[1]" "digital_0/flash_adc_inp[3]" 0.128724
+cap "digital_0/flash_adc_inp[1]" "uo_out[2]" 0.500646
+cap "digital_0/flash_adc_inp[1]" "uo_out[3]" 0.317625
+cap "uo_out[2]" "digital_0/flash_adc_inp[3]" 0.100784
+cap "uo_out[3]" "digital_0/flash_adc_inp[3]" 0.0642472
+cap "digital_0/flash_adc_inp[1]" "uo_out[1]" 0.640603
+merge "digital_0/VSUBS" "VSUBS" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0

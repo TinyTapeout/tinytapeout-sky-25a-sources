@@ -1,0 +1,35 @@
+* ROM address scan
+
+V1 VDD GND 1.8
+
+X1 addr[0] addr[1] addr[2] addr[3] addr[4] addr[5] addr[6] addr[7] addr[8] addr[9] addr[10] addr[11]
++ q[0] q[1] q[2] q[3] q[4] q[5] q[6] q[7]
++ GND VDD rom_vga_logo
+
+V10 addr[0]  GND PULSE(0 1.8   5n 0.1n 0.1n 10n 200n)
+V11 addr[1]  GND PULSE(0 1.8  20n 0.1n 0.1n 10n 200n)
+V12 addr[2]  GND PULSE(0 1.8  35n 0.1n 0.1n 10n 200n)
+V13 addr[3]  GND PULSE(0 1.8  50n 0.1n 0.1n 10n 200n)
+V14 addr[4]  GND PULSE(0 1.8  65n 0.1n 0.1n 10n 200n)
+V15 addr[5]  GND PULSE(0 1.8  80n 0.1n 0.1n 10n 200n)
+V16 addr[6]  GND PULSE(0 1.8  95n 0.1n 0.1n 10n 200n)
+V17 addr[7]  GND PULSE(0 1.8 110n 0.1n 0.1n 10n 200n)
+V18 addr[8]  GND PULSE(0 1.8 125n 0.1n 0.1n 10n 200n)
+V19 addr[9]  GND PULSE(0 1.8 140n 0.1n 0.1n 10n 200n)
+V20 addr[10] GND PULSE(0 1.8 155n 0.1n 0.1n 10n 200n)
+V21 addr[11] GND PULSE(0 1.8 170n 0.1n 0.1n 10n 200n)
+
+
+.lib $PDK_ROOT/sky130A/libs.tech/combined/sky130.lib.spice tt
+.include rom_vga_logo.lvs.spice
+
+.param mc_mm_switch=0
+.control
+save all
+tran 50p 200n
+
+.endc
+
+.GLOBAL GND
+.GLOBAL VDD
+.end

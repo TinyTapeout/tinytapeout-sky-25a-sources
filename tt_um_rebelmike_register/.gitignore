@@ -1,0 +1,17 @@
+.DS_Store
+.idea
+.vscode
+*.vcd
+runs
+tt_submission
+src/user_config.tcl
+test/sim_build
+test/__pycache__/
+test/results.xml
+test/gate_level_netlist.v
+mag/register*.mag
+mag/tt_um_rebelmike_register.mag
+spice/tt_um_flat.*
+spice/simulation.spice
+art/incrementer_logo.gds
+*.bak

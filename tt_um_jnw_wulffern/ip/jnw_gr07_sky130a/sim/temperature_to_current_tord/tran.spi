@@ -1,0 +1,109 @@
+* TB_SUN_TR_SKY130NM/TB_NCM
+*----------------------------------------------------------------
+* Include
+*----------------------------------------------------------------
+#ifdef Lay
+.include ../../../work/lpe/temperature_to_current_tord_lpe.spi
+#else
+.include ../../../work/xsch/temperature_to_current_tord.spice
+#endif
+
+*-----------------------------------------------------------------
+* OPTIONS
+*-----------------------------------------------------------------
+.option TNOM=27 GMIN=1e-15 reltol=1e-3
+
+*-----------------------------------------------------------------
+* PARAMETERS
+*-----------------------------------------------------------------
+.param TRF = 10p
+
+*
+* original code stops, self written code begins ...
+*
+
+* fix taken from jnw_gr05
+.param vdda = 1.8
+
+*
+* self written code stops, original code continues...
+*
+
+.param AVDD = {vdda}
+
+*-----------------------------------------------------------------
+* FORCE
+*-----------------------------------------------------------------
+VSS  VSS  0     dc 0
+*VDD  VDD_1V8  VSS  pwl 0 0 10n {AVDD}
+*IBP 0 IBPS_5U dc 5u
+*V0  IBNS_20U 0 dc 1
+
+*
+* original code stops, self written code begins ...
+*
+
+VDD VDD_1V8 VSS dc 1.8
+V_PTAT I_PTAT VSS dc 0.5
+
+*
+* V_PTAT value of 0.5 is some magic number that was given to us by Carsten
+*
+
+*
+* self written code stops, original code continues...
+*
+
+*-----------------------------------------------------------------
+* DUT
+*-----------------------------------------------------------------
+.include ../xdut.spi
+.include ../../../../cpdk/ngspice/ideal_circuits.spi
+
+*----------------------------------------------------------------
+* PROBE
+*----------------------------------------------------------------
+*.probe I(xdut.R1)
+*.probe alli
+*.option savecurrents
+*.save all
+*.save @r.xdut.r1[i]
+.save i(v_ptat)
+*.save v(v_d1)
+.save v(v_ref)
+
+*----------------------------------------------------------------
+* NGSPICE control
+*----------------------------------------------------------------
+.control
+set num_threads=8
+set color0=white
+set color1=black
+unset askquit
+
+optran 0 0 0 1n 1u 0
+*tran 1n 10000n 1p
+*.dc TEMP -40 125 10
+
+*write
+
+*
+* original code stops, self written code begins ...
+*
+
+set fend = .raw
+foreach vtemp -50 -40, -30, -20, -10, 0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 110, 120, 130, 140, 150
+	option temp=$vtemp
+	tran 1n 10u 10n
+	write {cicname}_$vtemp$fend
+end
+
+*
+* self written code stops, original code continues...
+*
+
+quit
+
+.endc
+
+.end

@@ -1,0 +1,16 @@
+** sch_path: /foss/designs/analog-circuit-design/sky25a-TIQ_ADC/xschem/INVERTER_SIZES/inverter_p40_n1_symsch.sch
+.subckt inverter_p40_n1_symsch Vout Vin VDPWR VGND
+*.PININFO Vout:O Vin:I VDPWR:B VGND:B
+x1 VDPWR Vout Vin VGND inverter_p40_n1
+.ends
+
+* expanding   symbol:  inverter_p40_n1.sym # of pins=4
+** sym_path: /foss/designs/analog-circuit-design/sky25a-TIQ_ADC/xschem/INVERTER_SIZES/inverter_p40_n1.sym
+** sch_path: /foss/designs/analog-circuit-design/sky25a-TIQ_ADC/xschem/INVERTER_SIZES/inverter_p40_n1.sch
+.subckt inverter_p40_n1 VDPWR Vout Vin VGND
+*.PININFO Vout:O Vin:I VDPWR:B VGND:B
+XM1 Vout Vin VGND VGND sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 m=1
+XM2 Vout Vin VDPWR VDPWR sky130_fd_pr__pfet_01v8 L=0.15 W=20 nf=2 m=1
+XM3 Vout Vin VDPWR VDPWR sky130_fd_pr__pfet_01v8 L=0.15 W=20 nf=2 m=1
+.ends
+

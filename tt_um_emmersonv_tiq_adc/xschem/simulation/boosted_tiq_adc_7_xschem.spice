@@ -1,0 +1,134 @@
+** sch_path: /foss/designs/analog-circuit-design/sky25a-TIQ_ADC/xschem/boosted_tiq_adc_7_xschem.sch
+.subckt boosted_tiq_adc_7_xschem VDPWR VGND Vin t0 t1 t2 t3 t4 t5 t6
+*.PININFO VDPWR:B VGND:B Vin:I t0:O t1:O t2:O t3:O t4:O t5:O t6:O
+x1 Vin VGND VDPWR net1 net2 net3 net4 net5 net6 net7 tiq_adc_7
+x2 VDPWR VGND t0 net1 t1 net2 net3 t2 t3 net4 t4 net5 t5 net6 t6 net7 gain_stage_7
+.ends
+
+* expanding   symbol:  tiq_adc_7.sym # of pins=10
+** sym_path: /foss/designs/analog-circuit-design/sky25a-TIQ_ADC/xschem/tiq_adc_7.sym
+** sch_path: /foss/designs/analog-circuit-design/sky25a-TIQ_ADC/xschem/tiq_adc_7.sch
+.subckt tiq_adc_7 Vin VGND VDPWR t0 t1 t2 t3 t4 t5 t6
+*.PININFO t0:O t1:O t2:O t3:O t4:O t5:O t6:O Vin:I VGND:B VDPWR:B
+x4 VDPWR t3 Vin VGND inverter_p15_n5
+x5 VDPWR t4 Vin VGND inverter_p16_n1o5
+x6 VDPWR t5 Vin VGND inverter_p40_n1
+x2 VDPWR t1 Vin VGND inverter_p2_n18
+x3 VDPWR t2 Vin VGND inverter_p7_n10
+x7 VDPWR t6 Vin VGND inverter_p90_n0o47
+x1 VDPWR t0 Vin VGND inverter_p0o47_n40
+.ends
+
+
+* expanding   symbol:  gain_stage_7.sym # of pins=16
+** sym_path: /foss/designs/analog-circuit-design/sky25a-TIQ_ADC/xschem/gain_stage_7.sym
+** sch_path: /foss/designs/analog-circuit-design/sky25a-TIQ_ADC/xschem/gain_stage_7.sch
+.subckt gain_stage_7 VDPWR VGND t0 in0 t1 in1 in2 t2 t3 in3 t4 in4 t5 in5 t6 in6
+*.PININFO VGND:B VDPWR:B in0:I in1:I in2:I in3:I in4:I in5:I in6:I t0:O t1:O t2:O t3:O t4:O t5:O t6:O
+x1 VDPWR VGND t0 in0 gain_stage
+x2 VDPWR VGND t1 in1 gain_stage
+x3 VDPWR VGND t2 in2 gain_stage
+x4 VDPWR VGND t3 in3 gain_stage
+x5 VDPWR VGND t4 in4 gain_stage
+x6 VDPWR VGND t5 in5 gain_stage
+x7 VDPWR VGND t6 in6 gain_stage
+.ends
+
+
+* expanding   symbol:  /foss/designs/analog-circuit-design/sky25a-TIQ_ADC/xschem/INVERTER_SIZES/inverter_p15_n5.sym # of pins=4
+** sym_path: /foss/designs/analog-circuit-design/sky25a-TIQ_ADC/xschem/INVERTER_SIZES/inverter_p15_n5.sym
+** sch_path: /foss/designs/analog-circuit-design/sky25a-TIQ_ADC/xschem/INVERTER_SIZES/inverter_p15_n5.sch
+.subckt inverter_p15_n5 VDPWR Vout Vin VGND
+*.PININFO Vout:O Vin:I VDPWR:B VGND:B
+XM1 Vout Vin VGND VGND sky130_fd_pr__nfet_01v8 L=0.15 W=5 nf=2 m=1
+XM2 Vout Vin VDPWR VDPWR sky130_fd_pr__pfet_01v8 L=0.15 W=15 nf=2 m=1
+.ends
+
+
+* expanding   symbol:  /foss/designs/analog-circuit-design/sky25a-TIQ_ADC/xschem/INVERTER_SIZES/inverter_p16_n1o5.sym # of pins=4
+** sym_path: /foss/designs/analog-circuit-design/sky25a-TIQ_ADC/xschem/INVERTER_SIZES/inverter_p16_n1o5.sym
+** sch_path: /foss/designs/analog-circuit-design/sky25a-TIQ_ADC/xschem/INVERTER_SIZES/inverter_p16_n1o5.sch
+.subckt inverter_p16_n1o5 VDPWR Vout Vin VGND
+*.PININFO Vout:O Vin:I VDPWR:B VGND:B
+XM1 Vout Vin VGND VGND sky130_fd_pr__nfet_01v8 L=0.15 W=1.5 nf=1 m=1
+XM2 Vout Vin VDPWR VDPWR sky130_fd_pr__pfet_01v8 L=0.15 W=16 nf=2 m=1
+.ends
+
+
+* expanding   symbol:  /foss/designs/analog-circuit-design/sky25a-TIQ_ADC/xschem/INVERTER_SIZES/inverter_p40_n1.sym # of pins=4
+** sym_path: /foss/designs/analog-circuit-design/sky25a-TIQ_ADC/xschem/INVERTER_SIZES/inverter_p40_n1.sym
+** sch_path: /foss/designs/analog-circuit-design/sky25a-TIQ_ADC/xschem/INVERTER_SIZES/inverter_p40_n1.sch
+.subckt inverter_p40_n1 VDPWR Vout Vin VGND
+*.PININFO Vout:O Vin:I VDPWR:B VGND:B
+XM1 Vout Vin VGND VGND sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 m=1
+XM2 Vout Vin VDPWR VDPWR sky130_fd_pr__pfet_01v8 L=0.15 W=20 nf=2 m=1
+XM3 Vout Vin VDPWR VDPWR sky130_fd_pr__pfet_01v8 L=0.15 W=20 nf=2 m=1
+.ends
+
+
+* expanding   symbol:  /foss/designs/analog-circuit-design/sky25a-TIQ_ADC/xschem/INVERTER_SIZES/inverter_p2_n18.sym # of pins=4
+** sym_path: /foss/designs/analog-circuit-design/sky25a-TIQ_ADC/xschem/INVERTER_SIZES/inverter_p2_n18.sym
+** sch_path: /foss/designs/analog-circuit-design/sky25a-TIQ_ADC/xschem/INVERTER_SIZES/inverter_p2_n18.sch
+.subckt inverter_p2_n18 VDPWR Vout Vin VGND
+*.PININFO Vout:O Vin:I VDPWR:B VGND:B
+XM1 Vout Vin VGND VGND sky130_fd_pr__nfet_01v8 L=0.15 W=9 nf=2 m=1
+XM2 Vout Vin VDPWR VDPWR sky130_fd_pr__pfet_01v8 L=0.15 W=2 nf=1 m=1
+XM3 Vout Vin VGND VGND sky130_fd_pr__nfet_01v8 L=0.15 W=9 nf=2 m=1
+.ends
+
+
+* expanding   symbol:  /foss/designs/analog-circuit-design/sky25a-TIQ_ADC/xschem/INVERTER_SIZES/inverter_p7_n10.sym # of pins=4
+** sym_path: /foss/designs/analog-circuit-design/sky25a-TIQ_ADC/xschem/INVERTER_SIZES/inverter_p7_n10.sym
+** sch_path: /foss/designs/analog-circuit-design/sky25a-TIQ_ADC/xschem/INVERTER_SIZES/inverter_p7_n10.sch
+.subckt inverter_p7_n10 VDPWR Vout Vin VGND
+*.PININFO Vout:O Vin:I VDPWR:B VGND:B
+XM1 Vout Vin VGND VGND sky130_fd_pr__nfet_01v8 L=0.15 W=5 nf=2 m=1
+XM2 Vout Vin VDPWR VDPWR sky130_fd_pr__pfet_01v8 L=0.15 W=7 nf=1 m=1
+XM3 Vout Vin VGND VGND sky130_fd_pr__nfet_01v8 L=0.15 W=5 nf=2 m=1
+.ends
+
+
+* expanding   symbol:  /foss/designs/analog-circuit-design/sky25a-TIQ_ADC/xschem/INVERTER_SIZES/inverter_p90_n0o47.sym # of pins=4
+** sym_path: /foss/designs/analog-circuit-design/sky25a-TIQ_ADC/xschem/INVERTER_SIZES/inverter_p90_n0o47.sym
+** sch_path: /foss/designs/analog-circuit-design/sky25a-TIQ_ADC/xschem/INVERTER_SIZES/inverter_p90_n0o47.sch
+.subckt inverter_p90_n0o47 VDPWR Vout Vin VGND
+*.PININFO Vout:O Vin:I VDPWR:B VGND:B
+XM1 Vout Vin VGND VGND sky130_fd_pr__nfet_01v8 L=0.15 W=0.47 nf=1 m=1
+XM2 Vout Vin VDPWR VDPWR sky130_fd_pr__pfet_01v8 L=0.15 W=30 nf=3 m=1
+XM3 Vout Vin VDPWR VDPWR sky130_fd_pr__pfet_01v8 L=0.15 W=30 nf=3 m=1
+XM4 Vout Vin VDPWR VDPWR sky130_fd_pr__pfet_01v8 L=0.15 W=30 nf=3 m=1
+.ends
+
+
+* expanding   symbol:  /foss/designs/analog-circuit-design/sky25a-TIQ_ADC/xschem/INVERTER_SIZES/inverter_p0o47_n40.sym # of pins=4
+** sym_path: /foss/designs/analog-circuit-design/sky25a-TIQ_ADC/xschem/INVERTER_SIZES/inverter_p0o47_n40.sym
+** sch_path: /foss/designs/analog-circuit-design/sky25a-TIQ_ADC/xschem/INVERTER_SIZES/inverter_p0o47_n40.sch
+.subckt inverter_p0o47_n40 VDPWR Vout Vin VGND
+*.PININFO Vout:O Vin:I VDPWR:B VGND:B
+XM1 Vout Vin VGND VGND sky130_fd_pr__nfet_01v8 L=0.15 W=13.33 nf=2 m=1
+XM2 Vout Vin VDPWR VDPWR sky130_fd_pr__pfet_01v8 L=0.15 W=0.47 nf=1 m=1
+XM3 Vout Vin VGND VGND sky130_fd_pr__nfet_01v8 L=0.15 W=13.33 nf=2 m=1
+XM4 Vout Vin VGND VGND sky130_fd_pr__nfet_01v8 L=0.15 W=13.33 nf=2 m=1
+.ends
+
+
+* expanding   symbol:  gain_stage.sym # of pins=4
+** sym_path: /foss/designs/analog-circuit-design/sky25a-TIQ_ADC/xschem/gain_stage.sym
+** sch_path: /foss/designs/analog-circuit-design/sky25a-TIQ_ADC/xschem/gain_stage.sch
+.subckt gain_stage VDPWR VGND out in
+*.PININFO in:I out:O VGND:B VDPWR:B
+x8 VDPWR net1 in VGND inverter_p1_n0o42
+x9 VDPWR net2 net1 VGND inverter_p1_n0o42
+x10 VDPWR out net2 VGND inverter_p1_n0o42
+.ends
+
+
+* expanding   symbol:  /foss/designs/analog-circuit-design/sky25a-TIQ_ADC/xschem/INVERTER_SIZES/inverter_p1_n0o42.sym # of pins=4
+** sym_path: /foss/designs/analog-circuit-design/sky25a-TIQ_ADC/xschem/INVERTER_SIZES/inverter_p1_n0o42.sym
+** sch_path: /foss/designs/analog-circuit-design/sky25a-TIQ_ADC/xschem/INVERTER_SIZES/inverter_p1_n0o42.sch
+.subckt inverter_p1_n0o42 VDPWR Vout Vin VGND
+*.PININFO Vout:O Vin:I VDPWR:B VGND:B
+XM1 Vout Vin VGND VGND sky130_fd_pr__nfet_01v8 L=0.15 W=0.42 nf=1 m=1
+XM2 Vout Vin VDPWR VDPWR sky130_fd_pr__pfet_01v8 L=0.15 W=1 nf=1 m=1
+.ends
+

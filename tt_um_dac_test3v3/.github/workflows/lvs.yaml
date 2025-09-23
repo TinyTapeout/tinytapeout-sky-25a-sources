@@ -1,0 +1,84 @@
+name: lvs
+
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  lvs:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+
+      - name: Set up environment variables
+        shell: bash
+        run: |
+          cat << EOF >> $GITHUB_ENV
+          PDK_ROOT=/home/runner/pdk
+          PDK=sky130A
+          MAGIC_VERSION=master
+          NETGEN_VERSION=master
+          TOPCELL=top
+          EOF
+  
+      - name: Install Sky130 PDK
+        uses: TinyTapeout/volare-action@v1
+        with:
+          pdk_name: sky130
+          pdk_version: 78b7bc32ddb4b6f14f76883c2e2dc5b5de9d1cbc
+          pdk_root: /home/runner/pdk
+
+      - name: Install Magic
+        shell: bash
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y m4 python3 libx11-dev tcl-dev tk-dev libcairo2-dev mesa-common-dev libglu1-mesa-dev
+          git clone -b $MAGIC_VERSION https://github.com/RTimothyEdwards/magic /tmp/magic
+          cd /tmp/magic
+          ./configure
+          make -j$(nproc)
+          sudo make install
+
+      - name: Install Netgen
+        shell: bash
+        run: |
+          git clone -b $NETGEN_VERSION https://github.com/RTimothyEdwards/netgen /tmp/netgen
+          cd /tmp/netgen
+          ./configure
+          make -j$(nproc)
+          sudo make install
+
+      - name: Generate layout SPICE with Magic
+        shell: bash
+        run: |
+          mkdir -p mag
+          magic -dnull -noconsole <<EOF
+          gds read gds/$TOPCELL.gds
+          load $TOPCELL
+          extract all
+          ext2spice lvs
+          ext2spice -o mag/layout.spice
+          quit
+          EOF
+
+      - name: Generate schematic SPICE with Netgen
+        shell: bash
+        run: |
+          netgen -batch readnet verilog rtl/$TOPCELL.v \
+            -top $TOPCELL \
+            $PDK_ROOT/$PDK/libs.tech/netgen/sky130A_setup.tcl \
+            mag/schematic.spice
+
+      - name: Run LVS
+        shell: bash
+        run: |
+          netgen -batch lvs \
+            "mag/layout.spice $TOPCELL" \
+            "mag/schematic.spice $TOPCELL" \
+            $PDK_ROOT/$PDK/libs.tech/netgen/sky130A_setup.tcl \
+            lvs_report.log || true
+          echo "✅ LVS finished. Report below:"
+          cat lvs_report.log || true

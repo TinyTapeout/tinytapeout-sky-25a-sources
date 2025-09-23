@@ -1,0 +1,235 @@
+VERSION 5.7 ;
+  NOWIREEXTENSIONATPIN ON ;
+  DIVIDERCHAR "/" ;
+  BUSBITCHARS "[]" ;
+MACRO rom_tvbgone_4k0
+  CLASS BLOCK ;
+  FOREIGN rom_tvbgone_4k0 ;
+  ORIGIN 0.000 0.000 ;
+  SIZE 80.900 BY 36.415 ;
+  PIN addr[0]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.675000 ;
+    PORT
+      LAYER met2 ;
+        RECT 80.600 7.310 80.900 7.570 ;
+    END
+  END addr[0]
+  PIN addr[1]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.675000 ;
+    PORT
+      LAYER met2 ;
+        RECT 80.600 8.310 80.900 8.570 ;
+    END
+  END addr[1]
+  PIN addr[2]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.675000 ;
+    PORT
+      LAYER met2 ;
+        RECT 80.600 9.310 80.900 9.570 ;
+    END
+  END addr[2]
+  PIN addr[3]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.675000 ;
+    PORT
+      LAYER met2 ;
+        RECT 80.600 6.310 80.900 6.570 ;
+    END
+  END addr[3]
+  PIN addr[4]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.675000 ;
+    PORT
+      LAYER met2 ;
+        RECT 80.600 5.310 80.900 5.570 ;
+    END
+  END addr[4]
+  PIN addr[5]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.675000 ;
+    PORT
+      LAYER met2 ;
+        RECT 80.600 4.310 80.900 4.570 ;
+    END
+  END addr[5]
+  PIN addr[6]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.675000 ;
+    PORT
+      LAYER met2 ;
+        RECT 80.600 3.310 80.900 3.570 ;
+    END
+  END addr[6]
+  PIN addr[7]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.675000 ;
+    PORT
+      LAYER met2 ;
+        RECT 80.600 2.310 80.900 2.570 ;
+    END
+  END addr[7]
+  PIN addr[8]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.675000 ;
+    PORT
+      LAYER met2 ;
+        RECT 80.600 1.310 80.900 1.570 ;
+    END
+  END addr[8]
+  PIN q[0]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.490000 ;
+    PORT
+      LAYER met2 ;
+        RECT 80.600 13.485 80.900 13.745 ;
+    END
+  END q[0]
+  PIN q[1]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.490000 ;
+    PORT
+      LAYER met2 ;
+        RECT 80.600 16.285 80.900 16.545 ;
+    END
+  END q[1]
+  PIN q[2]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.490000 ;
+    PORT
+      LAYER met2 ;
+        RECT 80.600 19.535 80.900 19.795 ;
+    END
+  END q[2]
+  PIN q[3]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.490000 ;
+    PORT
+      LAYER met2 ;
+        RECT 80.600 22.335 80.900 22.595 ;
+    END
+  END q[3]
+  PIN q[4]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.490000 ;
+    PORT
+      LAYER met2 ;
+        RECT 80.600 25.585 80.900 25.845 ;
+    END
+  END q[4]
+  PIN q[5]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.490000 ;
+    PORT
+      LAYER met2 ;
+        RECT 80.600 28.385 80.900 28.645 ;
+    END
+  END q[5]
+  PIN q[6]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.490000 ;
+    PORT
+      LAYER met2 ;
+        RECT 80.600 31.635 80.900 31.895 ;
+    END
+  END q[6]
+  PIN q[7]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.490000 ;
+    PORT
+      LAYER met2 ;
+        RECT 80.600 34.435 80.900 34.695 ;
+    END
+  END q[7]
+  PIN VGND
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER met3 ;
+        RECT 0.555 9.865 66.285 10.365 ;
+    END
+    PORT
+      LAYER met3 ;
+        RECT 0.055 6.445 74.755 7.695 ;
+    END
+  END VGND
+  PIN VPWR
+    DIRECTION INOUT ;
+    USE POWER ;
+    PORT
+      LAYER met3 ;
+        RECT 0.755 8.195 73.350 9.445 ;
+    END
+  END VPWR
+  OBS
+      LAYER nwell ;
+        RECT 0.400 0.000 80.385 36.400 ;
+      LAYER li1 ;
+        RECT 0.585 0.130 80.295 36.280 ;
+      LAYER met1 ;
+        RECT 0.055 0.130 80.355 36.415 ;
+      LAYER met2 ;
+        RECT 0.055 34.975 80.600 35.675 ;
+        RECT 0.055 34.155 80.320 34.975 ;
+        RECT 0.055 32.175 80.600 34.155 ;
+        RECT 0.055 31.355 80.320 32.175 ;
+        RECT 0.055 28.925 80.600 31.355 ;
+        RECT 0.055 28.105 80.320 28.925 ;
+        RECT 0.055 26.125 80.600 28.105 ;
+        RECT 0.055 25.305 80.320 26.125 ;
+        RECT 0.055 22.875 80.600 25.305 ;
+        RECT 0.055 22.055 80.320 22.875 ;
+        RECT 0.055 20.075 80.600 22.055 ;
+        RECT 0.055 19.255 80.320 20.075 ;
+        RECT 0.055 16.825 80.600 19.255 ;
+        RECT 0.055 16.005 80.320 16.825 ;
+        RECT 0.055 14.025 80.600 16.005 ;
+        RECT 0.055 13.205 80.320 14.025 ;
+        RECT 0.055 9.850 80.600 13.205 ;
+        RECT 0.055 9.030 80.320 9.850 ;
+        RECT 0.055 8.850 80.600 9.030 ;
+        RECT 0.055 8.030 80.320 8.850 ;
+        RECT 0.055 7.850 80.600 8.030 ;
+        RECT 0.055 7.030 80.320 7.850 ;
+        RECT 0.055 6.850 80.600 7.030 ;
+        RECT 0.055 6.030 80.320 6.850 ;
+        RECT 0.055 5.850 80.600 6.030 ;
+        RECT 0.055 5.030 80.320 5.850 ;
+        RECT 0.055 4.850 80.600 5.030 ;
+        RECT 0.055 4.030 80.320 4.850 ;
+        RECT 0.055 3.850 80.600 4.030 ;
+        RECT 0.055 3.030 80.320 3.850 ;
+        RECT 0.055 2.850 80.600 3.030 ;
+        RECT 0.055 2.030 80.320 2.850 ;
+        RECT 0.055 1.850 80.600 2.030 ;
+        RECT 0.055 1.030 80.320 1.850 ;
+        RECT 0.055 0.130 80.600 1.030 ;
+      LAYER met3 ;
+        RECT 1.245 10.765 80.350 36.415 ;
+        RECT 66.685 9.845 80.350 10.765 ;
+        RECT 73.750 8.095 80.350 9.845 ;
+        RECT 75.155 6.045 80.350 8.095 ;
+        RECT 1.245 0.615 80.350 6.045 ;
+  END
+END rom_tvbgone_4k0
+END LIBRARY
+

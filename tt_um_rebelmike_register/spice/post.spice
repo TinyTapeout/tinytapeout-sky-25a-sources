@@ -1,0 +1,39 @@
+
+* set gnd and power
+Vgnd VGND 0 0
+Vdd VPWR VGND 1.8
+
+* Data toggling
+Vd0 D0_IN VGND pulse(0 1.8 1.5n 200p 200p 2n 6n 5)
+Vd1 D1_IN VGND pulse(0 1.8 1.5n 200p 200p 4n 8n 5)
+Vd2 D2_IN VGND pulse(0 1.8 1.5n 200p 200p 8n 12n 5)
+Vd3 D3_IN VGND pulse(0 1.8 1.5n 200p 200p 16n 20n 5)
+Rd0 D0_IN D0 100
+Rd1 D1_IN D1 100
+Rd2 D2_IN D2 100
+Rd3 D3_IN D3 100
+
+* WEN
+Vwen WEN0_IN VGND pulse(0 1.8 1.5n 200p 200p 200n 400n)
+Rwen WEN0 WEN0_IN 100
+Rwen1 WEN1 VGND 100
+
+* Read address
+Raddra ADDR_A VGND 100
+Raddrb ADDR_B VPWR 100
+
+* create clock
+Vclk CLK_IN VGND pulse(0 1.8 1n 200p 200p 1n 2n)
+Rclk CLK_IN CLK 100
+
+.tran 10e-12 100e-09 0e-00
+
+.control
+run
+set color0 = white
+set color1 = black
+plot CLK D0 Q0A WEN0
+plot i(Vdd)
+.endc
+
+.end

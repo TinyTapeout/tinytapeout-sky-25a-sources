@@ -1,0 +1,4191 @@
+
+Circuit 1 cell sky130_fd_sc_hd__fill_1 and Circuit 2 cell sky130_fd_sc_hd__fill_1 are black boxes.
+Warning: Equate pins:  cell sky130_fd_sc_hd__fill_1 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_sc_hd__fill_1 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__fill_1         |Circuit 2: sky130_fd_sc_hd__fill_1         
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__fill_1 and sky130_fd_sc_hd__fill_1 are equivalent.
+
+Circuit 1 cell sky130_fd_sc_hd__decap_6 and Circuit 2 cell sky130_fd_sc_hd__decap_6 are black boxes.
+Warning: Equate pins:  cell sky130_fd_sc_hd__decap_6 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_sc_hd__decap_6 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__decap_6        |Circuit 2: sky130_fd_sc_hd__decap_6        
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__decap_6 and sky130_fd_sc_hd__decap_6 are equivalent.
+
+Circuit 1 cell sky130_fd_sc_hd__tapvpwrvgnd_1 and Circuit 2 cell sky130_fd_sc_hd__tapvpwrvgnd_1 are black boxes.
+Warning: Equate pins:  cell sky130_fd_sc_hd__tapvpwrvgnd_1 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_sc_hd__tapvpwrvgnd_1 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__tapvpwrvgnd_1  |Circuit 2: sky130_fd_sc_hd__tapvpwrvgnd_1  
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__tapvpwrvgnd_1 and sky130_fd_sc_hd__tapvpwrvgnd_1 are equivalent.
+
+Circuit 1 cell sky130_fd_sc_hd__decap_3 and Circuit 2 cell sky130_fd_sc_hd__decap_3 are black boxes.
+Warning: Equate pins:  cell sky130_fd_sc_hd__decap_3 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_sc_hd__decap_3 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__decap_3        |Circuit 2: sky130_fd_sc_hd__decap_3        
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__decap_3 and sky130_fd_sc_hd__decap_3 are equivalent.
+
+Circuit 1 cell sky130_fd_sc_hd__decap_8 and Circuit 2 cell sky130_fd_sc_hd__decap_8 are black boxes.
+Warning: Equate pins:  cell sky130_fd_sc_hd__decap_8 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_sc_hd__decap_8 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__decap_8        |Circuit 2: sky130_fd_sc_hd__decap_8        
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__decap_8 and sky130_fd_sc_hd__decap_8 are equivalent.
+
+Circuit 1 cell sky130_ef_sc_hd__decap_12 and Circuit 2 cell sky130_ef_sc_hd__decap_12 are black boxes.
+Warning: Equate pins:  cell sky130_ef_sc_hd__decap_12 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_ef_sc_hd__decap_12 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_ef_sc_hd__decap_12       |Circuit 2: sky130_ef_sc_hd__decap_12       
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_ef_sc_hd__decap_12 and sky130_ef_sc_hd__decap_12 are equivalent.
+
+Circuit 1 cell sky130_fd_sc_hd__clkbuf_1 and Circuit 2 cell sky130_fd_sc_hd__clkbuf_1 are black boxes.
+Warning: Equate pins:  cell sky130_fd_sc_hd__clkbuf_1 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_sc_hd__clkbuf_1 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__clkbuf_1       |Circuit 2: sky130_fd_sc_hd__clkbuf_1       
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+5                                          |5                                          
+6                                          |6                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__clkbuf_1 and sky130_fd_sc_hd__clkbuf_1 are equivalent.
+
+Circuit 1 cell sky130_fd_sc_hd__decap_4 and Circuit 2 cell sky130_fd_sc_hd__decap_4 are black boxes.
+Warning: Equate pins:  cell sky130_fd_sc_hd__decap_4 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_sc_hd__decap_4 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__decap_4        |Circuit 2: sky130_fd_sc_hd__decap_4        
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__decap_4 and sky130_fd_sc_hd__decap_4 are equivalent.
+
+Circuit 1 cell sky130_fd_sc_hd__and3_1 and Circuit 2 cell sky130_fd_sc_hd__and3_1 are black boxes.
+Warning: Equate pins:  cell sky130_fd_sc_hd__and3_1 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_sc_hd__and3_1 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__and3_1         |Circuit 2: sky130_fd_sc_hd__and3_1         
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+5                                          |5                                          
+6                                          |6                                          
+7                                          |7                                          
+8                                          |8                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__and3_1 and sky130_fd_sc_hd__and3_1 are equivalent.
+
+Circuit 1 cell sky130_fd_sc_hd__buf_1 and Circuit 2 cell sky130_fd_sc_hd__buf_1 are black boxes.
+Warning: Equate pins:  cell sky130_fd_sc_hd__buf_1 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_sc_hd__buf_1 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__buf_1          |Circuit 2: sky130_fd_sc_hd__buf_1          
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+5                                          |5                                          
+6                                          |6                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__buf_1 and sky130_fd_sc_hd__buf_1 are equivalent.
+
+Circuit 1 cell sky130_fd_sc_hd__a32o_4 and Circuit 2 cell sky130_fd_sc_hd__a32o_4 are black boxes.
+Warning: Equate pins:  cell sky130_fd_sc_hd__a32o_4 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_sc_hd__a32o_4 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__a32o_4         |Circuit 2: sky130_fd_sc_hd__a32o_4         
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+5                                          |5                                          
+6                                          |6                                          
+7                                          |7                                          
+8                                          |8                                          
+9                                          |9                                          
+10                                         |10                                         
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__a32o_4 and sky130_fd_sc_hd__a32o_4 are equivalent.
+
+Circuit 1 cell sky130_fd_sc_hd__fill_2 and Circuit 2 cell sky130_fd_sc_hd__fill_2 are black boxes.
+Warning: Equate pins:  cell sky130_fd_sc_hd__fill_2 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_sc_hd__fill_2 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__fill_2         |Circuit 2: sky130_fd_sc_hd__fill_2         
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__fill_2 and sky130_fd_sc_hd__fill_2 are equivalent.
+
+Circuit 1 cell sky130_fd_sc_hd__a21o_1 and Circuit 2 cell sky130_fd_sc_hd__a21o_1 are black boxes.
+Warning: Equate pins:  cell sky130_fd_sc_hd__a21o_1 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_sc_hd__a21o_1 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__a21o_1         |Circuit 2: sky130_fd_sc_hd__a21o_1         
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+5                                          |5                                          
+6                                          |6                                          
+7                                          |7                                          
+8                                          |8                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__a21o_1 and sky130_fd_sc_hd__a21o_1 are equivalent.
+
+Circuit 1 cell sky130_fd_sc_hd__nor2_1 and Circuit 2 cell sky130_fd_sc_hd__nor2_1 are black boxes.
+Warning: Equate pins:  cell sky130_fd_sc_hd__nor2_1 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_sc_hd__nor2_1 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__nor2_1         |Circuit 2: sky130_fd_sc_hd__nor2_1         
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+5                                          |5                                          
+6                                          |6                                          
+7                                          |7                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__nor2_1 and sky130_fd_sc_hd__nor2_1 are equivalent.
+
+Circuit 1 cell sky130_fd_sc_hd__or2_1 and Circuit 2 cell sky130_fd_sc_hd__or2_1 are black boxes.
+Warning: Equate pins:  cell sky130_fd_sc_hd__or2_1 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_sc_hd__or2_1 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__or2_1          |Circuit 2: sky130_fd_sc_hd__or2_1          
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+5                                          |5                                          
+6                                          |6                                          
+7                                          |7                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__or2_1 and sky130_fd_sc_hd__or2_1 are equivalent.
+
+Circuit 1 cell sky130_fd_sc_hd__and2_1 and Circuit 2 cell sky130_fd_sc_hd__and2_1 are black boxes.
+Warning: Equate pins:  cell sky130_fd_sc_hd__and2_1 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_sc_hd__and2_1 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__and2_1         |Circuit 2: sky130_fd_sc_hd__and2_1         
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+5                                          |5                                          
+6                                          |6                                          
+7                                          |7                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__and2_1 and sky130_fd_sc_hd__and2_1 are equivalent.
+
+Circuit 1 cell sky130_fd_sc_hd__a21o_2 and Circuit 2 cell sky130_fd_sc_hd__a21o_2 are black boxes.
+Warning: Equate pins:  cell sky130_fd_sc_hd__a21o_2 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_sc_hd__a21o_2 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__a21o_2         |Circuit 2: sky130_fd_sc_hd__a21o_2         
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+5                                          |5                                          
+6                                          |6                                          
+7                                          |7                                          
+8                                          |8                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__a21o_2 and sky130_fd_sc_hd__a21o_2 are equivalent.
+
+Circuit 1 cell sky130_fd_sc_hd__a31o_4 and Circuit 2 cell sky130_fd_sc_hd__a31o_4 are black boxes.
+Warning: Equate pins:  cell sky130_fd_sc_hd__a31o_4 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_sc_hd__a31o_4 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__a31o_4         |Circuit 2: sky130_fd_sc_hd__a31o_4         
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+5                                          |5                                          
+6                                          |6                                          
+7                                          |7                                          
+8                                          |8                                          
+9                                          |9                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__a31o_4 and sky130_fd_sc_hd__a31o_4 are equivalent.
+
+Circuit 1 cell sky130_fd_sc_hd__nor4_1 and Circuit 2 cell sky130_fd_sc_hd__nor4_1 are black boxes.
+Warning: Equate pins:  cell sky130_fd_sc_hd__nor4_1 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_sc_hd__nor4_1 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__nor4_1         |Circuit 2: sky130_fd_sc_hd__nor4_1         
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+5                                          |5                                          
+6                                          |6                                          
+7                                          |7                                          
+8                                          |8                                          
+9                                          |9                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__nor4_1 and sky130_fd_sc_hd__nor4_1 are equivalent.
+
+Circuit 1 cell sky130_fd_sc_hd__and4_1 and Circuit 2 cell sky130_fd_sc_hd__and4_1 are black boxes.
+Warning: Equate pins:  cell sky130_fd_sc_hd__and4_1 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_sc_hd__and4_1 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__and4_1         |Circuit 2: sky130_fd_sc_hd__and4_1         
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+5                                          |5                                          
+6                                          |6                                          
+7                                          |7                                          
+8                                          |8                                          
+9                                          |9                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__and4_1 and sky130_fd_sc_hd__and4_1 are equivalent.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in cell encoderr (1) makes a better match
+Making another compare attempt.
+
+Cell encoderr (0) disconnected node: clk
+Flattening instances of encoderr in

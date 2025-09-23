@@ -1,0 +1,43 @@
+digraph design {
+    splines=ortho;
+    nodesep=0.75;
+    ranksep=0.75;
+
+    node [ fontname="arial" fontsize="8" shape="rect" ];
+    edge [ fontname="arial" fontsize="8" ];
+
+    subgraph external {
+        rank=same;
+
+        spi_master [ label="SPI Master\n(RP2040)" ];
+        psram [ label="PSRAM\n(PMOD)" ];
+    }
+
+    subgraph external_to_wb {
+        rank=same;
+
+        spi_wishbone_bridge [ label="SPI Wishbone Bridge" ];
+        spi_controller [ label="QSPI SRAM Controller"]
+    }
+
+    subgraph interconnect {
+        rank=same;
+
+        interconnect [ label="Wishbone Interconnect" ];
+        arbiter [ label="Wishbone Arbiter" ];
+    }
+
+    subgraph engine {
+        rank=same;
+
+        levenshtein_controller [ label="Levenshtein Controller" ];
+    }
+
+    spi_master -> spi_wishbone_bridge;
+    spi_wishbone_bridge -> interconnect;
+    interconnect -> arbiter;
+    spi_controller -> arbiter [ dir="back" ];
+    spi_controller -> psram;
+    interconnect -> levenshtein_controller;
+    arbiter -> levenshtein_controller [ dir="back" ];
+}

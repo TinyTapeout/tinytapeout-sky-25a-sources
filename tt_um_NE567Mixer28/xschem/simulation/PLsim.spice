@@ -1,0 +1,104 @@
+** sch_path: /home/ttuser/tt10-OTA_FC/xschem/PLsim.sch
+**.subckt PLsim
+x1 VDD VSS out IN- IN+ OFC
+x2 VDD VSS out_parax IN- IN+ OFC_parax
+V1 VDD GND 1.8
+Vbias IN+ VSS 0.9
+VbiasR IN- VSS 0.9
+V2 VSS GND 0
+**** begin user architecture code
+
+
+
+* ngspice commands
+
+.options savecurrents
+
+.control
+save all
+save @m.xm1.msky130_fd_pr__pfet_01v8_lvt[gm]
+save @m.xm2.msky130_fd_pr__pfet_01v8_lvt[gm]
+save @m.xm3.msky130_fd_pr__nfet_01v8_lvt[gm]
+save @m.xm4.msky130_fd_pr__nfet_01v8_lvt[gm]
+save @m.xm5.msky130_fd_pr__nfet_01v8_lvt[gm]
+save @m.xm6.msky130_fd_pr__nfet_01v8_lvt[gm]
+save @m.xm7.msky130_fd_pr__pfet_01v8_lvt[gm]
+save @m.xm8.msky130_fd_pr__pfet_01v8_lvt[gm]
+save @m.xm9.msky130_fd_pr__pfet_01v8_lvt[gm]
+save @m.xm10.msky130_fd_pr__pfet_01v8_lvt[gm]
+
+   op
+   remzerovec
+   write PLsim.raw
+   set appendwrite
+   dc Vbias 0.899 0.901 0.00001
+   *dc Vbias 0.899 0.901 0.0001
+   *dc Vbias 0 1.8 0.01
+   *remzerovec
+   plot v(out),v(out_parax)
+   plot deriv(v(out)),deriv(v(out_parax))
+
+   write PLsim.raw
+
+.endc
+.end
+
+
+
+
+.param mc_mm_switch=0
+.param mc_pr_switch=0
+.include /home/ttuser/pdk/sky130A/libs.tech/ngspice/corners/tt.spice
+.include /home/ttuser/pdk/sky130A/libs.tech/ngspice/r+c/res_typical__cap_typical.spice
+.include /home/ttuser/pdk/sky130A/libs.tech/ngspice/r+c/res_typical__cap_typical__lin.spice
+.include /home/ttuser/pdk/sky130A/libs.tech/ngspice/corners/tt/specialized_cells.spice
+
+**** end user architecture code
+**.ends
+
+* expanding   symbol:  OFC.sym # of pins=5
+** sym_path: /home/ttuser/tt10-OTA_FC/xschem/OFC.sym
+** sch_path: /home/ttuser/tt10-OTA_FC/xschem/OFC.sch
+.subckt OFC VDD VSS OUT IN- IN+
+*.iopin VDD
+*.iopin VSS
+*.ipin IN+
+*.ipin IN-
+*.opin OUT
+XM11 S Vb VDD VDD sky130_fd_pr__pfet_01v8_lvt L=1 W=60 nf=6 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=2 m=2
+XM1 D1 IN+ S S sky130_fd_pr__pfet_01v8_lvt L=10 W=25 nf=2 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=2 m=2
+XM2 D2 IN- S S sky130_fd_pr__pfet_01v8_lvt L=10 W=25 nf=2 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=2 m=2
+XM3 OUT Vc1 D2 VSS sky130_fd_pr__nfet_01v8_lvt L=1 W=4 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM4 D2 Vc VSS VSS sky130_fd_pr__nfet_01v8_lvt L=1 W=2.8 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM5 D1 Vc VSS VSS sky130_fd_pr__nfet_01v8_lvt L=1 W=2.8 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM6 G Vc1 D1 VSS sky130_fd_pr__nfet_01v8_lvt L=1 W=4 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM7 G Vc2 D9 D9 sky130_fd_pr__pfet_01v8_lvt L=2.23 W=3 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM9 D9 G VDD VDD sky130_fd_pr__pfet_01v8_lvt L=2.23 W=4 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM8 D10 G VDD VDD sky130_fd_pr__pfet_01v8_lvt L=2.23 W=4 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM10 OUT Vc2 D10 D10 sky130_fd_pr__pfet_01v8_lvt L=2.23 W=3 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XR2 Vb VDD VSS sky130_fd_pr__res_xhigh_po_0p35 L=5 mult=1 m=1
+XR3 VSS Vb VSS sky130_fd_pr__res_xhigh_po_0p35 L=13.2 mult=1 m=1
+XR1 Vc VDD VSS sky130_fd_pr__res_xhigh_po_0p35 L=5 mult=1 m=1
+XR4 VSS Vc VSS sky130_fd_pr__res_xhigh_po_0p35 L=3.07 mult=1 m=1
+XR5 Vc1 VDD VSS sky130_fd_pr__res_xhigh_po_0p35 L=5 mult=1 m=1
+XR6 VSS Vc1 VSS sky130_fd_pr__res_xhigh_po_0p35 L=13.2 mult=1 m=1
+XR7 Vc2 VDD VSS sky130_fd_pr__res_xhigh_po_0p35 L=5 mult=1 m=1
+XR8 VSS Vc2 VSS sky130_fd_pr__res_xhigh_po_0p35 L=1.6 mult=1 m=1
+.ends
+
+
+* expanding   symbol:  OFC_parax.sym # of pins=5
+** sym_path: /home/ttuser/tt10-OTA_FC/xschem/OFC.sym
+.include /home/ttuser/tt10-OTA_FC/mag/OFC.sim.spice
+.end

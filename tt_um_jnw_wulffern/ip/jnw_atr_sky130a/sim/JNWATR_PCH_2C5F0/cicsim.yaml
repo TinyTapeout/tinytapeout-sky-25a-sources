@@ -1,0 +1,9 @@
+options:
+      useTmpDir: False
+      sha: True
+corner:
+  Lay: ''
+  Sch: ''
+ngspice:
+  library: JNW_ATR_SKY130A
+  cell: JNWATR_PCH_2C5F0

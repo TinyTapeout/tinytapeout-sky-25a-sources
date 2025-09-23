@@ -1,0 +1,22 @@
+** sch_path: /home/usuario/Guido/TTSKY25A-UP-analog-circuit/xschem/tt_um_upalermo_simple_analog_circuit.sch
+.subckt tt_um_upalermo_simple_analog_circuit VDPWR ua[0] uio_in[7] ui_in[7] uio_in[6] ui_in[6] uio_in[5] ui_in[5] uio_in[4]
++ ui_in[4] uio_in[3] ui_in[3] uio_in[2] ui_in[2] ui_in[1] uio_in[1] uio_in[0] ui_in[0] VGND
+*.PININFO ui_in[0]:I ui_in[2]:I ui_in[1]:I ui_in[3]:I ui_in[4]:I ui_in[5]:I ui_in[6]:I ui_in[7]:I uio_in[0]:I uio_in[1]:I
+*+ uio_in[2]:I uio_in[3]:I uio_in[4]:I uio_in[5]:I uio_in[6]:I uio_in[7]:I VDPWR:I VGND:I ua[0]:O
+x1 VDPWR ua[0] VGND currentmirror
+.ends
+
+* expanding   symbol:  Guido/TTSKY25A-UP-analog-circuit/xschem/currentmirror.sym # of pins=3
+** sym_path: /home/usuario/Guido/TTSKY25A-UP-analog-circuit/xschem/currentmirror.sym
+** sch_path: /home/usuario/Guido/TTSKY25A-UP-analog-circuit/xschem/currentmirror.sch
+.subckt currentmirror VDD IOUT VSS
+*.PININFO IOUT:O VSS:I VDD:I
+XM1 net1 net1 VSS VSS sky130_fd_pr__nfet_01v8 L=5 W=10 nf=4 m=1
+XM2 IOUT net1 VSS VSS sky130_fd_pr__nfet_01v8 L=5 W=10 nf=4 m=1
+XR1 net1 net2 VSS sky130_fd_pr__res_high_po_0p35 L=15 mult=1 m=1
+XR2 net2 net4 VSS sky130_fd_pr__res_high_po_0p35 L=15 mult=1 m=1
+XR3 net4 net3 VSS sky130_fd_pr__res_high_po_0p35 L=15 mult=1 m=1
+XR4 net3 VDD VSS sky130_fd_pr__res_high_po_0p35 L=15 mult=1 m=1
+.ends
+
+.end

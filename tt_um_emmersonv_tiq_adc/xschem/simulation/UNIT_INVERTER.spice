@@ -1,0 +1,15 @@
+* NGSPICE file created from UNIT_INVERTER.ext - technology: sky130A
+
+.subckt sky130_fd_pr__pfet_01v8_35B5V5 a_15_n90# w_n109_n152# a_n73_n90# a_n15_n116#
+X0 a_15_n90# a_n15_n116# a_n73_n90# w_n109_n152# sky130_fd_pr__pfet_01v8 ad=0.261 pd=2.38 as=0.261 ps=2.38 w=0.9 l=0.15
+.ends
+
+.subckt sky130_fd_pr__nfet_01v8_HEP5MT a_15_n42# a_n15_n68# a_n73_n42# VSUBS
+X0 a_15_n42# a_n15_n68# a_n73_n42# VSUBS sky130_fd_pr__nfet_01v8 ad=0.1218 pd=1.42 as=0.1218 ps=1.42 w=0.42 l=0.15
+.ends
+
+.subckt UNIT_INVERTER Vin Vout VDD GND
+Xsky130_fd_pr__pfet_01v8_35B5V5_0 Vout VDD VDD Vin sky130_fd_pr__pfet_01v8_35B5V5
+Xsky130_fd_pr__nfet_01v8_HEP5MT_0 Vout Vin GND GND sky130_fd_pr__nfet_01v8_HEP5MT
+.ends
+

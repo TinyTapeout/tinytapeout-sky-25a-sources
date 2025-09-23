@@ -1,0 +1,20 @@
+* NGSPICE file created from inverter_p90_n0o47.ext - technology: sky130A
+
+.subckt sky130_fd_pr__pfet_01v8_WGHLR5 a_n111_n1056# a_15_n1000# a_n173_n1000# a_111_n1000#
++ a_n81_n1000# w_n209_n1062#
+X0 a_111_n1000# a_n111_n1056# a_15_n1000# w_n209_n1062# sky130_fd_pr__pfet_01v8 ad=3.1 pd=20.62 as=1.65 ps=10.33 w=10 l=0.15
+X1 a_n81_n1000# a_n111_n1056# a_n173_n1000# w_n209_n1062# sky130_fd_pr__pfet_01v8 ad=1.65 pd=10.33 as=3.1 ps=20.62 w=10 l=0.15
+X2 a_15_n1000# a_n111_n1056# a_n81_n1000# w_n209_n1062# sky130_fd_pr__pfet_01v8 ad=1.65 pd=10.33 as=1.65 ps=10.33 w=10 l=0.15
+.ends
+
+.subckt sky130_fd_pr__nfet_01v8_PD6K7A a_n73_n47# a_15_n47# a_n15_n73# VSUBS
+X0 a_15_n47# a_n15_n73# a_n73_n47# VSUBS sky130_fd_pr__nfet_01v8 ad=0.1363 pd=1.52 as=0.1363 ps=1.52 w=0.47 l=0.15
+.ends
+
+.subckt inverter_p90_n0o47 VDPWR Vout Vin VGND
+Xsky130_fd_pr__pfet_01v8_WGHLR5_0 Vin VDPWR VDPWR Vout Vout VDPWR sky130_fd_pr__pfet_01v8_WGHLR5
+Xsky130_fd_pr__pfet_01v8_WGHLR5_1 Vin Vout Vout VDPWR VDPWR VDPWR sky130_fd_pr__pfet_01v8_WGHLR5
+Xsky130_fd_pr__pfet_01v8_WGHLR5_2 Vin Vout Vout VDPWR VDPWR VDPWR sky130_fd_pr__pfet_01v8_WGHLR5
+Xsky130_fd_pr__nfet_01v8_PD6K7A_0 VGND Vout Vin VGND sky130_fd_pr__nfet_01v8_PD6K7A
+.ends
+

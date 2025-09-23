@@ -1,0 +1,61 @@
+** sch_path: /home/mattia-msi-u/Scrivania/tt10-analog-template-progetto-main/xschem/analog.sch
+.subckt analog out Vdd Vss Vref n_d[0] y_d[0] in0 n_d[1] y_d[1] n_d[2] y_d[2] n_d[3] y_d[3] n_d[4] y_d[4] n_d[5] y_d[5] n_d[6]
++ y_d[6] n_d[7] y_d[7]
+*.PININFO out:O Vdd:I Vss:I Vref:I n_d[0]:I y_d[0]:I in0:I n_d[1]:I y_d[1]:I n_d[2]:I y_d[2]:I n_d[3]:I y_d[3]:I n_d[4]:I y_d[4]:I
+*+ n_d[5]:I y_d[5]:I n_d[6]:I y_d[6]:I n_d[7]:I y_d[7]:I
+XM1 vdm1 outpg net6 Vss sky130_fd_pr__nfet_01v8_lvt L=0.15 W=2 nf=2 m=1
+XM3 vdm1 net1 Vdd Vdd sky130_fd_pr__pfet_01v8_lvt L=0.35 W=2 nf=2 m=1
+XM7 net1 Vb2_part net2 Vss sky130_fd_pr__nfet_01v8_lvt L=0.15 W=1 nf=1 m=1
+XM10 net2 outpg net5 Vdd sky130_fd_pr__pfet_01v8_lvt L=0.35 W=4 nf=4 m=1
+XM11 net4 Vref net6 Vss sky130_fd_pr__nfet_01v8_lvt L=0.15 W=2 nf=2 m=1
+XM12 net3 Vref net5 Vdd sky130_fd_pr__pfet_01v8_lvt L=0.35 W=4 nf=4 m=1
+XM13 net6 Vmirnmos_part Vss Vss sky130_fd_pr__nfet_01v8_lvt L=0.15 W=1 nf=1 m=1
+XM14 net5 Vmirpmos_part Vdd Vdd sky130_fd_pr__pfet_01v8_lvt L=0.35 W=4 nf=4 m=1
+XM22 net7 outm Vss Vss sky130_fd_pr__nfet_01v8_lvt L=0.15 W=1 nf=1 m=1
+XM25 net7 outm Vdd Vdd sky130_fd_pr__pfet_01v8_lvt L=0.35 W=2 nf=2 m=1
+XR2 Vb3_part Vdd Vss sky130_fd_pr__res_high_po_0p35 L=25.2 mult=1 m=1
+XR3 Vss Vb3_part Vss sky130_fd_pr__res_high_po_0p35 L=25.2 mult=1 m=1
+XR1 Vb1_part Vdd Vss sky130_fd_pr__res_high_po_0p35 L=23.1 mult=1 m=1
+XR4 Vss Vb1_part Vss sky130_fd_pr__res_high_po_0p35 L=30.1 mult=1 m=1
+XR5 Vb2_part Vdd Vss sky130_fd_pr__res_high_po_0p35 L=25.2 mult=1 m=1
+XR6 Vss Vb2_part Vss sky130_fd_pr__res_high_po_0p35 L=20.3 mult=1 m=1
+XR7 Vmirpmos_part Vdd Vss sky130_fd_pr__res_high_po_0p35 L=25.2 mult=1 m=1
+XR8 Vss Vmirpmos_part Vss sky130_fd_pr__res_high_po_0p35 L=20.3 mult=1 m=1
+XR9 Vmirnmos_part Vdd Vss sky130_fd_pr__res_high_po_0p35 L=30.1 mult=1 m=1
+XR10 Vss Vmirnmos_part Vss sky130_fd_pr__res_high_po_0p35 L=14.7 mult=1 m=1
+XM16 net8 net7 Vss Vss sky130_fd_pr__nfet_01v8_lvt L=0.15 W=2 nf=2 m=1
+XM21 net8 net7 Vdd Vdd sky130_fd_pr__pfet_01v8_lvt L=0.35 W=4 nf=4 m=1
+XM24 out net8 Vss Vss sky130_fd_pr__nfet_01v8_lvt L=0.15 W=2 nf=2 m=1
+XM26 out net8 Vdd Vdd sky130_fd_pr__pfet_01v8_lvt L=0.35 W=4 nf=4 m=1
+XM2 net4 net1 Vdd Vdd sky130_fd_pr__pfet_01v8_lvt L=0.35 W=2 nf=2 m=1
+XM4 net1 Vb3_part vdm1 Vdd sky130_fd_pr__pfet_01v8_lvt L=0.35 W=2 nf=2 m=1
+XM5 outm Vb3_part net4 Vdd sky130_fd_pr__pfet_01v8_lvt L=0.35 W=2 nf=2 m=1
+XM6 outm Vb2_part net3 Vss sky130_fd_pr__nfet_01v8_lvt L=0.15 W=1 nf=1 m=1
+XM8 net3 Vb1_part Vss Vss sky130_fd_pr__nfet_01v8_lvt L=0.15 W=1 nf=1 m=1
+XM9 net2 Vb1_part Vss Vss sky130_fd_pr__nfet_01v8_lvt L=0.15 W=1 nf=1 m=1
+XR11 in7 Vdd Vss sky130_fd_pr__res_high_po_0p35 L=6.3 mult=1 m=1
+XR12 in6 in7 Vss sky130_fd_pr__res_high_po_0p35 L=6.3 mult=1 m=1
+XR13 in5 in6 Vss sky130_fd_pr__res_high_po_0p35 L=6.3 mult=1 m=1
+XR14 in4 in5 Vss sky130_fd_pr__res_high_po_0p35 L=6.3 mult=1 m=1
+XR15 in3 in4 Vss sky130_fd_pr__res_high_po_0p35 L=6.3 mult=1 m=1
+XR16 in2 in3 Vss sky130_fd_pr__res_high_po_0p35 L=6.3 mult=1 m=1
+XR17 in1 in2 Vss sky130_fd_pr__res_high_po_0p35 L=6.3 mult=1 m=1
+XR18 Vss in1 Vss sky130_fd_pr__res_high_po_0p35 L=6.3 mult=1 m=1
+XM15 in0 y_d[0] outpg Vss sky130_fd_pr__nfet_01v8_lvt L=0.15 W=1 nf=1 m=1
+XM23 outpg n_d[0] in0 Vdd sky130_fd_pr__pfet_01v8_lvt L=0.35 W=2 nf=2 m=1
+XM17 in1 y_d[1] outpg Vss sky130_fd_pr__nfet_01v8_lvt L=0.15 W=1 nf=1 m=1
+XM18 outpg n_d[1] in1 Vdd sky130_fd_pr__pfet_01v8_lvt L=0.35 W=2 nf=2 m=1
+XM19 in2 y_d[2] outpg Vss sky130_fd_pr__nfet_01v8_lvt L=0.15 W=1 nf=1 m=1
+XM20 outpg n_d[2] in2 Vdd sky130_fd_pr__pfet_01v8_lvt L=0.35 W=2 nf=2 m=1
+XM27 in3 y_d[3] outpg Vss sky130_fd_pr__nfet_01v8_lvt L=0.15 W=1 nf=1 m=1
+XM28 outpg n_d[3] in3 Vdd sky130_fd_pr__pfet_01v8_lvt L=0.35 W=2 nf=2 m=1
+XM29 in4 y_d[4] outpg Vss sky130_fd_pr__nfet_01v8_lvt L=0.15 W=1 nf=1 m=1
+XM30 outpg n_d[4] in4 Vdd sky130_fd_pr__pfet_01v8_lvt L=0.35 W=2 nf=2 m=1
+XM31 in5 y_d[5] outpg Vss sky130_fd_pr__nfet_01v8_lvt L=0.15 W=1 nf=1 m=1
+XM32 outpg n_d[5] in5 Vdd sky130_fd_pr__pfet_01v8_lvt L=0.35 W=2 nf=2 m=1
+XM33 in6 y_d[6] outpg Vss sky130_fd_pr__nfet_01v8_lvt L=0.15 W=1 nf=1 m=1
+XM34 outpg n_d[6] in6 Vdd sky130_fd_pr__pfet_01v8_lvt L=0.35 W=2 nf=2 m=1
+XM35 in7 y_d[7] outpg Vss sky130_fd_pr__nfet_01v8_lvt L=0.15 W=1 nf=1 m=1
+XM36 outpg n_d[7] in7 Vdd sky130_fd_pr__pfet_01v8_lvt L=0.35 W=2 nf=2 m=1
+.ends
+.end

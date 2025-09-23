@@ -1,0 +1,3 @@
+3DX_CUI_DEVICES_Supplier: CUI Devices
+3DX_CUI_DEVICES_Description: 6 x 7.4 mm, 5.5 mm Actuator Height, 100 gf, Black, Right Angle, Through Hole, SPST, Tactile Switch
+3DX_CUI_DEVICES_Model Number: TS11-674-55-BK-100-RA-D

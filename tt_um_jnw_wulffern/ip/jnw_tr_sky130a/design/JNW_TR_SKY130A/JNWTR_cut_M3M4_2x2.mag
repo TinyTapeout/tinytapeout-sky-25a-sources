@@ -1,0 +1,19 @@
+magic
+tech sky130A
+magscale 1 1
+timestamp 1723932000
+<< checkpaint >>
+rect 0 0 88 88
+<< m2 >>
+rect 0 0 88 88
+<< v2 >>
+rect 6 6 34 34
+rect 6 54 34 82
+rect 54 6 82 34
+rect 54 54 82 82
+<< m3 >>
+rect 0 0 88 88
+<< labels >>
+<< properties >>
+string FIXED_BBOX 0 0 88 88
+<< end >>

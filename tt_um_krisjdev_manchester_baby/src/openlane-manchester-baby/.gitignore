@@ -1,0 +1,19 @@
+__pycache__
+sim_build
+dump.vcd
+results.xml
+
+# ignore other files related to run, we only care about the final output
+runs/*/logs/
+runs/*/tmp/
+runs/*/results/cts/
+runs/*/results/floorplan/
+runs/*/results/placement/
+runs/*/results/routing/
+runs/*/results/signoff/
+runs/*/results/synthesis/
+runs/*/*.log
+runs/*/*.tcl
+runs/*/*.yaml
+runs/*/PDK_SOURCES
+runs/*/OPENLANE_VERSION

@@ -1,0 +1,37 @@
+* NGSPICE file created from tt_um_upalermo_simple_analog_circuit.ext - technology: sky130A
+
+.subckt sky130_fd_pr__res_high_po_0p35_RCHFKS a_n284_1484# a_n118_1484# a_214_n1916#
++ a_48_n1916# a_214_1484# a_n414_n2046# a_48_1484# a_n284_n1916# a_n118_n1916#
+X0 a_214_1484# a_214_n1916# a_n414_n2046# sky130_fd_pr__res_high_po_0p35 l=15
+X1 a_n118_1484# a_n118_n1916# a_n414_n2046# sky130_fd_pr__res_high_po_0p35 l=15
+X2 a_n284_1484# a_n284_n1916# a_n414_n2046# sky130_fd_pr__res_high_po_0p35 l=15
+X3 a_48_1484# a_48_n1916# a_n414_n2046# sky130_fd_pr__res_high_po_0p35 l=15
+.ends
+
+.subckt sky130_fd_pr__nfet_01v8_2HULJ6 a_n1029_n307# a_2087_n281# a_n2087_n307# a_n29_n281#
++ a_n2247_n393# a_1087_n307# a_n1087_n281# a_n2145_n281# a_29_n307# a_1029_n281#
+X0 a_2087_n281# a_1087_n307# a_1029_n281# a_n2247_n393# sky130_fd_pr__nfet_01v8 ad=0.725 pd=5.58 as=0.3625 ps=2.79 w=2.5 l=5
+X1 a_n1087_n281# a_n2087_n307# a_n2145_n281# a_n2247_n393# sky130_fd_pr__nfet_01v8 ad=0.3625 pd=2.79 as=0.725 ps=5.58 w=2.5 l=5
+X2 a_1029_n281# a_29_n307# a_n29_n281# a_n2247_n393# sky130_fd_pr__nfet_01v8 ad=0.3625 pd=2.79 as=0.3625 ps=2.79 w=2.5 l=5
+X3 a_n29_n281# a_n1029_n307# a_n1087_n281# a_n2247_n393# sky130_fd_pr__nfet_01v8 ad=0.3625 pd=2.79 as=0.3625 ps=2.79 w=2.5 l=5
+.ends
+
+.subckt currentmirror VDD IOUT VSS
+XXR1 m1_n140_3230# m1_n140_3230# VDD m1_n300_n170# m1_n460_3230# VSS m1_n460_3230#
++ m1_44_n192# m1_n300_n170# sky130_fd_pr__res_high_po_0p35_RCHFKS
+XXM1 m1_44_n192# m1_44_n192# m1_44_n192# m1_44_n192# VSS m1_44_n192# VSS m1_44_n192#
++ m1_44_n192# VSS sky130_fd_pr__nfet_01v8_2HULJ6
+Xsky130_fd_pr__nfet_01v8_2HULJ6_0 m1_44_n192# IOUT m1_44_n192# IOUT VSS m1_44_n192#
++ VSS IOUT m1_44_n192# VSS sky130_fd_pr__nfet_01v8_2HULJ6
+.ends
+
+.subckt tt_um_upalermo_simple_analog_circuit clk ena rst_n ua[0] ua[1] ua[2] ua[3]
++ ua[4] ua[5] ua[6] ua[7] ui_in[0] ui_in[1] ui_in[2] ui_in[3] ui_in[4] ui_in[5] ui_in[6]
++ ui_in[7] uio_in[0] uio_in[1] uio_in[2] uio_in[3] uio_in[4] uio_in[5] uio_in[6] uio_in[7]
++ uio_oe[0] uio_oe[1] uio_oe[2] uio_oe[3] uio_oe[4] uio_oe[5] uio_oe[6] uio_oe[7]
++ uio_out[0] uio_out[1] uio_out[2] uio_out[3] uio_out[4] uio_out[5] uio_out[6] uio_out[7]
++ uo_out[0] uo_out[1] uo_out[2] uo_out[3] uo_out[4] uo_out[5] uo_out[6] uo_out[7]
++ VDPWR VGND
+Xcurrentmirror_0 VDPWR ua[0] VGND currentmirror
+.ends
+

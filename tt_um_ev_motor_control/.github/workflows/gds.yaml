@@ -1,0 +1,86 @@
+name: gds
+
+on:
+  push:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  gds:
+    runs-on: ubuntu-24.04
+    steps:
+      - name: checkout repo
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+      - name: Build GDS
+        uses: TinyTapeout/tt-gds-action@ttsky25a
+        with:
+          pdk: sky130
+          tools-ref: ttsky25a
+          artifact-name: gds-artifact   # 👈 rename to avoid github-pages conflict
+
+  precheck:
+    needs: gds
+    runs-on: ubuntu-24.04
+    steps:
+      - name: checkout repo
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+      - name: Run Tiny Tapeout Precheck
+        uses: TinyTapeout/tt-gds-action/precheck@ttsky25a
+        with:
+          pdk: sky130
+          tools-ref: ttsky25a
+
+  gl_test:
+    needs: gds
+    runs-on: ubuntu-24.04
+    steps:
+      - name: checkout repo
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+      - name: GL test
+        uses: TinyTapeout/tt-gds-action/gl_test@ttsky25a
+        with:
+          pdk: sky130
+          tools-ref: ttsky25a
+
+  viewer:
+    needs: gds
+    runs-on: ubuntu-24.04
+    steps:
+      - name: checkout repo
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+
+      - name: Generate Viewer
+        uses: TinyTapeout/tt-gds-action/viewer@ttsky25a
+        with:
+          pdk: sky130
+          tools-ref: ttsky25a
+          artifact-name: github-pages   # 👈 only viewer produces this
+
+      - name: List viewer contents
+        run: ls -la viewer || true
+
+  deploy:
+    needs: viewer
+    runs-on: ubuntu-24.04
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

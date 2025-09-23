@@ -1,0 +1,52 @@
+
+
+* Ideal balun https://designers-guide.org/analysis/diff.pdf
+*d=1, c=2, p=3, n=4
+.subckt cpdk_ideal_balun 1 2 3 4
+* Ideal transformer for the positive input
+E1 5 2 1 0 0.5
+V1 3 5 dc 0
+F1 1 0 V1 -0.5
+R1 1 0 1T
+*Ideal transformer for the negative input
+E2 6 4 1 0 0.5
+V2 2 7 dc 0
+F2 1 0 V2 -0.5
+R2 7 6 1u
+.ends cpdk_ideal_balun
+
+
+.subckt cpdk_ideal_ota P N OUT VDD_1V8 VSS GAIN=1000 UGBW=1e6
+R1 P P1 1k
+C1 P1 0 1f
+R2 N N1 1k
+C2 N1 0 1f
+* The 1.1 factor is to compensate the gain, no idea why, there should be a reasonable explanation though.
+BOTA OUT_INT VSS V = (1 + tanh(-1.1*{GAIN}*(v(P1,N1) ) ) ) /2*v(VDD_1V8,VSS)
+R3 OUT_INT OUT_RC 100k
+C3 OUT_RC VSS {(1/(UGBW*2*3.14159)/100k)*GAIN}
+BOUT OUT VSS V=V(OUT_RC,VSS)
+.ends
+
+.subckt cpdk_ideal_cmp P N OUT VDD_1V8 VSS GAIN=1000
+R1 P P1 1k
+C1 P1 0 1f
+R2 N N1 1k
+C2 N1 0 1f
+BCMP OUT VSS V=(1 + tanh(-1.1*{GAIN}*(v(P1,N1) ) ) ) /2*v(VDD_1V8,VSS)
+.ends
+
+.subckt cpdk_ideal_ota_diff P N OP ON VDD_1V8 VSS GAIN=1000
+BOTA IOUT VSS V = ( tanh(-{GAIN}*(v(P,N) ) ) )*v(VDD_1V8,VSS)
+BCM VCM 0 V = V(VDD_1V8,VSS)/2
+Xbal IOUT VCM OP ON cpdk_ideal_balun
+.ends
+
+.subckt cpdk_ideal_switch P N C VDD_1V8 VSS RON=1k
+BR1 P N I=V(C,VSS)*V(P,N)/{RON}
+R1 P N 100G
+.ends
+
+.subckt cpdk_ideal_switch_cn P N CN VDD_1V8 VSS RON=1k
+BR1 P N I=V(VDD_1V8,CN)/V(VDD_1V8)*V(P,N)/{RON}
+.ends

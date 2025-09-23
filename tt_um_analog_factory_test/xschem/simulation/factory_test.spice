@@ -1,0 +1,32 @@
+** sch_path: /home/tnt/projects/asic/tinytapeout/tt08-analog-factory-test/xschem/factory_test.sch
+.subckt factory_test VGND VDPWR VAPWR ena_1v8_n ena_3v3_n ibias
+*.PININFO ena_3v3_n:I VDPWR:B VGND:B ibias:I VAPWR:B ena_1v8_n:I
+XR1 bias ibias VGND sky130_fd_pr__res_high_po_5p73 L=20 mult=1 m=1
+XM1 bias bias VGND VGND sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=16 nf=4 m=1
+XM2 mid_1v8 bias VGND VGND sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=320 nf=80 m=1
+XM3 mid_3v3 bias VGND VGND sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=320 nf=80 m=1
+x1 VGND VDPWR VAPWR ena_3v3_n H_ena_3v3_n net1 lv2hv
+XM5 mid_3v3 H_ena_3v3_n VAPWR VAPWR sky130_fd_pr__pfet_g5v0d10v5 L=0.5 W=240 nf=80 m=1
+XM4 mid_1v8 ena_1v8_n VDPWR VDPWR sky130_fd_pr__pfet_01v8 L=0.15 W=360 nf=120 m=1
+.ends
+
+* expanding   symbol:  lv2hv.sym # of pins=6
+** sym_path: /home/tnt/projects/asic/tinytapeout/tt08-analog-factory-test/xschem/lv2hv.sym
+** sch_path: /home/tnt/projects/asic/tinytapeout/tt08-analog-factory-test/xschem/lv2hv.sch
+.subckt lv2hv VGND LVPWR HVPWR in_p H_out_p H_out_n
+*.PININFO in_p:I VGND:B LVPWR:B HVPWR:B H_out_p:O H_out_n:O
+XM12 H_out_p net2 HVPWR HVPWR sky130_fd_pr__pfet_g5v0d10v5 L=0.5 W=0.84 nf=2 m=1
+XM10 H_out_p net2 VGND VGND sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=0.42 nf=1 m=1
+XM11 H_out_n net1 HVPWR HVPWR sky130_fd_pr__pfet_g5v0d10v5 L=0.5 W=0.84 nf=2 m=1
+XM9 H_out_n net1 VGND VGND sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=0.42 nf=1 m=1
+XM1 in_n in_p VGND VGND sky130_fd_pr__nfet_01v8 L=0.15 W=0.42 nf=1 m=1
+XM2 in_n in_p LVPWR LVPWR sky130_fd_pr__pfet_01v8_hvt L=0.15 W=1 nf=1 m=1
+XM3 net1 in_n VGND VGND sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=0.42 nf=1 m=1
+XM4 net2 in_p VGND VGND sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=0.42 nf=1 m=1
+XM5 net1 net2 net3 HVPWR sky130_fd_pr__pfet_g5v0d10v5 L=0.5 W=0.42 nf=1 m=1
+XM6 net2 net1 net4 HVPWR sky130_fd_pr__pfet_g5v0d10v5 L=0.5 W=0.42 nf=1 m=1
+XM7 net3 net1 HVPWR HVPWR sky130_fd_pr__pfet_g5v0d10v5 L=0.5 W=0.42 nf=1 m=1
+XM8 net4 net2 HVPWR HVPWR sky130_fd_pr__pfet_g5v0d10v5 L=0.5 W=0.42 nf=1 m=1
+.ends
+
+.end

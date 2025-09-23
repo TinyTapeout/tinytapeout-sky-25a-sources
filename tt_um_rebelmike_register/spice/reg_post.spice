@@ -1,0 +1,32 @@
+
+* set gnd and power
+Vgnd VGND 0 0
+Vdd VPWR VGND 1.8
+
+* Data toggling
+Vinc D_IN VGND pulse(0 1.8 1.5n 200p 200p 2n 6n 5)
+Rinc D_IN DIN 100
+
+* WEN
+Vwen WEN_IN VGND pulse(0 1.8 1.5n 200p 200p 40n 100n)
+Rwen WEN WEN_IN 100
+
+* create clock
+Vclk CLK_IN VGND pulse(0 1.8 1n 200p 200p 1n 2n)
+.tran 10e-12 100e-09 0e-00
+
+Rclk CLK_IN CLK 100
+
+Rs0 Q Q_OUT 100
+
+Cs0 Q_OUT VGND 1f
+
+.control
+run
+set color0 = white
+set color1 = black
+plot CLK DIN Q_OUT WEN
+plot i(Vdd)
+.endc
+
+.end

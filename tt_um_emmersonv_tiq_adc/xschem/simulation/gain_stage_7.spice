@@ -1,0 +1,33 @@
+* NGSPICE file created from gain_stage_7.ext - technology: sky130A
+
+.subckt sky130_fd_pr__pfet_01v8_TH65V5 a_n73_n100# w_n109_n162# a_15_n100# a_n15_n126#
+X0 a_15_n100# a_n15_n126# a_n73_n100# w_n109_n162# sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=0.15
+.ends
+
+.subckt sky130_fd_pr__nfet_01v8_PNPQML a_15_n42# a_n15_n68# a_n73_n42# VSUBS
+X0 a_15_n42# a_n15_n68# a_n73_n42# VSUBS sky130_fd_pr__nfet_01v8 ad=0.1218 pd=1.42 as=0.1218 ps=1.42 w=0.42 l=0.15
+.ends
+
+.subckt inverter_p1_n0o42 a_n80_136# li_100_114# w_n36_502# sky130_fd_pr__pfet_01v8_TH65V5_0/VSUBS
+Xsky130_fd_pr__pfet_01v8_TH65V5_0 w_n36_502# w_n36_502# li_100_114# a_n80_136# sky130_fd_pr__pfet_01v8_TH65V5
+Xsky130_fd_pr__nfet_01v8_PNPQML_0 li_100_114# a_n80_136# sky130_fd_pr__pfet_01v8_TH65V5_0/VSUBS
++ sky130_fd_pr__pfet_01v8_TH65V5_0/VSUBS sky130_fd_pr__nfet_01v8_PNPQML
+.ends
+
+.subckt gain_stage in out VDPWR VGND
+Xinverter_p1_n0o42_0 in inverter_p1_n0o42_1/a_n80_136# VDPWR VGND inverter_p1_n0o42
+Xinverter_p1_n0o42_1 inverter_p1_n0o42_1/a_n80_136# inverter_p1_n0o42_2/a_n80_136#
++ VDPWR VGND inverter_p1_n0o42
+Xinverter_p1_n0o42_2 inverter_p1_n0o42_2/a_n80_136# out VDPWR VGND inverter_p1_n0o42
+.ends
+
+.subckt gain_stage_7 VGND VDPWR in0 in1 in2 in3 in4 in5 in6 t0 t1 t2 t3 t4 t5 t6
+Xgain_stage_0 in0 t0 VDPWR VGND gain_stage
+Xgain_stage_1 in1 t1 VDPWR VGND gain_stage
+Xgain_stage_2 in2 t2 VDPWR VGND gain_stage
+Xgain_stage_3 in3 t3 VDPWR VGND gain_stage
+Xgain_stage_4 in4 t4 VDPWR VGND gain_stage
+Xgain_stage_5 in5 t5 VDPWR VGND gain_stage
+Xgain_stage_6 in6 t6 VDPWR VGND gain_stage
+.ends
+

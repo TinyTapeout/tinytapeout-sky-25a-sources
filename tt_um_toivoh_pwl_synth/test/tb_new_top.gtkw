@@ -1,0 +1,134 @@
+[*]
+[*] GTKWave Analyzer v3.4.0 (w)1999-2022 BSI
+[*] Mon Sep 15 06:57:18 2025
+[*]
+[dumpfile] "/home/toivo/code/tinytapeout/ttsky25a-chiptune-periph/test/tb.vcd"
+[dumpfile_mtime] "Mon Sep 15 06:54:55 2025"
+[dumpfile_size] 14123037
+[savefile] "/home/toivo/code/tinytapeout/ttsky25a-chiptune-periph/test/tb_new_top.gtkw"
+[timestart] 854594000
+[size] 2716 1459
+[pos] -1 -1
+*-19.900000 858546000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] tb.
+[treeopen] tb.test_harness.
+[treeopen] tb.test_harness.user_peripheral.
+[treeopen] tb.test_harness.user_peripheral.mc_alu_unit.
+[sst_width] 297
+[signals_width] 268
+[sst_expanded] 1
+[sst_vpaned_height] 455
+@28
+tb.rst_n
+tb.clk
+@200
+-
+@28
+tb.pwm_out[1:0]
+@c00022
+tb.uio_out[7:0]
+@28
+(0)tb.uio_out[7:0]
+(1)tb.uio_out[7:0]
+(2)tb.uio_out[7:0]
+(3)tb.uio_out[7:0]
+(4)tb.uio_out[7:0]
+(5)tb.uio_out[7:0]
+(6)tb.uio_out[7:0]
+(7)tb.uio_out[7:0]
+@1401200
+-group_end
+@200
+-
+@28
+tb.test_harness.waiting_for_read
+@200
+-
+@22
+tb.test_harness.synth_uo_out[7:0]
+tb.test_harness.user_peripheral.mc_alu_unit.pwm_counter[6:0]
+@28
+tb.test_harness.user_peripheral.mc_alu_unit.pwm_out_mono
+tb.test_harness.user_peripheral.mc_alu_unit.sample_out_acc
+@200
+-
+@28
+tb.test_harness.user_peripheral.mc_alu_unit.extra_term
+@22
+tb.test_harness.user_peripheral.mc_alu_unit.term_index_eff[3:0]
+@28
+tb.test_harness.user_peripheral.mc_alu_unit.state_eff[2:0]
+@200
+-
+@22
+tb.test_harness.cmd0[3:0]
+tb.test_harness.cmd1[3:0]
+tb.test_harness.cmd2[3:0]
+tb.test_harness.cmd3[3:0]
+tb.test_harness.cmd[3:0]
+@200
+-
+@28
+tb.test_harness.cmd_read
+tb.test_harness.cmd_write
+tb.test_harness.cmd_data_high
+tb.test_harness.cmd_data_low
+@22
+tb.test_harness.user_data_in[7:0]
+@200
+-
+@22
+tb.test_harness.wdata0[15:0]
+tb.test_harness.wdata[15:0]
+tb.test_harness.address[7:0]
+@200
+-
+@28
+tb.test_harness.write_pending
+tb.test_harness.do_write
+tb.test_harness.reg_we_internal
+@200
+-
+@28
+tb.test_harness.waiting_for_read
+tb.test_harness.data_ready
+@200
+-
+@22
+tb.period0[12:0]
+@200
+-
+@22
+tb.test_harness.user_peripheral.mc_alu_unit.detune_counter[31:0]
+@200
+-
+@28
+tb.test_harness.user_peripheral.mc_alu_unit.alu_unit.read_msbs_reg[2:0]
+@22
+tb.test_harness.user_peripheral.mc_alu_unit.alu_unit.direct_rdata[15:0]
+tb.test_harness.user_peripheral.mc_alu_unit.alu_unit.reg_read_index[3:0]
+tb.test_harness.user_peripheral.mc_alu_unit.reg_read_index[3:0]
+tb.test_harness.user_peripheral.mc_alu_unit.reg_read_index0[3:0]
+@200
+-
+@28
+tb.test_harness.user_peripheral.mc_alu_unit.reg_we
+@22
+tb.test_harness.user_peripheral.mc_alu_unit.reg_wdata[15:0]
+tb.test_harness.user_peripheral.mc_alu_unit.reg_waddr_eff[5:0]
+tb.test_harness.user_peripheral.address[5:0]
+tb.test_harness.user_peripheral.address2[5:0]
+@28
+tb.test_harness.user_peripheral.mc_alu_unit.reg_read_channel[1:0]
+@22
+tb.test_harness.user_peripheral.mc_alu_unit.alu_unit.reg_read_index[3:0]
+@200
+-
+@22
+tb.test_harness.user_peripheral.mc_alu_unit.cfg[12:0]
+tb.test_harness.user_peripheral.mc_alu_unit.alu_unit.acc_out[15:0]
+tb.test_harness.user_peripheral.data_out[31:0]
+@23
+tb.test_harness.user_peripheral.reg_rdata[15:0]
+[pattern_trace] 1
+[pattern_trace] 0

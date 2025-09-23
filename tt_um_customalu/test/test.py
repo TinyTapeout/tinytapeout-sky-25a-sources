@@ -1,0 +1,236 @@
+# SPDX-FileCopyrightText: © 2024 Tiny Tapeout
+# SPDX-License-Identifier: Apache-2.0
+
+import cocotb
+from cocotb.clock import Clock
+from cocotb.triggers import ClockCycles
+
+
+@cocotb.test()
+async def test_project(dut):
+    dut._log.info("Start")
+
+    # Set the clock period to 10 us (100 KHz)
+    clock = Clock(dut.clk, 10, units="us")
+    cocotb.start_soon(clock.start())
+
+    # Reset
+    dut._log.info("Reset")
+    dut.ena.value = 1
+    dut.ui_in.value = 0
+    dut.uio_in.value = 0
+    dut.rst_n.value = 0
+    await ClockCycles(dut.clk, 10)
+    dut.rst_n.value = 1
+
+    dut._log.info("Test project behavior")
+
+    def print_out():
+        # ALU_Result corresponds to the lower 4 bits (0 to 3) in Little Endian
+        ALU_Result = dut.uo_out.value[0:3]  # Access bits 0-3 (lowest 4 bits)
+        Zero = dut.uo_out.value[4]             # Zero is bit 4
+        Carry = dut.uo_out.value[5]            # Carry is bit 5
+        Sign = dut.uo_out.value[6]             # Sign is bit 6
+        Error = dut.uo_out.value[7]            # Error is bit 7
+    
+        # Log the values
+        dut._log.info(
+            f"Result={ALU_Result}, Zero={Zero}, Carry={Carry}, Sign={Sign}, Error={Error}"
+        )
+
+
+    
+
+    # Test addition: A=3, B=5, Opcode=0000 (add)
+    dut.ui_in.value = (5 << 4) | 3
+    dut.uio_in.value = 0b0000
+    await ClockCycles(dut.clk, 1)
+    print_out()
+
+    # Test subtraction: A=7, B=2, Opcode=0001 (sub)
+    dut.ui_in.value = (2 << 4) | 7
+    dut.uio_in.value = 0b0001
+    await ClockCycles(dut.clk, 1)
+    print_out()
+
+    # Test multiplication: A=4, B=3, Opcode=0010 (mul)
+    dut.ui_in.value = (3 << 4) | 4
+    dut.uio_in.value = 0b0010
+    await ClockCycles(dut.clk, 1)
+    print_out()
+
+    # Test division: A=8, B=2, Opcode=0011 (div)
+    dut.ui_in.value = (2 << 4) | 8
+    dut.uio_in.value = 0b0011
+    await ClockCycles(dut.clk, 1)
+    print_out()
+
+    # Test division by zero: A=8, B=0, Opcode=0011 (div)
+    dut.ui_in.value = (0 << 4) | 8
+    dut.uio_in.value = 0b0011
+    await ClockCycles(dut.clk, 1)
+    print_out()
+
+    # Test rotate left: A=9 (1001), Opcode=0100
+    dut.ui_in.value = (0 << 4) | 9
+    dut.uio_in.value = 0b0100
+    await ClockCycles(dut.clk, 1)
+    print_out()
+
+    # Test rotate right: A=9 (1001), Opcode=0101
+    dut.ui_in.value = (0 << 4) | 9
+    dut.uio_in.value = 0b0101
+    await ClockCycles(dut.clk, 1)
+    print_out()
+
+    # Test priority encoder: A=4'b0100, Opcode=0110
+    dut.ui_in.value = (0 << 4) | 4
+    dut.uio_in.value = 0b0110
+    await ClockCycles(dut.clk, 1)
+    print_out()
+
+    # Test gray code: A=7 (0111), Opcode=0111
+    dut.ui_in.value = (0 << 4) | 7
+    dut.uio_in.value = 0b0111
+    await ClockCycles(dut.clk, 1)
+    print_out()
+
+    # Test majority function: A=5 (0101), B=10 (1010), Opcode=1000
+    dut.ui_in.value = (10 << 4) | 5
+    dut.uio_in.value = 0b1000
+    await ClockCycles(dut.clk, 1)
+    print_out()
+
+    # Test parity detector: A=6 (0110), Opcode=1001
+    dut.ui_in.value = (0 << 4) | 6
+    dut.uio_in.value = 0b1001
+    await ClockCycles(dut.clk, 1)
+    print_out()
+
+    # Test AND: A=12 (1100), B=10 (1010), Opcode=1010
+    dut.ui_in.value = (10 << 4) | 12
+    dut.uio_in.value = 0b1010
+    await ClockCycles(dut.clk, 1)
+    print_out()
+
+    # Test OR: A=12 (1100), B=10 (1010), Opcode=1011
+    dut.ui_in.value = (10 << 4) | 12
+    dut.uio_in.value = 0b1011
+    await ClockCycles(dut.clk, 1)
+    print_out()
+
+    # Test NOT: A=5 (0101), Opcode=1100
+    dut.ui_in.value = (0 << 4) | 5
+    dut.uio_in.value = 0b1100
+    await ClockCycles(dut.clk, 1)
+    print_out()
+
+    # Test XOR: A=12 (1100), B=10 (1010), Opcode=1101
+    dut.ui_in.value = (10 << 4) | 12
+    dut.uio_in.value = 0b1101
+    await ClockCycles(dut.clk, 1)
+    print_out()
+
+    # Test Greater than: A=7, B=5, Opcode=1110
+    dut.ui_in.value = (5 << 4) | 7
+    dut.uio_in.value = 0b1110
+    await ClockCycles(dut.clk, 1)
+    print_out()
+
+    # Test Equality: A=7, B=7, Opcode=1111
+    dut.ui_in.value = (7 << 4) | 7
+    dut.uio_in.value = 0b1111
+    await ClockCycles(dut.clk, 1)
+    print_out()
+    
+    ###testcases for NPU
+    dut.ui_in.value = (2 << 4) | 4
+    dut.uio_in.value = 0b00000 | (1 << 4)  # NPU mode
+    await ClockCycles(dut.clk, 1)
+    print_out()
+
+    # Test ReLU: A=6, B=3, Opcode=0001
+    dut.ui_in.value = (3 << 4) | 6
+    dut.uio_in.value = 0b00001 | (1 << 4)
+    await ClockCycles(dut.clk, 1)
+    print_out()
+
+    # Test scaled dot product: A=4, B=4, Opcode=0010
+    dut.ui_in.value = (4 << 4) | 4
+    dut.uio_in.value = 0b00010 | (1 << 4)
+    await ClockCycles(dut.clk, 1)
+    print_out()
+
+    # Test max: A=7, B=5, Opcode=0011
+    dut.ui_in.value = (5 << 4) | 7
+    dut.uio_in.value = 0b00011 | (1 << 4)
+    await ClockCycles(dut.clk, 1)
+    print_out()
+
+    # Test min: A=3, B=6, Opcode=0100
+    dut.ui_in.value = (6 << 4) | 3
+    dut.uio_in.value = 0b00100 | (1 << 4)
+    await ClockCycles(dut.clk, 1)
+    print_out()
+
+    # Test threshold: A=5, B ignored, Opcode=0101
+    dut.ui_in.value = (0 << 4) | 5
+    dut.uio_in.value = 0b00101 | (1 << 4)
+    await ClockCycles(dut.clk, 1)
+    print_out()
+
+    # Test inverted XOR: A=6, B=3, Opcode=0110
+    dut.ui_in.value = (3 << 4) | 6
+    dut.uio_in.value = 0b00110 | (1 << 4)
+    await ClockCycles(dut.clk, 1)
+    print_out()
+
+    # Test noisy neuron: A=3, B=4, Opcode=0111
+    dut.ui_in.value = (4 << 4) | 3
+    dut.uio_in.value = 0b00111 | (1 << 4)
+    await ClockCycles(dut.clk, 1)
+    print_out()
+
+    # Test equality neuron: A=5, B=5, Opcode=1000
+    dut.ui_in.value = (5 << 4) | 5
+    dut.uio_in.value = 0b01000 | (1 << 4)
+    await ClockCycles(dut.clk, 1)
+    print_out()
+
+    # Test sign bit agreement: A=8 (1000), B=0 (0000), Opcode=1010
+    dut.ui_in.value = (0 << 4) | 8
+    dut.uio_in.value = 0b01010 | (1 << 4)
+    await ClockCycles(dut.clk, 1)
+    print_out()
+
+    # Test sigmoid-like: A=5, Opcode=1011
+    dut.ui_in.value = (0 << 4) | 5
+    dut.uio_in.value = 0b01011 | (1 << 4)
+    await ClockCycles(dut.clk, 1)
+    print_out()
+
+    # Test fire on diff: A=9, B=3, Opcode=1100
+    dut.ui_in.value = (3 << 4) | 9
+    dut.uio_in.value = 0b01100 | (1 << 4)
+    await ClockCycles(dut.clk, 1)
+    print_out()
+
+    # Test bitwise weighted sum: A=1011 (11), Opcode=1101
+    dut.ui_in.value = (0 << 4) | 0b1011
+    dut.uio_in.value = 0b01101 | (1 << 4)
+    await ClockCycles(dut.clk, 1)
+    print_out()
+
+    # Test quadratic neuron: A=3, B=4, Opcode=1110
+    dut.ui_in.value = (4 << 4) | 3
+    dut.uio_in.value = 0b01110 | (1 << 4)
+    await ClockCycles(dut.clk, 1)
+    print_out()
+
+    # Test binary classification: A=9, B=7, Opcode=1111
+    dut.ui_in.value = (7 << 4) | 9
+    dut.uio_in.value = 0b01111 | (1 << 4)
+    await ClockCycles(dut.clk, 1)
+    print_out()
+
+    dut._log.info("All tests completed")

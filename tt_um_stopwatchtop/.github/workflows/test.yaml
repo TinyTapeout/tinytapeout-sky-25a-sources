@@ -1,0 +1,40 @@
+name: Cocotb Test
+
+on:
+  push:
+    paths:
+      - "test/**"
+      - "src/**"
+      - "*.v"
+      - "*.sv"
+      - ".github/workflows/test.yaml"
+  pull_request:
+    paths:
+      - "test/**"
+      - "src/**"
+      - "*.v"
+      - "*.sv"
+      - ".github/workflows/test.yaml"
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Install cocotb and simulator
+        run: |
+          pip install cocotb cocotb-bus
+          sudo apt update
+          sudo apt install -y iverilog
+
+      - name: Run cocotb tests
+        run: |
+          cd test
+          make

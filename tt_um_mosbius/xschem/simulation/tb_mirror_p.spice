@@ -1,0 +1,168 @@
+** sch_path: /foss/designs/ttsky25a_minimosbius/xschem/tb_mirror_p.sch
+**.subckt tb_mirror_p
+VAPWR VAPWR GND 3.3
+.save i(vapwr)
+VDPWR VDPWR GND 1.8
+.save i(vdpwr)
+Ibias Ibias GND 100u
+VOUT net1 GND 3.3
+.save i(vout)
+VC1_1 ictrl_1[1] GND 1.8
+.save i(vc1_1)
+VC1_0 ictrl_1[0] GND 1.8
+.save i(vc1_0)
+VC2_1 ictrl_2[1] GND 1.8
+.save i(vc2_1)
+VC2_0 ictrl_2[0] GND 1.8
+.save i(vc2_0)
+Eout2 VOUT2 GND net1 GND 1
+Eout1 VOUT1 GND net1 GND 1
+x1 VAPWR VDPWR Ibias VOUT1 VOUT2 ictrl_1[1] ictrl_1[0] ictrl_2[1] ictrl_2[0] GND mirror_p
+**** begin user architecture code
+
+.param mc_mm_switch=0
+.param mc_pr_switch=0
+.include /foss/pdks/sky130A/libs.tech/ngspice/corners/tt.spice
+.include /foss/pdks/sky130A/libs.tech/ngspice/r+c/res_typical__cap_typical.spice
+.include /foss/pdks/sky130A/libs.tech/ngspice/r+c/res_typical__cap_typical__lin.spice
+.include /foss/pdks/sky130A/libs.tech/ngspice/corners/tt/specialized_cells.spice
+
+
+
+*****************************************
+* Vout DC Sweep Test
+*****************************************
+* With a fixed input current, sweeps the output voltage
+* and plots the output voltage for (1) programmable mirror 1 across codes
+* (2) programmable mirror 2 across codes (3) programmable mirror 1 vs fixed output
+*****************************************
+.control
+   save all
+   alter vc1_1 0
+   alter vc1_0 0
+   alter vc2_1 0
+   alter vc2_0 0
+   set temp = 27
+   set wr_singlescale
+   set wr_vecnames
+   set output_str = 'tb_mirror_p.raw' ; dont change this. handled in python
+   * the below 2x nested loop is required to step ctrl[1:0] from 0 to 3
+   * control for idac1 and idac2 are swept together
+   repeat 2
+      repeat 2
+         dc Vout 0 3.3 0.01
+         alter vc1_0 1.8
+         alter vc2_0 1.8
+      end
+      alter vc1_1 1.8
+      alter vc1_0 0
+      alter vc2_1 1.8
+      alter vc2_0 0
+   end
+   plot dc1.i(eout1) dc2.i(eout1) dc3.i(eout1) dc4.i(eout1) ; output current of idac1
+   plot dc1.i(eout2) dc2.i(eout2) dc3.i(eout2) dc4.i(eout2) ; output current of idac2
+
+*   wrdata $output_str dc1.i(eout1) dc2.i(eout1) dc3.i(eout1) dc4.i(eout1) dc1.i(eout2) dc2.i(eout2)
+*+ dc3.i(eout2) dc4.i(eout2)
+.endc
+
+
+**** end user architecture code
+**.ends
+
+* expanding   symbol:  mirror_p.sym # of pins=8
+** sym_path: /foss/designs/ttsky25a_minimosbius/xschem/mirror_p.sym
+** sch_path: /foss/designs/ttsky25a_minimosbius/xschem/mirror_p.sch
+.subckt mirror_p VAPWR VDPWR ibias iout_1 iout_2 ictrl_1[1] ictrl_1[0] ictrl_2[1] ictrl_2[0] GND
+*.iopin ibias
+*.iopin iout_1
+*.ipin ictrl_1[1],ictrl_1[0]
+*.ipin ictrl_2[1],ictrl_2[0]
+*.iopin iout_2
+*.iopin VAPWR
+*.iopin VDPWR
+*.iopin GND
+x4 GND VDPWR VAPWR ictrl_1[0] i1_1x iout_1 tt_asw_3v3
+x5 GND VDPWR VAPWR ictrl_1[1] i1_2x iout_1 tt_asw_3v3
+x1 GND VDPWR VAPWR ictrl_2[0] i2_1x iout_2 tt_asw_3v3
+x2 GND VDPWR VAPWR ictrl_2[1] i2_2x iout_2 tt_asw_3v3
+XM3 iout_1 ibias VAPWR VAPWR sky130_fd_pr__pfet_g5v0d10v5 L=1 W=30 nf=6 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM4 ibias ibias VAPWR VAPWR sky130_fd_pr__pfet_g5v0d10v5 L=1 W=30 nf=6 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM5 i1_1x ibias VAPWR VAPWR sky130_fd_pr__pfet_g5v0d10v5 L=1 W=30 nf=6 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM7 i1_2x ibias VAPWR VAPWR sky130_fd_pr__pfet_g5v0d10v5 L=1 W=60 nf=12 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM1 iout_2 ibias VAPWR VAPWR sky130_fd_pr__pfet_g5v0d10v5 L=1 W=30 nf=6 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM2 i2_1x ibias VAPWR VAPWR sky130_fd_pr__pfet_g5v0d10v5 L=1 W=30 nf=6 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM6 i2_2x ibias VAPWR VAPWR sky130_fd_pr__pfet_g5v0d10v5 L=1 W=60 nf=12 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+.ends
+
+
+* expanding   symbol:  tt_asw_3v3.sym # of pins=6
+** sym_path: /foss/designs/ttsky25a_minimosbius/xschem/tt_asw_3v3.sym
+** sch_path: /foss/designs/ttsky25a_minimosbius/xschem/tt_asw_3v3.sch
+.subckt tt_asw_3v3 VGND VDPWR VAPWR ctrl mod bus
+*.iopin mod
+*.iopin bus
+*.ipin ctrl
+*.iopin VGND
+*.iopin VDPWR
+*.iopin VAPWR
+XM1 tgon_n net2 VAPWR VAPWR sky130_fd_pr__pfet_g5v0d10v5 L=0.5 W=0.84 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM2 tgon_n net2 VGND VGND sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=0.42 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM3 tgon net1 VAPWR VAPWR sky130_fd_pr__pfet_g5v0d10v5 L=0.5 W=0.84 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM4 tgon net1 VGND VGND sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=0.42 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM5 bus tgon_n mod VAPWR sky130_fd_pr__pfet_g5v0d10v5 L=0.5 W=180 nf=18 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM6 bus tgon mod VGND sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=60 nf=12 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM7 ctrl_n ctrl VGND VGND sky130_fd_pr__nfet_01v8 L=0.15 W=0.42 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM8 ctrl_n ctrl VDPWR VDPWR sky130_fd_pr__pfet_01v8_hvt L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM9 net1 ctrl VGND VGND sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=0.42 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM10 net2 ctrl_n VGND VGND sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=0.42 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM11 net1 net2 net3 VAPWR sky130_fd_pr__pfet_g5v0d10v5 L=0.5 W=0.42 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM12 net2 net1 net4 VAPWR sky130_fd_pr__pfet_g5v0d10v5 L=0.5 W=0.42 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM13 net3 net1 VAPWR VAPWR sky130_fd_pr__pfet_g5v0d10v5 L=0.5 W=0.42 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM14 net4 net2 VAPWR VAPWR sky130_fd_pr__pfet_g5v0d10v5 L=0.5 W=0.42 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+.ends
+
+.GLOBAL GND
+.end

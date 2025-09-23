@@ -1,0 +1,24 @@
+library: JNW_GR07_SKY130A
+cell: JNW_GR07
+# Your name
+author: Anonymous
+# Your github username
+github: analogicus
+# Something funny and descriptive
+tagline: The answer is 42
+# Your email, if you so wish
+email: anon@anon.com
+# Your github site, usually <github username>.github.io
+url: analogicus.github.io
+doc:
+  # Make docs
+  libraries:
+  #   <library>:
+  #       - <cell>
+  #       - <cell>
+  JNW_GR07_SKY130A:
+      - JNW_GR07
+      - temperature_to_current_tord
+sim:
+  # <simdir>: command
+  temperature_to_current_tord: make typical && make summary

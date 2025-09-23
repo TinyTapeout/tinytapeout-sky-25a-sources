@@ -1,0 +1,63 @@
+name: gds
+
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  gds:
+    runs-on: ubuntu-24.04
+    steps:
+      - name: checkout repo
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+
+      - name: Build GDS
+        uses: TinyTapeout/tt-gds-action@ttsky25a
+        with:
+          pdk: sky130
+          tools-ref: ttsky25a
+        #env:
+          #GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}  # ✅ Pass token here
+
+  precheck:
+    needs: gds
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Run Tiny Tapeout Precheck
+        uses: TinyTapeout/tt-gds-action/precheck@ttsky25a
+        with:
+          pdk: sky130
+          tools-ref: ttsky25a
+        #env:
+          #GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}  # ✅ Add here too
+
+  gl_test:
+    needs: gds
+    runs-on: ubuntu-24.04
+    steps:
+      - name: checkout repo
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+
+      - name: GL test
+        uses: TinyTapeout/tt-gds-action/gl_test@ttsky25a
+        with:
+          pdk: sky130
+        #env:
+          #GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}  # ✅ And here
+
+  viewer:
+    needs: gds
+    runs-on: ubuntu-24.04
+    permissions:
+      pages: write
+      id-token: write
+    steps:
+      - uses: TinyTapeout/tt-gds-action/viewer@ttsky25a
+        with:
+          pdk: sky130
+        #env:
+          #GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}  # ✅ And here if needed

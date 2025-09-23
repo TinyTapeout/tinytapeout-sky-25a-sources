@@ -1,0 +1,43 @@
+name: gds
+
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  gds:
+    runs-on: ubuntu-24.04
+    steps:
+      - name: checkout repo
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+
+      - name: Create and publish the GDS artifact
+        uses: TinyTapeout/tt-gds-action/custom_gds@ttsky25a
+        with:
+          top_module: tt_um_rebelmike_register
+          gds_path: gds/tt_um_rebelmike_register.gds
+          lef_path: lef/tt_um_rebelmike_register.lef
+          verilog_path: src/project.v
+
+  precheck:
+    needs: gds
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Run Tiny Tapeout Precheck
+        uses: TinyTapeout/tt-gds-action/precheck@ttsky25a
+        with:
+          pdk: sky130
+          tools-ref: ttsky25a
+
+  viewer:
+    needs: gds
+    runs-on: ubuntu-24.04
+    permissions:
+      pages: write      # to deploy to Pages
+      id-token: write   # to verify the deployment originates from an appropriate source
+    steps:
+      - uses: TinyTapeout/tt-gds-action/viewer@ttsky25a
+        with:
+          pdk: sky130

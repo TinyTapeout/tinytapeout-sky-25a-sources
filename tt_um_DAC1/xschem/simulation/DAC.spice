@@ -1,0 +1,17 @@
+** sch_path: /home/ttuser/tt10-DAC-main/xschem/DAC.sch
+.subckt DAC D3 D2 D0 D1 Vref OUT VDD VSS
+*.PININFO D0:I D1:I D2:I D3:I Vref:B OUT:O VDD:B VSS:B
+XR3 net5 Vref VSS sky130_fd_pr__res_xhigh_po_0p35 L=16 mult=1 m=1
+XR4 G net5 VSS sky130_fd_pr__res_xhigh_po_0p35 L=16 mult=1 m=1
+XR5 VDD OUT VSS sky130_fd_pr__res_xhigh_po_0p69 L=1.75 mult=1 m=1
+XM6 OUT D0 net4 VSS sky130_fd_pr__nfet_01v8_lvt L=0.18 W=6 nf=3 m=1
+XM1 OUT D1 net1 VSS sky130_fd_pr__nfet_01v8_lvt L=0.18 W=6 nf=3 m=1
+XM2 OUT D2 net2 VSS sky130_fd_pr__nfet_01v8_lvt L=0.18 W=6 nf=3 m=1
+XM3 OUT D3 net3 VSS sky130_fd_pr__nfet_01v8_lvt L=0.18 W=6 nf=3 m=1
+XM4 G G VSS VSS sky130_fd_pr__nfet_01v8_lvt L=0.18 W=8 nf=3 m=1
+XM5 net4 G VSS VSS sky130_fd_pr__nfet_01v8_lvt L=0.18 W=8 nf=3 m=1
+XM7 net1 G VSS VSS sky130_fd_pr__nfet_01v8_lvt L=0.18 W=16 nf=6 m=1
+XM8 net2 G VSS VSS sky130_fd_pr__nfet_01v8_lvt L=0.18 W=33 nf=12 m=1
+XM9 net3 G VSS VSS sky130_fd_pr__nfet_01v8_lvt L=0.18 W=69 nf=24 m=1
+.ends
+.end

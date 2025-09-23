@@ -1,0 +1,214 @@
+* NGSPICE file created from boosted_tiq_adc_7.ext - technology: sky130A
+
+.subckt sky130_fd_pr__pfet_01v8_TH65V5 a_n73_n100# w_n109_n162# a_15_n100# a_n15_n126#
+X0 a_15_n100# a_n15_n126# a_n73_n100# w_n109_n162# sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=0.15
+.ends
+
+.subckt sky130_fd_pr__nfet_01v8_PNPQML a_15_n42# a_n15_n68# a_n73_n42# VSUBS
+X0 a_15_n42# a_n15_n68# a_n73_n42# VSUBS sky130_fd_pr__nfet_01v8 ad=0.1218 pd=1.42 as=0.1218 ps=1.42 w=0.42 l=0.15
+.ends
+
+.subckt inverter_p1_n0o42 a_n80_136# li_100_114# w_n36_502# sky130_fd_pr__pfet_01v8_TH65V5_0/VSUBS
+Xsky130_fd_pr__pfet_01v8_TH65V5_0 w_n36_502# w_n36_502# li_100_114# a_n80_136# sky130_fd_pr__pfet_01v8_TH65V5
+Xsky130_fd_pr__nfet_01v8_PNPQML_0 li_100_114# a_n80_136# sky130_fd_pr__pfet_01v8_TH65V5_0/VSUBS
++ sky130_fd_pr__pfet_01v8_TH65V5_0/VSUBS sky130_fd_pr__nfet_01v8_PNPQML
+.ends
+
+.subckt gain_stage in out VDPWR VGND
+Xinverter_p1_n0o42_0 in inverter_p1_n0o42_1/a_n80_136# VDPWR VGND inverter_p1_n0o42
+Xinverter_p1_n0o42_1 inverter_p1_n0o42_1/a_n80_136# inverter_p1_n0o42_2/a_n80_136#
++ VDPWR VGND inverter_p1_n0o42
+Xinverter_p1_n0o42_2 inverter_p1_n0o42_2/a_n80_136# out VDPWR VGND inverter_p1_n0o42
+.ends
+
+.subckt gain_stage_7 gain_stage_5/VDPWR gain_stage_3/out gain_stage_6/VDPWR gain_stage_0/out
++ gain_stage_4/in gain_stage_1/in gain_stage_4/out gain_stage_1/out gain_stage_3/in
++ gain_stage_5/out gain_stage_6/in gain_stage_0/in gain_stage_2/out gain_stage_0/VDPWR
++ gain_stage_1/VDPWR gain_stage_2/VDPWR gain_stage_5/in gain_stage_6/VGND gain_stage_6/out
++ gain_stage_3/VDPWR gain_stage_2/in gain_stage_4/VDPWR
+Xgain_stage_0 gain_stage_0/in gain_stage_0/out gain_stage_0/VDPWR gain_stage_6/VGND
++ gain_stage
+Xgain_stage_1 gain_stage_1/in gain_stage_1/out gain_stage_1/VDPWR gain_stage_6/VGND
++ gain_stage
+Xgain_stage_2 gain_stage_2/in gain_stage_2/out gain_stage_2/VDPWR gain_stage_6/VGND
++ gain_stage
+Xgain_stage_3 gain_stage_3/in gain_stage_3/out gain_stage_3/VDPWR gain_stage_6/VGND
++ gain_stage
+Xgain_stage_4 gain_stage_4/in gain_stage_4/out gain_stage_4/VDPWR gain_stage_6/VGND
++ gain_stage
+Xgain_stage_5 gain_stage_5/in gain_stage_5/out gain_stage_5/VDPWR gain_stage_6/VGND
++ gain_stage
+Xgain_stage_6 gain_stage_6/in gain_stage_6/out gain_stage_6/VDPWR gain_stage_6/VGND
++ gain_stage
+.ends
+
+.subckt sky130_fd_pr__pfet_01v8_WGHLR5 a_n111_n1056# a_15_n1000# a_n173_n1000# a_111_n1000#
++ a_n81_n1000# w_n209_n1062#
+X0 a_111_n1000# a_n111_n1056# a_15_n1000# w_n209_n1062# sky130_fd_pr__pfet_01v8 ad=3.1 pd=20.62 as=1.65 ps=10.33 w=10 l=0.15
+X1 a_n81_n1000# a_n111_n1056# a_n173_n1000# w_n209_n1062# sky130_fd_pr__pfet_01v8 ad=1.65 pd=10.33 as=3.1 ps=20.62 w=10 l=0.15
+X2 a_15_n1000# a_n111_n1056# a_n81_n1000# w_n209_n1062# sky130_fd_pr__pfet_01v8 ad=1.65 pd=10.33 as=1.65 ps=10.33 w=10 l=0.15
+.ends
+
+.subckt sky130_fd_pr__nfet_01v8_PD6K7A a_n73_n47# a_15_n47# a_n15_n73# VSUBS
+X0 a_15_n47# a_n15_n73# a_n73_n47# VSUBS sky130_fd_pr__nfet_01v8 ad=0.1363 pd=1.52 as=0.1363 ps=1.52 w=0.47 l=0.15
+.ends
+
+.subckt inverter_p90_n0o47 li_n396_170# w_n592_198# sky130_fd_pr__pfet_01v8_WGHLR5_2/VSUBS
++ w_n540_2312# a_n592_170#
+Xsky130_fd_pr__pfet_01v8_WGHLR5_0 a_n592_170# w_n540_2312# w_n540_2312# li_n396_170#
++ li_n396_170# w_n540_2312# sky130_fd_pr__pfet_01v8_WGHLR5
+Xsky130_fd_pr__pfet_01v8_WGHLR5_1 a_n592_170# li_n396_170# li_n396_170# w_n540_2312#
++ w_n540_2312# w_n540_2312# sky130_fd_pr__pfet_01v8_WGHLR5
+Xsky130_fd_pr__pfet_01v8_WGHLR5_2 a_n592_170# li_n396_170# li_n396_170# w_n540_2312#
++ w_n540_2312# w_n540_2312# sky130_fd_pr__pfet_01v8_WGHLR5
+Xsky130_fd_pr__nfet_01v8_PD6K7A_0 sky130_fd_pr__pfet_01v8_WGHLR5_2/VSUBS li_n396_170#
++ a_n592_170# sky130_fd_pr__pfet_01v8_WGHLR5_2/VSUBS sky130_fd_pr__nfet_01v8_PD6K7A
+.ends
+
+.subckt sky130_fd_pr__pfet_01v8_WELYR5 a_n125_n1000# a_63_n1000# a_n33_n1000# w_n161_n1062#
++ a_n63_n1056#
+X0 a_63_n1000# a_n63_n1056# a_n33_n1000# w_n161_n1062# sky130_fd_pr__pfet_01v8 ad=3.1 pd=20.62 as=1.65 ps=10.33 w=10 l=0.15
+X1 a_n33_n1000# a_n63_n1056# a_n125_n1000# w_n161_n1062# sky130_fd_pr__pfet_01v8 ad=1.65 pd=10.33 as=3.1 ps=20.62 w=10 l=0.15
+.ends
+
+.subckt sky130_fd_pr__nfet_01v8_QDUU3W a_n73_n100# a_15_n100# a_n15_n126# VSUBS
+X0 a_15_n100# a_n15_n126# a_n73_n100# VSUBS sky130_fd_pr__nfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=0.15
+.ends
+
+.subckt inverter_p40_n1 w_n248_302# sky130_fd_pr__pfet_01v8_WELYR5_1/VSUBS li_n52_276#
++ w_466_302# w_28_300# a_n248_276#
+Xsky130_fd_pr__pfet_01v8_WELYR5_0 w_28_300# w_28_300# li_n52_276# w_28_300# a_n248_276#
++ sky130_fd_pr__pfet_01v8_WELYR5
+Xsky130_fd_pr__pfet_01v8_WELYR5_1 w_28_300# w_28_300# li_n52_276# w_28_300# a_n248_276#
++ sky130_fd_pr__pfet_01v8_WELYR5
+Xsky130_fd_pr__nfet_01v8_QDUU3W_0 sky130_fd_pr__pfet_01v8_WELYR5_1/VSUBS li_n52_276#
++ a_n248_276# sky130_fd_pr__pfet_01v8_WELYR5_1/VSUBS sky130_fd_pr__nfet_01v8_QDUU3W
+.ends
+
+.subckt sky130_fd_pr__pfet_01v8_N885V5 a_63_n800# w_n161_n862# a_n33_n800# a_n63_n856#
++ a_n125_n800#
+X0 a_n33_n800# a_n63_n856# a_n125_n800# w_n161_n862# sky130_fd_pr__pfet_01v8 ad=1.32 pd=8.33 as=2.48 ps=16.62 w=8 l=0.15
+X1 a_63_n800# a_n63_n856# a_n33_n800# w_n161_n862# sky130_fd_pr__pfet_01v8 ad=2.48 pd=16.62 as=1.32 ps=8.33 w=8 l=0.15
+.ends
+
+.subckt sky130_fd_pr__nfet_01v8_PZUUQ8 a_15_n150# a_n15_n176# a_n73_n150# VSUBS
+X0 a_15_n150# a_n15_n176# a_n73_n150# VSUBS sky130_fd_pr__nfet_01v8 ad=0.435 pd=3.58 as=0.435 ps=3.58 w=1.5 l=0.15
+.ends
+
+.subckt inverter_p16_n1o5 w_306_388# sky130_fd_pr__pfet_01v8_N885V5_0/VSUBS a_n88_364#
++ li_100_330# w_n44_2108#
+Xsky130_fd_pr__pfet_01v8_N885V5_0 w_n44_2108# w_n44_2108# li_100_330# a_n88_364# w_n44_2108#
++ sky130_fd_pr__pfet_01v8_N885V5
+Xsky130_fd_pr__nfet_01v8_PZUUQ8_0 li_100_330# a_n88_364# sky130_fd_pr__pfet_01v8_N885V5_0/VSUBS
++ sky130_fd_pr__pfet_01v8_N885V5_0/VSUBS sky130_fd_pr__nfet_01v8_PZUUQ8
+.ends
+
+.subckt sky130_fd_pr__nfet_01v8_CTSNWR a_63_n667# a_n33_n667# a_n63_n693# a_n125_n667#
++ VSUBS
+X0 a_63_n667# a_n63_n693# a_n33_n667# VSUBS sky130_fd_pr__nfet_01v8 ad=2.0677 pd=13.96 as=1.10055 ps=7 w=6.67 l=0.15
+X1 a_n33_n667# a_n63_n693# a_n125_n667# VSUBS sky130_fd_pr__nfet_01v8 ad=1.10055 pd=7 as=2.0677 ps=13.96 w=6.67 l=0.15
+.ends
+
+.subckt sky130_fd_pr__pfet_01v8_FCTDLW a_n73_n47# a_15_n47# a_n15_n73# w_n109_n109#
+X0 a_15_n47# a_n15_n73# a_n73_n47# w_n109_n109# sky130_fd_pr__pfet_01v8 ad=0.1363 pd=1.52 as=0.1363 ps=1.52 w=0.47 l=0.15
+.ends
+
+.subckt inverter_p0o47_n40 a_0_1460# li_108_1426# sky130_fd_pr__pfet_01v8_FCTDLW_0/VSUBS
++ w_n36_1490#
+Xsky130_fd_pr__nfet_01v8_CTSNWR_0 sky130_fd_pr__pfet_01v8_FCTDLW_0/VSUBS li_108_1426#
++ a_0_1460# sky130_fd_pr__pfet_01v8_FCTDLW_0/VSUBS sky130_fd_pr__pfet_01v8_FCTDLW_0/VSUBS
++ sky130_fd_pr__nfet_01v8_CTSNWR
+Xsky130_fd_pr__nfet_01v8_CTSNWR_1 sky130_fd_pr__pfet_01v8_FCTDLW_0/VSUBS li_108_1426#
++ a_0_1460# sky130_fd_pr__pfet_01v8_FCTDLW_0/VSUBS sky130_fd_pr__pfet_01v8_FCTDLW_0/VSUBS
++ sky130_fd_pr__nfet_01v8_CTSNWR
+Xsky130_fd_pr__nfet_01v8_CTSNWR_2 sky130_fd_pr__pfet_01v8_FCTDLW_0/VSUBS li_108_1426#
++ a_0_1460# sky130_fd_pr__pfet_01v8_FCTDLW_0/VSUBS sky130_fd_pr__pfet_01v8_FCTDLW_0/VSUBS
++ sky130_fd_pr__nfet_01v8_CTSNWR
+Xsky130_fd_pr__pfet_01v8_FCTDLW_0 w_n36_1490# li_108_1426# a_0_1460# w_n36_1490# sky130_fd_pr__pfet_01v8_FCTDLW
+.ends
+
+.subckt sky130_fd_pr__nfet_01v8_V2VUT3 a_n33_n250# a_n125_n250# a_63_n250# a_n63_n276#
++ VSUBS
+X0 a_n33_n250# a_n63_n276# a_n125_n250# VSUBS sky130_fd_pr__nfet_01v8 ad=0.4125 pd=2.83 as=0.775 ps=5.62 w=2.5 l=0.15
+X1 a_63_n250# a_n63_n276# a_n33_n250# VSUBS sky130_fd_pr__nfet_01v8 ad=0.775 pd=5.62 as=0.4125 ps=2.83 w=2.5 l=0.15
+.ends
+
+.subckt sky130_fd_pr__pfet_01v8_7QKTNL a_n63_n806# a_63_n750# a_n33_n750# w_n161_n812#
++ a_n125_n750#
+X0 a_63_n750# a_n63_n806# a_n33_n750# w_n161_n812# sky130_fd_pr__pfet_01v8 ad=2.325 pd=15.62 as=1.2375 ps=7.83 w=7.5 l=0.15
+X1 a_n33_n750# a_n63_n806# a_n125_n750# w_n161_n812# sky130_fd_pr__pfet_01v8 ad=1.2375 pd=7.83 as=2.325 ps=15.62 w=7.5 l=0.15
+.ends
+
+.subckt inverter_p15_n5 a_n80_626# w_n80_656# sky130_fd_pr__pfet_01v8_7QKTNL_0/VSUBS
++ li_108_592#
+Xsky130_fd_pr__nfet_01v8_V2VUT3_0 li_108_592# sky130_fd_pr__pfet_01v8_7QKTNL_0/VSUBS
++ sky130_fd_pr__pfet_01v8_7QKTNL_0/VSUBS a_n80_626# sky130_fd_pr__pfet_01v8_7QKTNL_0/VSUBS
++ sky130_fd_pr__nfet_01v8_V2VUT3
+Xsky130_fd_pr__pfet_01v8_7QKTNL_0 a_n80_626# w_n80_656# li_108_592# w_n80_656# w_n80_656#
++ sky130_fd_pr__pfet_01v8_7QKTNL
+.ends
+
+.subckt sky130_fd_pr__nfet_01v8_QQ9VTX a_63_n450# a_n63_n476# a_n33_n450# a_n125_n450#
++ VSUBS
+X0 a_63_n450# a_n63_n476# a_n33_n450# VSUBS sky130_fd_pr__nfet_01v8 ad=1.395 pd=9.62 as=0.7425 ps=4.83 w=4.5 l=0.15
+X1 a_n33_n450# a_n63_n476# a_n125_n450# VSUBS sky130_fd_pr__nfet_01v8 ad=0.7425 pd=4.83 as=1.395 ps=9.62 w=4.5 l=0.15
+.ends
+
+.subckt sky130_fd_pr__pfet_01v8_UCB5V5 a_15_n200# a_n15_n226# a_n73_n200# w_n109_n262#
+X0 a_15_n200# a_n15_n226# a_n73_n200# w_n109_n262# sky130_fd_pr__pfet_01v8 ad=0.58 pd=4.58 as=0.58 ps=4.58 w=2 l=0.15
+.ends
+
+.subckt inverter_p2_n18 w_n36_1130# a_0_1026# a_662_3294# li_108_992# sky130_fd_pr__pfet_01v8_UCB5V5_0/VSUBS
+Xsky130_fd_pr__nfet_01v8_QQ9VTX_0 sky130_fd_pr__pfet_01v8_UCB5V5_0/VSUBS a_0_1026#
++ li_108_992# sky130_fd_pr__pfet_01v8_UCB5V5_0/VSUBS sky130_fd_pr__pfet_01v8_UCB5V5_0/VSUBS
++ sky130_fd_pr__nfet_01v8_QQ9VTX
+Xsky130_fd_pr__nfet_01v8_QQ9VTX_1 sky130_fd_pr__pfet_01v8_UCB5V5_0/VSUBS a_0_1026#
++ li_108_992# sky130_fd_pr__pfet_01v8_UCB5V5_0/VSUBS sky130_fd_pr__pfet_01v8_UCB5V5_0/VSUBS
++ sky130_fd_pr__nfet_01v8_QQ9VTX
+Xsky130_fd_pr__pfet_01v8_UCB5V5_0 li_108_992# a_0_1026# w_n36_1130# w_n36_1130# sky130_fd_pr__pfet_01v8_UCB5V5
+.ends
+
+.subckt sky130_fd_pr__pfet_01v8_VGLYR5 a_n73_n700# w_n109_n762# a_15_n700# a_n15_n726#
+X0 a_15_n700# a_n15_n726# a_n73_n700# w_n109_n762# sky130_fd_pr__pfet_01v8 ad=2.03 pd=14.58 as=2.03 ps=14.58 w=7 l=0.15
+.ends
+
+.subckt inverter_p7_n10 sky130_fd_pr__pfet_01v8_VGLYR5_0/VSUBS a_0_626# li_108_576#
++ w_n36_656#
+Xsky130_fd_pr__nfet_01v8_V2VUT3_0 li_108_576# sky130_fd_pr__pfet_01v8_VGLYR5_0/VSUBS
++ sky130_fd_pr__pfet_01v8_VGLYR5_0/VSUBS a_0_626# sky130_fd_pr__pfet_01v8_VGLYR5_0/VSUBS
++ sky130_fd_pr__nfet_01v8_V2VUT3
+Xsky130_fd_pr__nfet_01v8_V2VUT3_1 li_108_576# sky130_fd_pr__pfet_01v8_VGLYR5_0/VSUBS
++ sky130_fd_pr__pfet_01v8_VGLYR5_0/VSUBS a_0_626# sky130_fd_pr__pfet_01v8_VGLYR5_0/VSUBS
++ sky130_fd_pr__nfet_01v8_V2VUT3
+Xsky130_fd_pr__pfet_01v8_VGLYR5_0 w_n36_656# w_n36_656# li_108_576# a_0_626# sky130_fd_pr__pfet_01v8_VGLYR5
+.ends
+
+.subckt tiq_adc_7 m1_1632_3018# m1_1632_2570# m1_1632_1262# m1_1632_3626# w_3894_3016#
++ m1_1632_4234# m1_1634_6# m1_1632_2126# inverter_p7_n10_0/sky130_fd_pr__pfet_01v8_VGLYR5_0/VSUBS
++ m1_1632_1362#
+Xinverter_p90_n0o47_0 m1_1634_6# w_3894_3016# inverter_p7_n10_0/sky130_fd_pr__pfet_01v8_VGLYR5_0/VSUBS
++ w_3894_3016# m1_1632_1262# inverter_p90_n0o47
+Xinverter_p40_n1_0 w_3894_3016# inverter_p7_n10_0/sky130_fd_pr__pfet_01v8_VGLYR5_0/VSUBS
++ m1_1632_1362# w_3894_3016# w_3894_3016# m1_1632_1262# inverter_p40_n1
+Xinverter_p16_n1o5_0 w_3894_3016# inverter_p7_n10_0/sky130_fd_pr__pfet_01v8_VGLYR5_0/VSUBS
++ m1_1632_1262# m1_1632_2126# w_3894_3016# inverter_p16_n1o5
+Xinverter_p0o47_n40_0 m1_1632_1262# m1_1632_4234# inverter_p7_n10_0/sky130_fd_pr__pfet_01v8_VGLYR5_0/VSUBS
++ w_3894_3016# inverter_p0o47_n40
+Xinverter_p15_n5_0 m1_1632_1262# w_3894_3016# inverter_p7_n10_0/sky130_fd_pr__pfet_01v8_VGLYR5_0/VSUBS
++ m1_1632_2570# inverter_p15_n5
+Xinverter_p2_n18_0 w_3894_3016# m1_1632_1262# w_3894_3016# m1_1632_3626# inverter_p7_n10_0/sky130_fd_pr__pfet_01v8_VGLYR5_0/VSUBS
++ inverter_p2_n18
+Xinverter_p7_n10_0 inverter_p7_n10_0/sky130_fd_pr__pfet_01v8_VGLYR5_0/VSUBS m1_1632_1262#
++ m1_1632_3018# w_3894_3016# inverter_p7_n10
+.ends
+
+.subckt boosted_tiq_adc_7 VDPWR VGND Vin t0 t1 t2 t3 t4 t5 t6
+Xgain_stage_7_0 VDPWR t3 VDPWR t0 gain_stage_7_0/gain_stage_4/in gain_stage_7_0/gain_stage_1/in
++ t4 t1 gain_stage_7_0/gain_stage_3/in t5 gain_stage_7_0/gain_stage_6/in gain_stage_7_0/gain_stage_0/in
++ t2 VDPWR VDPWR VDPWR gain_stage_7_0/gain_stage_5/in VGND t6 VDPWR gain_stage_7_0/gain_stage_2/in
++ VDPWR gain_stage_7
+Xtiq_adc_7_0 gain_stage_7_0/gain_stage_2/in gain_stage_7_0/gain_stage_3/in Vin gain_stage_7_0/gain_stage_1/in
++ VDPWR gain_stage_7_0/gain_stage_0/in gain_stage_7_0/gain_stage_6/in gain_stage_7_0/gain_stage_4/in
++ VGND gain_stage_7_0/gain_stage_5/in tiq_adc_7
+.ends
+

@@ -1,0 +1,5 @@
+** sch_path: /foss/designs/analog-circuit-design/sky25a-TIQ_ADC/xschem/encoder_xschem.sch
+.subckt encoder_xschem clk t0 t1 t2 t3 t4 t5 t6 o2 o1 o0
+*.PININFO clk:I t0:I t1:I t2:I t3:I t4:I t5:I t6:I o2:O o1:O o0:O
+A1 [ clk t0 t1 t2 t3 t4 t5 t6 ] [ o0 o1 o2 ] encoder
+.ends

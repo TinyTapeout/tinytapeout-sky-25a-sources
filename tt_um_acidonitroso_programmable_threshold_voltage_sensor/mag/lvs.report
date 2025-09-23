@@ -1,0 +1,772 @@
+
+Circuit 1 cell sky130_fd_pr__res_high_po_0p35 and Circuit 2 cell sky130_fd_pr__res_high_po_0p35 are black boxes.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__res_high_po_0p35  |Circuit 2: sky130_fd_pr__res_high_po_0p35  
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__res_high_po_0p35 and sky130_fd_pr__res_high_po_0p35 are equivalent.
+
+Circuit 1 cell sky130_fd_pr__pfet_01v8_lvt and Circuit 2 cell sky130_fd_pr__pfet_01v8_lvt are black boxes.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__pfet_01v8_lvt     |Circuit 2: sky130_fd_pr__pfet_01v8_lvt     
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__pfet_01v8_lvt and sky130_fd_pr__pfet_01v8_lvt are equivalent.
+
+Circuit 1 cell sky130_fd_pr__nfet_01v8_lvt and Circuit 2 cell sky130_fd_pr__nfet_01v8_lvt are black boxes.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__nfet_01v8_lvt     |Circuit 2: sky130_fd_pr__nfet_01v8_lvt     
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__nfet_01v8_lvt and sky130_fd_pr__nfet_01v8_lvt are equivalent.
+
+Circuit 1 cell sky130_fd_pr__pfet_01v8_hvt and Circuit 2 cell sky130_fd_pr__pfet_01v8_hvt are black boxes.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__pfet_01v8_hvt     |Circuit 2: sky130_fd_pr__pfet_01v8_hvt     
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__pfet_01v8_hvt and sky130_fd_pr__pfet_01v8_hvt are equivalent.
+
+Circuit 1 cell sky130_fd_pr__nfet_01v8 and Circuit 2 cell sky130_fd_pr__nfet_01v8 are black boxes.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__nfet_01v8         |Circuit 2: sky130_fd_pr__nfet_01v8         
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__nfet_01v8 and sky130_fd_pr__nfet_01v8 are equivalent.
+
+Subcircuit summary:
+Circuit 1: sky130_fd_sc_hd__decap_8        |Circuit 2: sky130_fd_sc_hd__decap_8        
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_01v8_hvt (1)            |sky130_fd_pr__pfet_01v8_hvt (1)            
+sky130_fd_pr__nfet_01v8 (1)                |sky130_fd_pr__nfet_01v8 (1)                
+Number of devices: 2                       |Number of devices: 2                       
+Number of nets: 4                          |Number of nets: 4                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__decap_8        |Circuit 2: sky130_fd_sc_hd__decap_8        
+-------------------------------------------|-------------------------------------------
+VPB                                        |VPB                                        
+VNB                                        |VNB                                        
+VPWR                                       |VPWR                                       
+VGND                                       |VGND                                       
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__decap_8 and sky130_fd_sc_hd__decap_8 are equivalent.
+
+Subcircuit summary:
+Circuit 1: sky130_fd_sc_hd__decap_4        |Circuit 2: sky130_fd_sc_hd__decap_4        
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_01v8_hvt (1)            |sky130_fd_pr__pfet_01v8_hvt (1)            
+sky130_fd_pr__nfet_01v8 (1)                |sky130_fd_pr__nfet_01v8 (1)                
+Number of devices: 2                       |Number of devices: 2                       
+Number of nets: 4                          |Number of nets: 4                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__decap_4        |Circuit 2: sky130_fd_sc_hd__decap_4        
+-------------------------------------------|-------------------------------------------
+VPB                                        |VPB                                        
+VNB                                        |VNB                                        
+VPWR                                       |VPWR                                       
+VGND                                       |VGND                                       
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__decap_4 and sky130_fd_sc_hd__decap_4 are equivalent.
+
+Class sky130_fd_sc_hd__clkbuf_4 (0):  Merged 6 parallel devices.
+Class sky130_fd_sc_hd__clkbuf_4 (1):  Merged 6 parallel devices.
+Subcircuit summary:
+Circuit 1: sky130_fd_sc_hd__clkbuf_4       |Circuit 2: sky130_fd_sc_hd__clkbuf_4       
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_01v8_hvt (5->2)         |sky130_fd_pr__pfet_01v8_hvt (5->2)         
+sky130_fd_pr__nfet_01v8 (5->2)             |sky130_fd_pr__nfet_01v8 (5->2)             
+Number of devices: 4                       |Number of devices: 4                       
+Number of nets: 7                          |Number of nets: 7                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__clkbuf_4       |Circuit 2: sky130_fd_sc_hd__clkbuf_4       
+-------------------------------------------|-------------------------------------------
+VPWR                                       |VPWR                                       
+X                                          |X                                          
+VPB                                        |VPB                                        
+A                                          |A                                          
+VGND                                       |VGND                                       
+VNB                                        |VNB                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__clkbuf_4 and sky130_fd_sc_hd__clkbuf_4 are equivalent.
+
+Subcircuit summary:
+Circuit 1: sky130_fd_sc_hd__decap_3        |Circuit 2: sky130_fd_sc_hd__decap_3        
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_01v8_hvt (1)            |sky130_fd_pr__pfet_01v8_hvt (1)            
+sky130_fd_pr__nfet_01v8 (1)                |sky130_fd_pr__nfet_01v8 (1)                
+Number of devices: 2                       |Number of devices: 2                       
+Number of nets: 4                          |Number of nets: 4                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__decap_3        |Circuit 2: sky130_fd_sc_hd__decap_3        
+-------------------------------------------|-------------------------------------------
+VPB                                        |VPB                                        
+VNB                                        |VNB                                        
+VPWR                                       |VPWR                                       
+VGND                                       |VGND                                       
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__decap_3 and sky130_fd_sc_hd__decap_3 are equivalent.
+
+Subcircuit summary:
+Circuit 1: sky130_fd_sc_hd__decap_6        |Circuit 2: sky130_fd_sc_hd__decap_6        
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_01v8_hvt (1)            |sky130_fd_pr__pfet_01v8_hvt (1)            
+sky130_fd_pr__nfet_01v8 (1)                |sky130_fd_pr__nfet_01v8 (1)                
+Number of devices: 2                       |Number of devices: 2                       
+Number of nets: 4                          |Number of nets: 4                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__decap_6        |Circuit 2: sky130_fd_sc_hd__decap_6        
+-------------------------------------------|-------------------------------------------
+VPB                                        |VPB                                        
+VNB                                        |VNB                                        
+VPWR                                       |VPWR                                       
+VGND                                       |VGND                                       
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__decap_6 and sky130_fd_sc_hd__decap_6 are equivalent.
+
+Circuit 2 cell sky130_ef_sc_hd__decap_12 is a black box; will not flatten Circuit 1
+
+Subcircuit pins:
+Circuit 1: sky130_ef_sc_hd__decap_12       |Circuit 2: sky130_ef_sc_hd__decap_12       
+-------------------------------------------|-------------------------------------------
+VGND                                       |VGND                                       
+VPWR                                       |VPWR                                       
+VPB                                        |VPB                                        
+VNB                                        |VNB                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_ef_sc_hd__decap_12 and sky130_ef_sc_hd__decap_12 are equivalent.
+
+Subcircuit summary:
+Circuit 1: sky130_fd_sc_hd__and3b_1        |Circuit 2: sky130_fd_sc_hd__and3b_1        
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__nfet_01v8 (5)                |sky130_fd_pr__nfet_01v8 (5)                
+sky130_fd_pr__pfet_01v8_hvt (5)            |sky130_fd_pr__pfet_01v8_hvt (5)            
+Number of devices: 10                      |Number of devices: 10                      
+Number of nets: 12                         |Number of nets: 12                         
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__and3b_1        |Circuit 2: sky130_fd_sc_hd__and3b_1        
+-------------------------------------------|-------------------------------------------
+VNB                                        |VNB                                        
+VPWR                                       |VPWR                                       
+VPB                                        |VPB                                        
+VGND                                       |VGND                                       
+X                                          |X                                          
+A_N                                        |A_N                                        
+C                                          |C                                          
+B                                          |B                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__and3b_1 and sky130_fd_sc_hd__and3b_1 are equivalent.
+
+Subcircuit summary:
+Circuit 1: sky130_fd_sc_hd__clkbuf_1       |Circuit 2: sky130_fd_sc_hd__clkbuf_1       
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_01v8_hvt (2)            |sky130_fd_pr__pfet_01v8_hvt (2)            
+sky130_fd_pr__nfet_01v8 (2)                |sky130_fd_pr__nfet_01v8 (2)                
+Number of devices: 4                       |Number of devices: 4                       
+Number of nets: 7                          |Number of nets: 7                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__clkbuf_1       |Circuit 2: sky130_fd_sc_hd__clkbuf_1       
+-------------------------------------------|-------------------------------------------
+VGND                                       |VGND                                       
+A                                          |A                                          
+VNB                                        |VNB                                        
+X                                          |X                                          
+VPWR                                       |VPWR                                       
+VPB                                        |VPB                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__clkbuf_1 and sky130_fd_sc_hd__clkbuf_1 are equivalent.
+
+Subcircuit summary:
+Circuit 1: sky130_fd_sc_hd__or3b_1         |Circuit 2: sky130_fd_sc_hd__or3b_1         
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__nfet_01v8 (5)                |sky130_fd_pr__nfet_01v8 (5)                
+sky130_fd_pr__pfet_01v8_hvt (5)            |sky130_fd_pr__pfet_01v8_hvt (5)            
+Number of devices: 10                      |Number of devices: 10                      
+Number of nets: 12                         |Number of nets: 12                         
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__or3b_1         |Circuit 2: sky130_fd_sc_hd__or3b_1         
+-------------------------------------------|-------------------------------------------
+VPWR                                       |VPWR                                       
+VGND                                       |VGND                                       
+VNB                                        |VNB                                        
+VPB                                        |VPB                                        
+X                                          |X                                          
+B                                          |B                                          
+A                                          |A                                          
+C_N                                        |C_N                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__or3b_1 and sky130_fd_sc_hd__or3b_1 are equivalent.
+
+Subcircuit summary:
+Circuit 1: sky130_fd_sc_hd__nor3b_1        |Circuit 2: sky130_fd_sc_hd__nor3b_1        
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__nfet_01v8 (4)                |sky130_fd_pr__nfet_01v8 (4)                
+sky130_fd_pr__pfet_01v8_hvt (4)            |sky130_fd_pr__pfet_01v8_hvt (4)            
+Number of devices: 8                       |Number of devices: 8                       
+Number of nets: 11                         |Number of nets: 11                         
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__nor3b_1        |Circuit 2: sky130_fd_sc_hd__nor3b_1        
+-------------------------------------------|-------------------------------------------
+VPWR                                       |VPWR                                       
+C_N                                        |C_N                                        
+A                                          |A                                          
+B                                          |B                                          
+Y                                          |Y                                          
+VGND                                       |VGND                                       
+VNB                                        |VNB                                        
+VPB                                        |VPB                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__nor3b_1 and sky130_fd_sc_hd__nor3b_1 are equivalent.
+
+Subcircuit summary:
+Circuit 1: sky130_fd_sc_hd__nand3b_1       |Circuit 2: sky130_fd_sc_hd__nand3b_1       
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_01v8_hvt (4)            |sky130_fd_pr__pfet_01v8_hvt (4)            
+sky130_fd_pr__nfet_01v8 (4)                |sky130_fd_pr__nfet_01v8 (4)                
+Number of devices: 8                       |Number of devices: 8                       
+Number of nets: 11                         |Number of nets: 11                         
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__nand3b_1       |Circuit 2: sky130_fd_sc_hd__nand3b_1       
+-------------------------------------------|-------------------------------------------
+A_N                                        |A_N                                        
+VGND                                       |VGND                                       
+B                                          |B                                          
+C                                          |C                                          
+VNB                                        |VNB                                        
+VPWR                                       |VPWR                                       
+VPB                                        |VPB                                        
+Y                                          |Y                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__nand3b_1 and sky130_fd_sc_hd__nand3b_1 are equivalent.
+
+Subcircuit summary:
+Circuit 1: sky130_fd_sc_hd__buf_1          |Circuit 2: sky130_fd_sc_hd__buf_1          
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_01v8_hvt (2)            |sky130_fd_pr__pfet_01v8_hvt (2)            
+sky130_fd_pr__nfet_01v8 (2)                |sky130_fd_pr__nfet_01v8 (2)                
+Number of devices: 4                       |Number of devices: 4                       
+Number of nets: 7                          |Number of nets: 7                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__buf_1          |Circuit 2: sky130_fd_sc_hd__buf_1          
+-------------------------------------------|-------------------------------------------
+VGND                                       |VGND                                       
+X                                          |X                                          
+VNB                                        |VNB                                        
+A                                          |A                                          
+VPWR                                       |VPWR                                       
+VPB                                        |VPB                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__buf_1 and sky130_fd_sc_hd__buf_1 are equivalent.
+
+Subcircuit summary:
+Circuit 1: sky130_fd_sc_hd__nand3_1        |Circuit 2: sky130_fd_sc_hd__nand3_1        
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_01v8_hvt (3)            |sky130_fd_pr__pfet_01v8_hvt (3)            
+sky130_fd_pr__nfet_01v8 (3)                |sky130_fd_pr__nfet_01v8 (3)                
+Number of devices: 6                       |Number of devices: 6                       
+Number of nets: 10                         |Number of nets: 10                         
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__nand3_1        |Circuit 2: sky130_fd_sc_hd__nand3_1        
+-------------------------------------------|-------------------------------------------
+VGND                                       |VGND                                       
+Y                                          |Y                                          
+A                                          |A                                          
+B                                          |B                                          
+C                                          |C                                          
+VPWR                                       |VPWR                                       
+VPB                                        |VPB                                        
+VNB                                        |VNB                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__nand3_1 and sky130_fd_sc_hd__nand3_1 are equivalent.
+
+Subcircuit summary:
+Circuit 1: sky130_fd_sc_hd__and3_1         |Circuit 2: sky130_fd_sc_hd__and3_1         
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_01v8_hvt (4)            |sky130_fd_pr__pfet_01v8_hvt (4)            
+sky130_fd_pr__nfet_01v8 (4)                |sky130_fd_pr__nfet_01v8 (4)                
+Number of devices: 8                       |Number of devices: 8                       
+Number of nets: 11                         |Number of nets: 11                         
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__and3_1         |Circuit 2: sky130_fd_sc_hd__and3_1         
+-------------------------------------------|-------------------------------------------
+VGND                                       |VGND                                       
+A                                          |A                                          
+B                                          |B                                          
+C                                          |C                                          
+X                                          |X                                          
+VNB                                        |VNB                                        
+VPWR                                       |VPWR                                       
+VPB                                        |VPB                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__and3_1 and sky130_fd_sc_hd__and3_1 are equivalent.
+
+Subcircuit summary:
+Circuit 1: sky130_fd_sc_hd__or3_1          |Circuit 2: sky130_fd_sc_hd__or3_1          
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_01v8_hvt (4)            |sky130_fd_pr__pfet_01v8_hvt (4)            
+sky130_fd_pr__nfet_01v8 (4)                |sky130_fd_pr__nfet_01v8 (4)                
+Number of devices: 8                       |Number of devices: 8                       
+Number of nets: 11                         |Number of nets: 11                         
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__or3_1          |Circuit 2: sky130_fd_sc_hd__or3_1          
+-------------------------------------------|-------------------------------------------
+VPB                                        |VPB                                        
+VGND                                       |VGND                                       
+VNB                                        |VNB                                        
+VPWR                                       |VPWR                                       
+X                                          |X                                          
+C                                          |C                                          
+A                                          |A                                          
+B                                          |B                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__or3_1 and sky130_fd_sc_hd__or3_1 are equivalent.
+
+Subcircuit summary:
+Circuit 1: sky130_fd_sc_hd__nor3_1         |Circuit 2: sky130_fd_sc_hd__nor3_1         
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_01v8_hvt (3)            |sky130_fd_pr__pfet_01v8_hvt (3)            
+sky130_fd_pr__nfet_01v8 (3)                |sky130_fd_pr__nfet_01v8 (3)                
+Number of devices: 6                       |Number of devices: 6                       
+Number of nets: 10                         |Number of nets: 10                         
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__nor3_1         |Circuit 2: sky130_fd_sc_hd__nor3_1         
+-------------------------------------------|-------------------------------------------
+Y                                          |Y                                          
+VGND                                       |VGND                                       
+VNB                                        |VNB                                        
+VPB                                        |VPB                                        
+A                                          |A                                          
+B                                          |B                                          
+C                                          |C                                          
+VPWR                                       |VPWR                                       
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__nor3_1 and sky130_fd_sc_hd__nor3_1 are equivalent.
+
+Class sky130_fd_sc_hd__clkbuf_2 (0):  Merged 2 parallel devices.
+Class sky130_fd_sc_hd__clkbuf_2 (1):  Merged 2 parallel devices.
+Subcircuit summary:
+Circuit 1: sky130_fd_sc_hd__clkbuf_2       |Circuit 2: sky130_fd_sc_hd__clkbuf_2       
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_01v8_hvt (3->2)         |sky130_fd_pr__pfet_01v8_hvt (3->2)         
+sky130_fd_pr__nfet_01v8 (3->2)             |sky130_fd_pr__nfet_01v8 (3->2)             
+Number of devices: 4                       |Number of devices: 4                       
+Number of nets: 7                          |Number of nets: 7                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__clkbuf_2       |Circuit 2: sky130_fd_sc_hd__clkbuf_2       
+-------------------------------------------|-------------------------------------------
+A                                          |A                                          
+VPWR                                       |VPWR                                       
+VPB                                        |VPB                                        
+VGND                                       |VGND                                       
+VNB                                        |VNB                                        
+X                                          |X                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__clkbuf_2 and sky130_fd_sc_hd__clkbuf_2 are equivalent.
+Flattening unmatched subcell sky130_fd_sc_hd__fill_2 in circuit decoder_p (1)(5 instances)
+Flattening unmatched subcell sky130_fd_sc_hd__fill_1 in circuit decoder_p (1)(13 instances)
+Flattening unmatched subcell sky130_fd_sc_hd__tapvpwrvgnd_1 in circuit decoder_p (1)(12 instances)
+
+Class decoder_p (0):  Merged 52 parallel devices.
+Class decoder_p (1):  Merged 52 parallel devices.
+Subcircuit summary:
+Circuit 1: decoder_p                       |Circuit 2: decoder_p                       
+-------------------------------------------|-------------------------------------------
+sky130_fd_sc_hd__decap_8 (5->1)            |sky130_fd_sc_hd__decap_8 (5->1)            
+sky130_fd_sc_hd__decap_4 (7->1)            |sky130_fd_sc_hd__decap_4 (7->1)            
+sky130_fd_sc_hd__clkbuf_4 (16)             |sky130_fd_sc_hd__clkbuf_4 (16)             
+sky130_fd_sc_hd__decap_3 (24->1)           |sky130_fd_sc_hd__decap_3 (24->1)           
+sky130_fd_sc_hd__decap_6 (4->1)            |sky130_fd_sc_hd__decap_6 (4->1)            
+sky130_ef_sc_hd__decap_12 (17->1)          |sky130_ef_sc_hd__decap_12 (17->1)          
+sky130_fd_sc_hd__and3b_1 (3)               |sky130_fd_sc_hd__and3b_1 (3)               
+sky130_fd_sc_hd__clkbuf_1 (8)              |sky130_fd_sc_hd__clkbuf_1 (8)              
+sky130_fd_sc_hd__or3b_1 (3)                |sky130_fd_sc_hd__or3b_1 (3)                
+sky130_fd_sc_hd__nor3b_1 (3)               |sky130_fd_sc_hd__nor3b_1 (3)               
+sky130_fd_sc_hd__nand3b_1 (3)              |sky130_fd_sc_hd__nand3b_1 (3)              
+sky130_fd_sc_hd__buf_1 (3)                 |sky130_fd_sc_hd__buf_1 (3)                 
+sky130_fd_sc_hd__nand3_1 (1)               |sky130_fd_sc_hd__nand3_1 (1)               
+sky130_fd_sc_hd__and3_1 (1)                |sky130_fd_sc_hd__and3_1 (1)                
+sky130_fd_sc_hd__or3_1 (1)                 |sky130_fd_sc_hd__or3_1 (1)                 
+sky130_fd_sc_hd__nor3_1 (1)                |sky130_fd_sc_hd__nor3_1 (1)                
+sky130_fd_sc_hd__clkbuf_2 (3)              |sky130_fd_sc_hd__clkbuf_2 (3)              
+Number of devices: 51                      |Number of devices: 51                      
+Number of nets: 51                         |Number of nets: 51                         
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: decoder_p                       |Circuit 2: decoder_p                       
+-------------------------------------------|-------------------------------------------
+in[2]                                      |in[2]                                      
+in[1]                                      |in[1]                                      
+in[0]                                      |in[0]                                      
+y_d[1]                                     |y_d[1]                                     
+y_d[2]                                     |y_d[2]                                     
+y_d[4]                                     |y_d[4]                                     
+y_d[0]                                     |y_d[0]                                     
+n_d[7]                                     |n_d[7]                                     
+y_d[6]                                     |y_d[6]                                     
+y_d[5]                                     |y_d[5]                                     
+y_d[3]                                     |y_d[3]                                     
+y_d[7]                                     |y_d[7]                                     
+n_d[0]                                     |n_d[0]                                     
+n_d[2]                                     |n_d[2]                                     
+n_d[1]                                     |n_d[1]                                     
+n_d[4]                                     |n_d[4]                                     
+n_d[6]                                     |n_d[6]                                     
+n_d[3]                                     |n_d[3]                                     
+n_d[5]                                     |n_d[5]                                     
+VGND                                       |VGND                                       
+VPWR                                       |VPWR                                       
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes decoder_p and decoder_p are equivalent.
+Flattening unmatched subcell ota in circuit analog (0)(1 instance)
+Flattening unmatched subcell vb2_part in circuit analog (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__res_high_po_0p35_MGTKQ5 in circuit analog (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__res_high_po_0p35_KC2364 in circuit analog (0)(1 instance)
+Flattening unmatched subcell inverter_primo in circuit analog (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_lvt_4Q3NH3 in circuit analog (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_lvt_648S5X in circuit analog (0)(1 instance)
+Flattening unmatched subcell vb3_part in circuit analog (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__res_high_po_0p35_MGTKQ5 in circuit analog (0)(2 instances)
+Flattening unmatched subcell vmirpmos in circuit analog (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__res_high_po_0p35_MGTKQ5 in circuit analog (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__res_high_po_0p35_KC2364 in circuit analog (0)(1 instance)
+Flattening unmatched subcell ingresso_ota in circuit analog (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_lvt_4QBKD3 in circuit analog (0)(3 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_lvt_648S5X in circuit analog (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_lvt_DJ7QE5 in circuit analog (0)(2 instances)
+Flattening unmatched subcell carico in circuit analog (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_lvt_4Q3NH3 in circuit analog (0)(4 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_lvt_648S5X in circuit analog (0)(4 instances)
+Flattening unmatched subcell inverter_fine in circuit analog (0)(2 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_lvt_DJ7QE5 in circuit analog (0)(2 instances)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_lvt_4QBKD3 in circuit analog (0)(2 instances)
+Flattening unmatched subcell vmirnmos in circuit analog (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__res_high_po_0p35_J32JWA in circuit analog (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__res_high_po_0p35_M898NC in circuit analog (0)(1 instance)
+Flattening unmatched subcell vb1_part in circuit analog (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__res_high_po_0p35_A5V4E5 in circuit analog (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__res_high_po_0p35_M898NC in circuit analog (0)(1 instance)
+Flattening unmatched subcell Matt in circuit analog (0)(1 instance)
+Flattening unmatched subcell pass_gate_MAGIC in circuit analog (0)(8 instances)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_lvt_4Q3NH3 in circuit analog (0)(8 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_lvt_648S5X in circuit analog (0)(8 instances)
+Flattening unmatched subcell partitore_MAGIC in circuit analog (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__res_high_po_0p35_3S7HW9 in circuit analog (0)(8 instances)
+
+Class analog (0):  Merged 32 parallel devices.
+Subcircuit summary:
+Circuit 1: analog                          |Circuit 2: analog                          
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__res_high_po_0p35 (18)        |sky130_fd_pr__res_high_po_0p35 (18)        
+sky130_fd_pr__pfet_01v8_lvt (46->18)       |sky130_fd_pr__pfet_01v8_lvt (18)           
+sky130_fd_pr__nfet_01v8_lvt (22->18)       |sky130_fd_pr__nfet_01v8_lvt (18)           
+Number of devices: 54                      |Number of devices: 54                      
+Number of nets: 44                         |Number of nets: 44                         
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: analog                          |Circuit 2: analog                          
+-------------------------------------------|-------------------------------------------
+y_d[0]                                     |y_d[0]                                     
+n_d[0]                                     |n_d[0]                                     
+y_d[2]                                     |y_d[2]                                     
+y_d[3]                                     |y_d[3]                                     
+y_d[4]                                     |y_d[4]                                     
+y_d[5]                                     |y_d[5]                                     
+y_d[6]                                     |y_d[6]                                     
+y_d[1]                                     |y_d[1]                                     
+y_d[7]                                     |y_d[7]                                     
+n_d[7]                                     |n_d[7]                                     
+n_d[1]                                     |n_d[1]                                     
+n_d[2]                                     |n_d[2]                                     
+n_d[4]                                     |n_d[4]                                     
+n_d[5]                                     |n_d[5]                                     
+n_d[3]                                     |n_d[3]                                     
+n_d[6]                                     |n_d[6]                                     
+Vss                                        |Vss                                        
+Vdd                                        |Vdd                                        
+Vref                                       |Vref                                       
+out                                        |out                                        
+in0                                        |in0                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes analog and analog are equivalent.
+
+Cell tt_um_acidonitroso_programmable_threshold_voltage_sensor (0) disconnected node: clk
+Cell tt_um_acidonitroso_programmable_threshold_voltage_sensor (0) disconnected node: ena
+Cell tt_um_acidonitroso_programmable_threshold_voltage_sensor (0) disconnected node: rst_n
+Cell tt_um_acidonitroso_programmable_threshold_voltage_sensor (0) disconnected node: ua[3]
+Cell tt_um_acidonitroso_programmable_threshold_voltage_sensor (0) disconnected node: ua[4]
+Cell tt_um_acidonitroso_programmable_threshold_voltage_sensor (0) disconnected node: ua[5]
+Cell tt_um_acidonitroso_programmable_threshold_voltage_sensor (0) disconnected node: ua[6]
+Cell tt_um_acidonitroso_programmable_threshold_voltage_sensor (0) disconnected node: ua[7]
+Cell tt_um_acidonitroso_programmable_threshold_voltage_sensor (0) disconnected node: ui_in[3]
+Cell tt_um_acidonitroso_programmable_threshold_voltage_sensor (0) disconnected node: ui_in[4]
+Cell tt_um_acidonitroso_programmable_threshold_voltage_sensor (0) disconnected node: ui_in[5]
+Cell tt_um_acidonitroso_programmable_threshold_voltage_sensor (0) disconnected node: ui_in[6]
+Cell tt_um_acidonitroso_programmable_threshold_voltage_sensor (0) disconnected node: ui_in[7]
+Cell tt_um_acidonitroso_programmable_threshold_voltage_sensor (0) disconnected node: uio_in[0]
+Cell tt_um_acidonitroso_programmable_threshold_voltage_sensor (0) disconnected node: uio_in[1]
+Cell tt_um_acidonitroso_programmable_threshold_voltage_sensor (0) disconnected node: uio_in[2]
+Cell tt_um_acidonitroso_programmable_threshold_voltage_sensor (0) disconnected node: uio_in[3]
+Cell tt_um_acidonitroso_programmable_threshold_voltage_sensor (0) disconnected node: uio_in[4]
+Cell tt_um_acidonitroso_programmable_threshold_voltage_sensor (0) disconnected node: uio_in[5]
+Cell tt_um_acidonitroso_programmable_threshold_voltage_sensor (0) disconnected node: uio_in[6]
+Cell tt_um_acidonitroso_programmable_threshold_voltage_sensor (0) disconnected node: uio_in[7]
+Cell tt_um_acidonitroso_programmable_threshold_voltage_sensor (1) disconnected node: ui_in[7]
+Cell tt_um_acidonitroso_programmable_threshold_voltage_sensor (1) disconnected node: ui_in[6]
+Cell tt_um_acidonitroso_programmable_threshold_voltage_sensor (1) disconnected node: ui_in[5]
+Cell tt_um_acidonitroso_programmable_threshold_voltage_sensor (1) disconnected node: ui_in[4]
+Cell tt_um_acidonitroso_programmable_threshold_voltage_sensor (1) disconnected node: ui_in[3]
+Cell tt_um_acidonitroso_programmable_threshold_voltage_sensor (1) disconnected node: uio_in[7]
+Cell tt_um_acidonitroso_programmable_threshold_voltage_sensor (1) disconnected node: uio_in[6]
+Cell tt_um_acidonitroso_programmable_threshold_voltage_sensor (1) disconnected node: uio_in[5]
+Cell tt_um_acidonitroso_programmable_threshold_voltage_sensor (1) disconnected node: uio_in[4]
+Cell tt_um_acidonitroso_programmable_threshold_voltage_sensor (1) disconnected node: uio_in[3]
+Cell tt_um_acidonitroso_programmable_threshold_voltage_sensor (1) disconnected node: uio_in[2]
+Cell tt_um_acidonitroso_programmable_threshold_voltage_sensor (1) disconnected node: uio_in[1]
+Cell tt_um_acidonitroso_programmable_threshold_voltage_sensor (1) disconnected node: uio_in[0]
+Cell tt_um_acidonitroso_programmable_threshold_voltage_sensor (1) disconnected node: ua[7]
+Cell tt_um_acidonitroso_programmable_threshold_voltage_sensor (1) disconnected node: ua[6]
+Cell tt_um_acidonitroso_programmable_threshold_voltage_sensor (1) disconnected node: ua[5]
+Cell tt_um_acidonitroso_programmable_threshold_voltage_sensor (1) disconnected node: ua[4]
+Cell tt_um_acidonitroso_programmable_threshold_voltage_sensor (1) disconnected node: ua[3]
+Cell tt_um_acidonitroso_programmable_threshold_voltage_sensor (1) disconnected node: ena
+Cell tt_um_acidonitroso_programmable_threshold_voltage_sensor (1) disconnected node: clk
+Cell tt_um_acidonitroso_programmable_threshold_voltage_sensor (1) disconnected node: rst_n
+Removing zero-valued device r from cell tt_um_acidonitroso_programmable_threshold_voltage_sensor (0) makes a better match
+Removing zero-valued device r from cell tt_um_acidonitroso_programmable_threshold_voltage_sensor (0) makes a better match
+Removing zero-valued device r from cell tt_um_acidonitroso_programmable_threshold_voltage_sensor (0) makes a better match
+Removing zero-valued device r from cell tt_um_acidonitroso_programmable_threshold_voltage_sensor (0) makes a better match
+Removing zero-valued device r from cell tt_um_acidonitroso_programmable_threshold_voltage_sensor (0) makes a better match
+Removing zero-valued device r from cell tt_um_acidonitroso_programmable_threshold_voltage_sensor (0) makes a better match
+Removing zero-valued device r from cell tt_um_acidonitroso_programmable_threshold_voltage_sensor (0) makes a better match
+Removing zero-valued device r from cell tt_um_acidonitroso_programmable_threshold_voltage_sensor (0) makes a better match
+Removing zero-valued device r from cell tt_um_acidonitroso_programmable_threshold_voltage_sensor (0) makes a better match
+Removing zero-valued device r from cell tt_um_acidonitroso_programmable_threshold_voltage_sensor (0) makes a better match
+Removing zero-valued device r from cell tt_um_acidonitroso_programmable_threshold_voltage_sensor (0) makes a better match
+Removing zero-valued device r from cell tt_um_acidonitroso_programmable_threshold_voltage_sensor (0) makes a better match
+Removing zero-valued device r from cell tt_um_acidonitroso_programmable_threshold_voltage_sensor (0) makes a better match
+Removing zero-valued device r from cell tt_um_acidonitroso_programmable_threshold_voltage_sensor (0) makes a better match
+Removing zero-valued device r from cell tt_um_acidonitroso_programmable_threshold_voltage_sensor (0) makes a better match
+Removing zero-valued device r from cell tt_um_acidonitroso_programmable_threshold_voltage_sensor (0) makes a better match
+Removing zero-valued device r from cell tt_um_acidonitroso_programmable_threshold_voltage_sensor (0) makes a better match
+Removing zero-valued device r from cell tt_um_acidonitroso_programmable_threshold_voltage_sensor (0) makes a better match
+Removing zero-valued device r from cell tt_um_acidonitroso_programmable_threshold_voltage_sensor (0) makes a better match
+Removing zero-valued device r from cell tt_um_acidonitroso_programmable_threshold_voltage_sensor (0) makes a better match
+Removing zero-valued device r from cell tt_um_acidonitroso_programmable_threshold_voltage_sensor (0) makes a better match
+Removing zero-valued device r from cell tt_um_acidonitroso_programmable_threshold_voltage_sensor (0) makes a better match
+Removing zero-valued device r from cell tt_um_acidonitroso_programmable_threshold_voltage_sensor (0) makes a better match
+Removing zero-valued device r from cell tt_um_acidonitroso_programmable_threshold_voltage_sensor (0) makes a better match
+Making another compare attempt.
+
+Cell tt_um_acidonitroso_programmable_threshold_voltage_sensor (0) disconnected node: clk
+Cell tt_um_acidonitroso_programmable_threshold_voltage_sensor (0) disconnected node: ena
+Cell tt_um_acidonitroso_programmable_threshold_voltage_sensor (0) disconnected node: rst_n
+Cell tt_um_acidonitroso_programmable_threshold_voltage_sensor (0) disconnected node: ua[3]
+Cell tt_um_acidonitroso_programmable_threshold_voltage_sensor (0) disconnected node: ua[4]
+Cell tt_um_acidonitroso_programmable_threshold_voltage_sensor (0) disconnected node: ua[5]
+Cell tt_um_acidonitroso_programmable_threshold_voltage_sensor (0) disconnected node: ua[6]
+Cell tt_um_acidonitroso_programmable_threshold_voltage_sensor (0) disconnected node: ua[7]
+Cell tt_um_acidonitroso_programmable_threshold_voltage_sensor (0) disconnected node: ui_in[3]
+Cell tt_um_acidonitroso_programmable_threshold_voltage_sensor (0) disconnected node: ui_in[4]
+Cell tt_um_acidonitroso_programmable_threshold_voltage_sensor (0) disconnected node: ui_in[5]
+Cell tt_um_acidonitroso_programmable_threshold_voltage_sensor (0) disconnected node: ui_in[6]
+Cell tt_um_acidonitroso_programmable_threshold_voltage_sensor (0) disconnected node: ui_in[7]
+Cell tt_um_acidonitroso_programmable_threshold_voltage_sensor (0) disconnected node: uio_in[0]
+Cell tt_um_acidonitroso_programmable_threshold_voltage_sensor (0) disconnected node: uio_in[1]
+Cell tt_um_acidonitroso_programmable_threshold_voltage_sensor (0) disconnected node: uio_in[2]
+Cell tt_um_acidonitroso_programmable_threshold_voltage_sensor (0) disconnected node: uio_in[3]
+Cell tt_um_acidonitroso_programmable_threshold_voltage_sensor (0) disconnected node: uio_in[4]
+Cell tt_um_acidonitroso_programmable_threshold_voltage_sensor (0) disconnected node: uio_in[5]
+Cell tt_um_acidonitroso_programmable_threshold_voltage_sensor (0) disconnected node: uio_in[6]
+Cell tt_um_acidonitroso_programmable_threshold_voltage_sensor (0) disconnected node: uio_in[7]
+Cell tt_um_acidonitroso_programmable_threshold_voltage_sensor (1) disconnected node: ui_in[7]
+Cell tt_um_acidonitroso_programmable_threshold_voltage_sensor (1) disconnected node: ui_in[6]
+Cell tt_um_acidonitroso_programmable_threshold_voltage_sensor (1) disconnected node: ui_in[5]
+Cell tt_um_acidonitroso_programmable_threshold_voltage_sensor (1) disconnected node: ui_in[4]
+Cell tt_um_acidonitroso_programmable_threshold_voltage_sensor (1) disconnected node: ui_in[3]
+Cell tt_um_acidonitroso_programmable_threshold_voltage_sensor (1) disconnected node: uio_in[7]
+Cell tt_um_acidonitroso_programmable_threshold_voltage_sensor (1) disconnected node: uio_in[6]
+Cell tt_um_acidonitroso_programmable_threshold_voltage_sensor (1) disconnected node: uio_in[5]
+Cell tt_um_acidonitroso_programmable_threshold_voltage_sensor (1) disconnected node: uio_in[4]
+Cell tt_um_acidonitroso_programmable_threshold_voltage_sensor (1) disconnected node: uio_in[3]
+Cell tt_um_acidonitroso_programmable_threshold_voltage_sensor (1) disconnected node: uio_in[2]
+Cell tt_um_acidonitroso_programmable_threshold_voltage_sensor (1) disconnected node: uio_in[1]
+Cell tt_um_acidonitroso_programmable_threshold_voltage_sensor (1) disconnected node: uio_in[0]
+Cell tt_um_acidonitroso_programmable_threshold_voltage_sensor (1) disconnected node: ua[7]
+Cell tt_um_acidonitroso_programmable_threshold_voltage_sensor (1) disconnected node: ua[6]
+Cell tt_um_acidonitroso_programmable_threshold_voltage_sensor (1) disconnected node: ua[5]
+Cell tt_um_acidonitroso_programmable_threshold_voltage_sensor (1) disconnected node: ua[4]
+Cell tt_um_acidonitroso_programmable_threshold_voltage_sensor (1) disconnected node: ua[3]
+Cell tt_um_acidonitroso_programmable_threshold_voltage_sensor (1) disconnected node: ena
+Cell tt_um_acidonitroso_programmable_threshold_voltage_sensor (1) disconnected node: clk
+Cell tt_um_acidonitroso_programmable_threshold_voltage_sensor (1) disconnected node: rst_n
+Subcircuit summary:
+Circuit 1: tt_um_acidonitroso_programmable |Circuit 2: tt_um_acidonitroso_programmable 
+-------------------------------------------|-------------------------------------------
+decoder_p (1)                              |decoder_p (1)                              
+analog (1)                                 |analog (1)                                 
+Number of devices: 2                       |Number of devices: 2                       
+Number of nets: 24                         |Number of nets: 24                         
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: tt_um_acidonitroso_programmable |Circuit 2: tt_um_acidonitroso_programmable 
+-------------------------------------------|-------------------------------------------
+VDPWR                                      |VDPWR                                      
+uio_oe[0]                                  |uio_oe[0]                                  
+ui_in[0]                                   |ui_in[0]                                   
+ui_in[1]                                   |ui_in[1]                                   
+ui_in[2]                                   |ui_in[2]                                   
+ua[2]                                      |ua[2]                                      
+ua[1]                                      |ua[1]                                      
+ua[0]                                      |ua[0]                                      
+clk                                        |clk                                        
+ena                                        |ena                                        
+rst_n                                      |rst_n                                      
+ua[3]                                      |ua[3]                                      
+ua[4]                                      |ua[4]                                      
+ua[5]                                      |ua[5]                                      
+ua[6]                                      |ua[6]                                      
+ua[7]                                      |ua[7]                                      
+ui_in[3]                                   |ui_in[3]                                   
+ui_in[4]                                   |ui_in[4]                                   
+ui_in[5]                                   |ui_in[5]                                   
+ui_in[6]                                   |ui_in[6]                                   
+ui_in[7]                                   |ui_in[7]                                   
+uio_in[0]                                  |uio_in[0]                                  
+uio_in[1]                                  |uio_in[1]                                  
+uio_in[2]                                  |uio_in[2]                                  
+uio_in[3]                                  |uio_in[3]                                  
+uio_in[4]                                  |uio_in[4]                                  
+uio_in[5]                                  |uio_in[5]                                  
+uio_in[6]                                  |uio_in[6]                                  
+uio_in[7]                                  |uio_in[7]                                  
+uio_oe[1]                                  |uio_oe[1]                                  
+uio_oe[2]                                  |uio_oe[2]                                  
+uio_oe[3]                                  |uio_oe[3]                                  
+uio_oe[4]                                  |uio_oe[4]                                  
+uio_oe[5]                                  |uio_oe[5]                                  
+uio_oe[6]                                  |uio_oe[6]                                  
+uio_oe[7]                                  |uio_oe[7]                                  
+uio_out[0]                                 |uio_out[0]                                 
+uio_out[1]                                 |uio_out[1]                                 
+uio_out[2]                                 |uio_out[2]                                 
+uio_out[3]                                 |uio_out[3]                                 
+uio_out[4]                                 |uio_out[4]                                 
+uio_out[5]                                 |uio_out[5]                                 
+uio_out[6]                                 |uio_out[6]                                 
+uio_out[7]                                 |uio_out[7]                                 
+uo_out[0]                                  |uo_out[0]                                  
+uo_out[1]                                  |uo_out[1]                                  
+uo_out[2]                                  |uo_out[2]                                  
+uo_out[3]                                  |uo_out[3]                                  
+uo_out[4]                                  |uo_out[4]                                  
+uo_out[5]                                  |uo_out[5]                                  
+uo_out[6]                                  |uo_out[6]                                  
+uo_out[7]                                  |uo_out[7]                                  
+VGND                                       |VGND                                       
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes tt_um_acidonitroso_programmable_threshold_voltage_sensor and tt_um_acidonitroso_programmable_threshold_voltage_sensor are equivalent.
+
+Final result: Circuits match uniquely.
+.

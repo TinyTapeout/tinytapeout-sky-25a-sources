@@ -1,0 +1,2 @@
+,gmid10_id,gmid15_id,gmid10_vgs,gmid15_vgs,gmid10_vth,gmid15_vth,gmid10_vdsat,gmid15_vdsat,gmid10_rds,gmid15_rds,gmid10_gmrds,gmid15_gmrds,gmid10_gmrds_db,gmid15_gmrds_db,name,type,time,OK
+0,107.7166,31.30233,675.6955,590.0774,489.44910000000004,508.7503,128.5384,81.70172000000001,0.051249789999999996,0.11997899999999999,55.06201,56.32429,34.81698,35.01391,dc_SchGtKttTtVt,Sch,Sat Dec 14 11:17:03 2024,True

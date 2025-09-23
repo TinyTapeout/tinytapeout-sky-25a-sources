@@ -1,0 +1,50 @@
+** sch_path: /home/eserlis/one_class_tt_official_tb.sch
+**.subckt one_class_tt_official_tb
+Vdd Vdd GND 1.8
+Vss Vss GND 0
+Vr1 En GND 1.8
+Vr Vr GND 0.8
+Vdd3 Vin2 GND Vin2
+Vdd1 Vin1 GND Vin1
+Vdd2 Vin3 GND Vin3
+Vdd4 Vin4 GND Vin4
+x1 Vdd Vss Vr Vin4 Vin3 Vin2 Vin1 En Iout0 Iout1 one_class_tt_official
+**** begin user architecture code
+
+** opencircuitdesign pdks install
+.lib /home/eserlis/pdk/sky130A/libs.tech/ngspice/sky130.lib.spice tt
+
+
+
+
+.include /home/eserlis/tt_um_subdiduntil2_mixed_signal_classifier_rc.spice
+.control
+.param Wmirror=1
+.param Vin4=1.8 Vin3=1.8
+.param Vin2=0 Vin1=0
+.param Wdac4=10 Ldac4=0.3
+.param Wdac3=10 Ldac3=0.3
+.param Wdac2=10 Ldac2=0.3
+.param Wdac1=10 Ldac1=0.3
+.param Wdac43=10 Ldac43=0.3
+.param Wdac32=10 Ldac32=0.3
+.param Wdac21=10 Ldac21=0.3
+save all
+tran 0.01n 100n
+plot En
+plot Vr
+plot Vin1
+plot Vin2
+plot Vin3
+plot Vin4
+plot Iout0, Iout1
+plot x1.Vdac0, x1.Vdac1
+plot x1.Vref1, x1.Vref2, x1.Vref3, x1.Vref4
+write one_class_tt_tb_official.raw
+.endc
+
+
+**** end user architecture code
+**.ends
+.GLOBAL GND
+.end

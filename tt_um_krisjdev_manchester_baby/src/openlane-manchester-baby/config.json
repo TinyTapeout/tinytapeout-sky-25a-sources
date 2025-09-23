@@ -1,0 +1,32 @@
+{
+    "DESIGN_NAME": "manchester_baby",
+    "VERILOG_FILES": [
+        "dir::logisim/hdl/base/logisimTickGenerator.v",
+        "dir::logisim/hdl/base/LogisimClockComponent.v",
+        "dir::logisim/hdl/gates/AND_GATE.v",
+        "dir::logisim/hdl/gates/OR_GATE_BUS_5_INPUTS.v",
+        "dir::logisim/hdl/gates/OR_GATE_3_INPUTS.v",
+        "dir::logisim/hdl/gates/OR_GATE.v",
+        "dir::logisim/hdl/gates/OR_GATE_BUS.v",
+        "dir::logisim/hdl/circuit/main.v",
+        "dir::logisim/hdl/toplevel/logisimTopLevelShell.v",
+        "dir::logisim/hdl/plexers/Decoder_8.v",
+        "dir::logisim/hdl/plexers/Multiplexer_bus_2.v",
+        "dir::logisim/hdl/arith/Adder.v",
+        "dir::logisim/hdl/arith/Comparator.v",
+        "dir::logisim/hdl/arith/Subtractor.v",
+        "dir::logisim/hdl/memory/REGISTER_FLIP_FLOP.v",
+        "dir::logisim/hdl/memory/LogisimCounter.v",
+        "dir::logisim/hdl/memory/S_R_FLIPFLOP.v",
+        "dir::src/ram_plexer.v",
+        "dir::src/manchester_baby.v"
+    ],
+    "CLOCK_PORT": "clock",
+    "CLOCK_PERIOD": 10.0,
+    "DESIGN_IS_CORE": true,
+    "DIE_AREA": "0 0 160 160",
+    "FP_SIZING": "absolute",
+
+    "GLB_RESIZER_DESIGN_OPTIMIZATIONS": false,
+    "GLB_RESIZER_TIMING_OPTIMIZATIONS": false
+}

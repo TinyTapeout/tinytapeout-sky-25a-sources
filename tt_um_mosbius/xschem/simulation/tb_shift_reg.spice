@@ -1,0 +1,246 @@
+** sch_path: /foss/designs/ttsky25a_minimosbius/xschem/tb_shift_reg.sch
+**.subckt tb_shift_reg
+V2 VDPWR GND 1.8
+.save i(v2)
+C1[7] reg7 GND 10f m=1
+C1[6] reg6 GND 10f m=1
+C1[5] reg5 GND 10f m=1
+C1[4] reg4 GND 10f m=1
+C1[3] reg3 GND 10f m=1
+C1[2] reg2 GND 10f m=1
+C1[1] reg1 GND 10f m=1
+C1[0] reg0 GND 10f m=1
+V1 clk_source GND PULSE 0 1.8 50n 100p 100p 50n 100n
+.save i(v1)
+V3 rstb GND PULSE 1.8 0 1u 100p 100p 500n 1m
+.save i(v3)
+x1 VDPWR clk reg7 reg6 reg5 reg4 reg3 reg2 reg1 reg0 VDPWR rstb GND ena shift_reg_short
+V4 ena GND PULSE 1.8 0 0 100p 100p 200n 2m
+.save i(v4)
+x2 clk_source GND GND VDPWR VDPWR clk_inv clkinv
+x3[25] clk_inv GND GND VDPWR VDPWR clk_dummy[25] clkinv
+x3[24] clk_inv GND GND VDPWR VDPWR clk_dummy[24] clkinv
+x3[23] clk_inv GND GND VDPWR VDPWR clk_dummy[23] clkinv
+x3[22] clk_inv GND GND VDPWR VDPWR clk_dummy[22] clkinv
+x3[21] clk_inv GND GND VDPWR VDPWR clk_dummy[21] clkinv
+x3[20] clk_inv GND GND VDPWR VDPWR clk_dummy[20] clkinv
+x3[19] clk_inv GND GND VDPWR VDPWR clk_dummy[19] clkinv
+x3[18] clk_inv GND GND VDPWR VDPWR clk_dummy[18] clkinv
+x3[17] clk_inv GND GND VDPWR VDPWR clk_dummy[17] clkinv
+x3[16] clk_inv GND GND VDPWR VDPWR clk_dummy[16] clkinv
+x3[15] clk_inv GND GND VDPWR VDPWR clk_dummy[15] clkinv
+x3[14] clk_inv GND GND VDPWR VDPWR clk_dummy[14] clkinv
+x3[13] clk_inv GND GND VDPWR VDPWR clk_dummy[13] clkinv
+x3[12] clk_inv GND GND VDPWR VDPWR clk_dummy[12] clkinv
+x3[11] clk_inv GND GND VDPWR VDPWR clk_dummy[11] clkinv
+x3[10] clk_inv GND GND VDPWR VDPWR clk_dummy[10] clkinv
+x3[9] clk_inv GND GND VDPWR VDPWR clk_dummy[9] clkinv
+x3[8] clk_inv GND GND VDPWR VDPWR clk_dummy[8] clkinv
+x3[7] clk_inv GND GND VDPWR VDPWR clk_dummy[7] clkinv
+x3[6] clk_inv GND GND VDPWR VDPWR clk_dummy[6] clkinv
+x3[5] clk_inv GND GND VDPWR VDPWR clk_dummy[5] clkinv
+x3[4] clk_inv GND GND VDPWR VDPWR clk_dummy[4] clkinv
+x3[3] clk_inv GND GND VDPWR VDPWR clk_dummy[3] clkinv
+x3[2] clk_inv GND GND VDPWR VDPWR clk_dummy[2] clkinv
+x3[1] clk_inv GND GND VDPWR VDPWR clk_dummy[1] clkinv
+x3[0] clk_inv GND GND VDPWR VDPWR clk_dummy[0] clkinv
+C2[25] clk_dummy[25] GND 10f m=1
+C2[24] clk_dummy[24] GND 10f m=1
+C2[23] clk_dummy[23] GND 10f m=1
+C2[22] clk_dummy[22] GND 10f m=1
+C2[21] clk_dummy[21] GND 10f m=1
+C2[20] clk_dummy[20] GND 10f m=1
+C2[19] clk_dummy[19] GND 10f m=1
+C2[18] clk_dummy[18] GND 10f m=1
+C2[17] clk_dummy[17] GND 10f m=1
+C2[16] clk_dummy[16] GND 10f m=1
+C2[15] clk_dummy[15] GND 10f m=1
+C2[14] clk_dummy[14] GND 10f m=1
+C2[13] clk_dummy[13] GND 10f m=1
+C2[12] clk_dummy[12] GND 10f m=1
+C2[11] clk_dummy[11] GND 10f m=1
+C2[10] clk_dummy[10] GND 10f m=1
+C2[9] clk_dummy[9] GND 10f m=1
+C2[8] clk_dummy[8] GND 10f m=1
+C2[7] clk_dummy[7] GND 10f m=1
+C2[6] clk_dummy[6] GND 10f m=1
+C2[5] clk_dummy[5] GND 10f m=1
+C2[4] clk_dummy[4] GND 10f m=1
+C2[3] clk_dummy[3] GND 10f m=1
+C2[2] clk_dummy[2] GND 10f m=1
+C2[1] clk_dummy[1] GND 10f m=1
+C2[0] clk_dummy[0] GND 10f m=1
+x4 clk_inv GND GND VDPWR VDPWR clk clkinv
+**** begin user architecture code
+
+.param mc_mm_switch=0
+.param mc_pr_switch=0
+.include /foss/pdks/sky130A/libs.tech/ngspice/corners/tt.spice
+.include /foss/pdks/sky130A/libs.tech/ngspice/r+c/res_typical__cap_typical.spice
+.include /foss/pdks/sky130A/libs.tech/ngspice/r+c/res_typical__cap_typical__lin.spice
+.include /foss/pdks/sky130A/libs.tech/ngspice/corners/tt/specialized_cells.spice
+
+
+
+*****************************************
+* Shift Register Test
+*****************************************
+* holds a logic 1 at the shift reg input, and it propagates down
+* the shift register. A asynchronous reset is also asserted.
+* a shorter 8-bit shift register is tested for simulation time.
+* includes clock fanout network
+*****************************************
+.control
+   save all
+   set temp=27
+   tran 100p 3u
+   plot v(reg0) v(reg1) v(reg2) v(reg3) v(reg4) v(reg5) v(reg6) v(reg7)
+   plot v(rstb) v(ena)
+   plot v(clk) v(clk_inv) v(clk_source)
+.endc
+
+
+**** end user architecture code
+**.ends
+
+* expanding   symbol:  shift_reg_short.sym # of pins=7
+** sym_path: /foss/designs/ttsky25a_minimosbius/xschem/shift_reg_short.sym
+** sch_path: /foss/designs/ttsky25a_minimosbius/xschem/shift_reg_short.sch
+.subckt shift_reg_short VPWR clk reg[7] reg[6] reg[5] reg[4] reg[3] reg[2] reg[1] reg[0] dat rstb
++ VGND ena
+*.ipin clk
+*.ipin dat
+*.ipin rstb
+*.iopin VPWR
+*.iopin VGND
+*.opin reg[7],reg[6],reg[5],reg[4],reg[3],reg[2],reg[1],reg[0]
+*.ipin ena
+x1[7] clk reg_int[6] rstb VGND VGND VPWR VPWR reg_int[7] dff
+x1[6] clk reg_int[5] rstb VGND VGND VPWR VPWR reg_int[6] dff
+x1[5] clk reg_int[4] rstb VGND VGND VPWR VPWR reg_int[5] dff
+x1[4] clk reg_int[3] rstb VGND VGND VPWR VPWR reg_int[4] dff
+x1[3] clk reg_int[2] rstb VGND VGND VPWR VPWR reg_int[3] dff
+x1[2] clk reg_int[1] rstb VGND VGND VPWR VPWR reg_int[2] dff
+x1[1] clk reg_int[0] rstb VGND VGND VPWR VPWR reg_int[1] dff
+x1[0] clk dat rstb VGND VGND VPWR VPWR reg_int[0] dff
+x2[7] reg_int[7] ena VGND VGND VPWR VPWR reg[7] and
+x2[6] reg_int[6] ena VGND VGND VPWR VPWR reg[6] and
+x2[5] reg_int[5] ena VGND VGND VPWR VPWR reg[5] and
+x2[4] reg_int[4] ena VGND VGND VPWR VPWR reg[4] and
+x2[3] reg_int[3] ena VGND VGND VPWR VPWR reg[3] and
+x2[2] reg_int[2] ena VGND VGND VPWR VPWR reg[2] and
+x2[1] reg_int[1] ena VGND VGND VPWR VPWR reg[1] and
+x2[0] reg_int[0] ena VGND VGND VPWR VPWR reg[0] and
+.ends
+
+
+* expanding   symbol:  clkinv.sym # of pins=6
+** sym_path: /foss/designs/ttsky25a_minimosbius/xschem/clkinv.sym
+** sch_path: /foss/designs/ttsky25a_minimosbius/xschem/clkinv.sch
+.subckt clkinv A VGND VNB VPB VPWR Y
+*.ipin A
+*.iopin VGND
+*.iopin VNB
+*.iopin VPB
+*.iopin VPWR
+*.opin Y
+**** begin user architecture code
+
+
+X0 Y A VPWR VPB sky130_fd_pr__pfet_01v8_hvt w=840000u l=150000u
+X1 Y A VGND VNB sky130_fd_pr__nfet_01v8 w=420000u l=150000u
+X2 VPWR A Y VPB sky130_fd_pr__pfet_01v8_hvt w=840000u l=150000u
+
+
+**** end user architecture code
+**** begin user architecture code
+
+
+**** end user architecture code
+.ends
+
+
+* expanding   symbol:  dff.sym # of pins=8
+** sym_path: /foss/designs/ttsky25a_minimosbius/xschem/dff.sym
+** sch_path: /foss/designs/ttsky25a_minimosbius/xschem/dff.sch
+.subckt dff CLK D RESET_B VGND VNB VPB VPWR Q
+*.ipin CLK
+*.ipin D
+*.ipin RESET_B
+*.iopin VGND
+*.iopin VNB
+*.iopin VPB
+*.iopin VPWR
+*.opin Q
+**** begin user architecture code
+
+
+X0 a_1270_413# a_1283_21# VPWR VPB sky130_fd_pr__pfet_01v8_hvt w=420000u l=150000u
+X1 VPWR a_543_47# a_761_289# VPB sky130_fd_pr__pfet_01v8_hvt w=840000u l=150000u
+X2 VGND a_543_47# a_761_289# VNB sky130_fd_pr__nfet_01v8 w=640000u l=150000u
+X3 VGND D a_448_47# VNB sky130_fd_pr__nfet_01v8 w=420000u l=150000u
+X4 a_1108_47# a_193_47# a_1270_413# VPB sky130_fd_pr__pfet_01v8_hvt w=420000u l=150000u
+X5 VGND a_1283_21# Q VNB sky130_fd_pr__nfet_01v8 w=650000u l=150000u
+X6 a_1217_47# a_1283_21# VGND VNB sky130_fd_pr__nfet_01v8 w=420000u l=150000u
+X7 a_448_47# a_27_47# a_543_47# VNB sky130_fd_pr__nfet_01v8 w=360000u l=150000u
+X8 a_448_47# a_193_47# a_543_47# VPB sky130_fd_pr__pfet_01v8_hvt w=420000u l=150000u
+X9 a_543_47# a_193_47# a_639_47# VNB sky130_fd_pr__nfet_01v8 w=360000u l=150000u
+X10 a_1108_47# a_27_47# a_1217_47# VNB sky130_fd_pr__nfet_01v8 w=360000u l=150000u
+X11 a_1462_47# a_1108_47# a_1283_21# VNB sky130_fd_pr__nfet_01v8 w=420000u l=150000u
+X12 a_543_47# a_27_47# a_651_413# VPB sky130_fd_pr__pfet_01v8_hvt w=420000u l=150000u
+X13 a_805_47# RESET_B VGND VNB sky130_fd_pr__nfet_01v8 w=420000u l=150000u
+X14 a_761_289# a_193_47# a_1108_47# VNB sky130_fd_pr__nfet_01v8 w=360000u l=150000u
+X15 VPWR RESET_B a_651_413# VPB sky130_fd_pr__pfet_01v8_hvt w=420000u l=150000u
+X16 VGND a_27_47# a_193_47# VNB sky130_fd_pr__nfet_01v8 w=420000u l=150000u
+X17 a_27_47# CLK VGND VNB sky130_fd_pr__nfet_01v8 w=420000u l=150000u
+X18 a_27_47# CLK VPWR VPB sky130_fd_pr__pfet_01v8_hvt w=640000u l=150000u
+X19 VPWR a_1283_21# Q VPB sky130_fd_pr__pfet_01v8_hvt w=1e+06u l=150000u
+X20 VPWR a_27_47# a_193_47# VPB sky130_fd_pr__pfet_01v8_hvt w=640000u l=150000u
+X21 a_1283_21# a_1108_47# VPWR VPB sky130_fd_pr__pfet_01v8_hvt w=420000u l=150000u
+X22 VGND RESET_B a_1462_47# VNB sky130_fd_pr__nfet_01v8 w=420000u l=150000u
+X23 VPWR D a_448_47# VPB sky130_fd_pr__pfet_01v8_hvt w=420000u l=150000u
+X24 a_651_413# a_761_289# VPWR VPB sky130_fd_pr__pfet_01v8_hvt w=420000u l=150000u
+X25 a_761_289# a_27_47# a_1108_47# VPB sky130_fd_pr__pfet_01v8_hvt w=420000u l=150000u
+X26 VPWR RESET_B a_1283_21# VPB sky130_fd_pr__pfet_01v8_hvt w=420000u l=150000u
+X27 a_639_47# a_761_289# a_805_47# VNB sky130_fd_pr__nfet_01v8 w=420000u l=150000u
+
+
+**** end user architecture code
+**** begin user architecture code
+
+
+**** end user architecture code
+.ends
+
+
+* expanding   symbol:  and.sym # of pins=7
+** sym_path: /foss/designs/ttsky25a_minimosbius/xschem/and.sym
+** sch_path: /foss/designs/ttsky25a_minimosbius/xschem/and.sch
+.subckt and A B VGND VNB VPB VPWR X
+*.ipin A
+*.ipin B
+*.iopin VGND
+*.iopin VNB
+*.iopin VPB
+*.iopin VPWR
+*.opin X
+**** begin user architecture code
+
+
+X0 a_40_47# B VPWR VPB sky130_fd_pr__pfet_01v8_hvt w=420000u l=150000u
+X1 a_123_47# B VGND VNB sky130_fd_pr__nfet_01v8 w=420000u l=150000u
+X2 a_40_47# A a_123_47# VNB sky130_fd_pr__nfet_01v8 w=420000u l=150000u
+X3 VGND a_40_47# X VNB sky130_fd_pr__nfet_01v8 w=420000u l=150000u
+X4 VPWR A a_40_47# VPB sky130_fd_pr__pfet_01v8_hvt w=420000u l=150000u
+X5 VPWR a_40_47# X VPB sky130_fd_pr__pfet_01v8_hvt w=640000u l=150000u
+
+
+**** end user architecture code
+**** begin user architecture code
+
+
+**** end user architecture code
+.ends
+
+.GLOBAL GND
+.end

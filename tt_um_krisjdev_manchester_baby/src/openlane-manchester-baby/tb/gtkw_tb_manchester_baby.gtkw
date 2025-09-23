@@ -1,0 +1,52 @@
+[*]
+[*] GTKWave Analyzer v3.3.114 (w)1999-2023 BSI
+[*] Fri Dec 15 17:29:42 2023
+[*]
+[dumpfile] "/home/kris/repos/diy-ic/openlane-manchester-baby/tb/waves_tb_manchester_baby.vcd"
+[dumpfile_mtime] "Fri Dec 15 17:14:53 2023"
+[dumpfile_size] 721180
+[savefile] "/home/kris/repos/diy-ic/openlane-manchester-baby/tb/gtkw_tb_manchester_baby.gtkw"
+[timestart] 0
+[size] 1920 1005
+[pos] -1 -1
+*-18.900000 694000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[sst_width] 278
+[signals_width] 206
+[sst_expanded] 1
+[sst_vpaned_height] 589
+@28
+manchester_baby.manchester_baby_instance.fpgaGlobalClock
+@c00022
+manchester_baby.manchester_baby_instance.CIRCUIT_0.logisimClockTree0[4:0]
+@28
+(0)manchester_baby.manchester_baby_instance.CIRCUIT_0.logisimClockTree0[4:0]
+(1)manchester_baby.manchester_baby_instance.CIRCUIT_0.logisimClockTree0[4:0]
+(2)manchester_baby.manchester_baby_instance.CIRCUIT_0.logisimClockTree0[4:0]
+(3)manchester_baby.manchester_baby_instance.CIRCUIT_0.logisimClockTree0[4:0]
+(4)manchester_baby.manchester_baby_instance.CIRCUIT_0.logisimClockTree0[4:0]
+@1401200
+-group_end
+@28
+manchester_baby.manchester_baby_instance.CIRCUIT_0.clock_o
+manchester_baby.manchester_baby_instance.CIRCUIT_0.reset_i
+manchester_baby.manchester_baby_instance.CIRCUIT_0.stop_lamp_o
+@22
+manchester_baby.manchester_baby_instance.CIRCUIT_0.ram_addr_o[4:0]
+manchester_baby.manchester_baby_instance.CIRCUIT_0.ram_data_i[31:0]
+manchester_baby.manchester_baby_instance.CIRCUIT_0.ram_data_o[31:0]
+@28
+manchester_baby.manchester_baby_instance.CIRCUIT_0.ram_rw_en_o
+@200
+-Program Counter
+@22
+manchester_baby.manchester_baby_instance.CIRCUIT_0.PC.q[4:0]
+@200
+-Instruction Register
+@22
+manchester_baby.manchester_baby_instance.CIRCUIT_0.IR.q[31:0]
+@200
+-Accumulator
+@22
+manchester_baby.manchester_baby_instance.CIRCUIT_0.Acc.q[31:0]
+[pattern_trace] 1
+[pattern_trace] 0

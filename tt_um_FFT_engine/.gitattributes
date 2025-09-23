@@ -1,0 +1,3 @@
+pdk_files/* linguist-vendored
+verilog_sta/scripts/opensta_examples/* linguist-vendored
+verilog_sta/pdk_files/* linguist-vendored

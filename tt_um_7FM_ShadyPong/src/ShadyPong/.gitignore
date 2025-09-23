@@ -1,0 +1,9 @@
+*.out
+*.vcd
+*.log
+build/
+bin/
+sim_build/
+.vscode/
+.direnv
+sim

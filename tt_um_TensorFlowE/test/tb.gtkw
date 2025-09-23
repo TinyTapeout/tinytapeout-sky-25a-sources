@@ -1,0 +1,180 @@
+[*]
+[*] GTKWave Analyzer v3.3.104 (w)1999-2020 BSI
+[*] Wed Sep 10 22:53:52 2025
+[*]
+[dumpfile] "/home/ral298/tt_um_TensorFlowE/test/tb.vcd"
+[dumpfile_mtime] "Wed Sep 10 22:52:53 2025"
+[dumpfile_size] 82878
+[savefile] "/home/ral298/tt_um_TensorFlowE/test/tb.gtkw"
+[timestart] 143330000
+[size] 1850 1016
+[pos] 342 27
+*-23.017073 192470000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] tb.
+[treeopen] tb.user_project.
+[treeopen] tb.user_project.core.
+[sst_width] 297
+[signals_width] 329
+[sst_expanded] 1
+[sst_vpaned_height] 307
+@28
+tb.user_project.ena
+tb.user_project.clk
+tb.user_project.rst_n
+@200
+-Inputs
+@24
+tb.user_project.ui_in[7:0]
+@200
+-Bidirectional Pins
+@22
+tb.user_project.uio_in[7:0]
+tb.user_project.uio_oe[7:0]
+tb.user_project.uio_out[7:0]
+@200
+-Output Pins
+@22
+tb.user_project.uo_out[7:0]
+@200
+-
+-Datos de 64 bits
+@28
+tb.user_project.core.four_palabras_Unit.con[2:0]
+@24
+tb.user_project.core.four_palabras_Unit.dato[7:0]
+@28
+tb.user_project.core.four_palabras_Unit.flat_comple
+tb.user_project.core.four_palabras_Unit.rst
+tb.user_project.core.four_palabras_Unit.rx_flat
+@200
+-
+-Enable 
+@28
+tb.user_project.core.clk
+tb.user_project.core.Ena_accu_Ena
+tb.user_project.core.Ena_read_Ena
+tb.user_project.core.Ena_write_Ena
+@200
+-
+-Datos Entrada
+@28
+tb.user_project.core.four_palabras_Unit.clk
+tb.user_project.core.four_palabras_Unit.con[2:0]
+@22
+tb.user_project.core.four_palabras_Unit.data_comple[15:0]
+tb.user_project.core.four_palabras_Unit.dato[7:0]
+@29
+tb.user_project.core.four_palabras_Unit.flat_comple
+@22
+tb.user_project.core.four_palabras_Unit.mem[7:0]
+@28
+tb.user_project.core.four_palabras_Unit.rst
+tb.user_project.core.four_palabras_Unit.rx_flat
+@200
+-
+-Datos multiplicador
+@22
+tb.user_project.core.multiply_unit_u.accumulator[7:0]
+@28
+tb.user_project.core.multiply_unit_u.clk
+@420
+tb.user_project.core.multiply_unit_u.col
+@28
+tb.user_project.core.multiply_unit_u.enable
+tb.user_project.core.multiply_unit_u.i[1:0]
+tb.user_project.core.multiply_unit_u.j[1:0]
+tb.user_project.core.multiply_unit_u.k[1:0]
+tb.user_project.core.multiply_unit_u.listo
+tb.user_project.core.multiply_unit_u.matrixA[15:0]
+tb.user_project.core.multiply_unit_u.matrixB[15:0]
+tb.user_project.core.Ena_accu_Ena
+tb.user_project.core.listo
+tb.user_project.core.flat_Ena_accu_Ena
+tb.user_project.core.accumulate_unit_u.enable
+tb.user_project.core.clear
+@24
+tb.user_project.core.multiply_unit_u.matrixA[15:0]
+tb.user_project.core.multiply_unit_u.matrixB[15:0]
+@28
+tb.user_project.core.Ena_clear_Ena
+tb.user_project.core.multiply_unit_u.result[15:0]
+@c00024
+tb.user_project.core.accumulate_unit_u.result[15:0]
+@28
+(0)tb.user_project.core.accumulate_unit_u.result[15:0]
+(1)tb.user_project.core.accumulate_unit_u.result[15:0]
+(2)tb.user_project.core.accumulate_unit_u.result[15:0]
+(3)tb.user_project.core.accumulate_unit_u.result[15:0]
+(4)tb.user_project.core.accumulate_unit_u.result[15:0]
+(5)tb.user_project.core.accumulate_unit_u.result[15:0]
+(6)tb.user_project.core.accumulate_unit_u.result[15:0]
+(7)tb.user_project.core.accumulate_unit_u.result[15:0]
+(8)tb.user_project.core.accumulate_unit_u.result[15:0]
+(9)tb.user_project.core.accumulate_unit_u.result[15:0]
+(10)tb.user_project.core.accumulate_unit_u.result[15:0]
+(11)tb.user_project.core.accumulate_unit_u.result[15:0]
+(12)tb.user_project.core.accumulate_unit_u.result[15:0]
+(13)tb.user_project.core.accumulate_unit_u.result[15:0]
+(14)tb.user_project.core.accumulate_unit_u.result[15:0]
+(15)tb.user_project.core.accumulate_unit_u.result[15:0]
+@1401200
+-group_end
+@24
+tb.user_project.core.accumulate_unit_u.out[15:0]
+@28
+tb.user_project.core.Ena_clear_Ena
+tb.user_project.core.accumulate_unit_u.accumulator[15:0]
+tb.user_project.core.accumulate_unit_u.out[15:0]
+uart_tx_u.start
+tb.user_project.core.Ena_read_Ena
+tb.user_project.core.ena_TPU
+@420
+tb.user_project.core.multiply_unit_u.row
+@28
+tb.user_project.core.multiply_unit_u.rst
+tb.user_project.core.multiply_unit_u.state[2:0]
+@200
+-Acumulador
+@28
+tb.user_project.core.accumulate_unit_u.accumulator[15:0]
+tb.user_project.core.accumulate_unit_u.clear
+tb.user_project.core.accumulate_unit_u.clock
+tb.user_project.core.accumulate_unit_u.enable
+tb.user_project.core.accumulate_unit_u.out[15:0]
+tb.user_project.core.accumulate_unit_u.reset
+tb.user_project.core.accumulate_unit_u.result[15:0]
+@200
+-Datos de salida
+@28
+uart_tx_u.Con[1:0]
+@22
+uart_tx_u.Dato[15:0]
+@28
+uart_tx_u.First
+uart_tx_u.Flat
+@22
+uart_tx_u.Output_dato[7:0]
+@28
+uart_tx_u.clk
+uart_tx_u.flat_out
+@22
+uart_tx_u.input_dato[15:0]
+@28
+uart_tx_u.next_uart
+uart_tx_u.rst
+uart_tx_u.start
+@200
+-datos salida salida
+@22
+tb.user_project.uo_out[7:0]
+@28
+tb.user_project.core.accumulate_unit_u.out[15:0]
+@22
+tb.user_project.core.accumulate_unit_u.out[15:0]
+@28
+tb.user_project.uo_out[7:0]
+tb.user_project.uio_out[7:0]
+tb.user_project.core.Ena_out
+tb.user_project.core.listo
+[pattern_trace] 1
+[pattern_trace] 0

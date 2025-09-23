@@ -1,0 +1,41 @@
+[*]
+[*] GTKWave Analyzer v3.4.0 (w)1999-2022 BSI
+[*] Thu Jul 17 10:44:58 2025
+[*]
+[dumpfile] "/foss/designs/ttsky25a-rgb-mixer/test/tb.vcd"
+[dumpfile_mtime] "Thu Jul 17 10:44:37 2025"
+[dumpfile_size] 402332
+[savefile] "/foss/designs/ttsky25a-rgb-mixer/test/tb.gtkw"
+[timestart] 0
+[size] 1451 600
+[pos] -1 -1
+*-25.534533 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] tb.
+[sst_width] 314
+[signals_width] 230
+[sst_expanded] 1
+[sst_vpaned_height] 158
+@28
+tb.clk
+@22
+tb.debug_enc[7:0]
+@28
+tb.debug_mode[1:0]
+tb.ena
+tb.enc0_a
+tb.enc0_b
+tb.enc1_a
+tb.enc1_b
+tb.enc2_a
+tb.enc2_b
+tb.pwm0_out
+tb.pwm1_out
+tb.pwm2_out
+tb.rst_n
+@22
+tb.uio_in[7:0]
+tb.uio_oe[7:0]
+tb.uio_out[7:0]
+tb.uo_out[7:0]
+[pattern_trace] 1
+[pattern_trace] 0

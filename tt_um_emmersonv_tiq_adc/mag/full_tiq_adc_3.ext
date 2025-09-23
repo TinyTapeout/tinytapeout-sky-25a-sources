@@ -1,0 +1,544 @@
+timestamp 1755744124
+version 8.3
+tech sky130A
+style ngspice()
+scale 1000 1 500000
+resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
+use encoder encoder_0 1 0 -7516 0 1 -76
+use boosted_tiq_adc_7 boosted_tiq_adc_7_0 1 0 260 0 1 0
+port "o0" 4 -7516 1020 -7116 1140 m3
+port "o1" 5 -7514 3468 -7114 3588 m3
+port "o2" 6 -7516 5916 -7116 6036 m3
+port "Vin" 3 2862 3506 2896 3664 m2
+port "VGND" 1 -548 16 -380 184 m1
+port "VDPWR" 2 -658 6640 -494 6814 m1
+node "o0" 0 227.992 -7516 1020 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 48000 1040 0 0 0 0 0 0
+node "o1" 0 227.992 -7514 3468 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 48000 1040 0 0 0 0 0 0
+node "o2" 0 227.992 -7516 5916 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 48000 1040 0 0 0 0 0 0
+node "m2_n3818_324#" 2 299.399 -3818 324 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 38752 1496 0 0 0 0 0 0 0 0
+node "Vin" 1 74.8494 2862 3506 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 5372 384 0 0 0 0 0 0 0 0
+node "VGND" 4 2981.71 -548 16 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 760032 9384 53760 976 53760 976 129280 1448 0 0 0 0
+node "VDPWR" 7 5284.86 -658 6640 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1597604 18248 55680 988 55680 988 100480 1268 0 0 0 0
+node "li_208_360#" 15 401.148 208 360 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4488 268 4488 268 43520 1416 9604 392 0 0 0 0 0 0
+node "li_208_1344#" 14 335.55 208 1344 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4488 268 4488 268 36856 1220 9604 392 0 0 0 0 0 0
+node "li_208_2330#" 14 356.717 208 2330 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4488 268 4488 268 39848 1308 9604 392 0 0 0 0 0 0
+node "li_208_3314#" 15 400.228 208 3314 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4488 268 4488 268 47464 1532 9604 392 0 0 0 0 0 0
+node "li_208_4298#" 15 438.614 208 4298 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4488 268 4488 268 54400 1736 9604 392 0 0 0 0 0 0
+node "li_208_5280#" 15 480.577 208 5280 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4488 268 4488 268 61608 1948 9604 392 0 0 0 0 0 0
+node "li_208_6268#" 15 482.201 208 6268 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4488 268 4488 268 69768 2188 9604 392 0 0 0 0 0 0
+substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "li_208_4298#" "li_208_5280#" 40.5013
+cap "li_208_4298#" "li_208_3314#" 39.3775
+cap "li_208_2330#" "li_208_3314#" 38.342
+cap "li_208_360#" "VGND" 64.7059
+cap "li_208_1344#" "VGND" 0.323992
+cap "m2_n3818_324#" "VGND" 2.09651
+cap "li_208_6268#" "VDPWR" 231.796
+cap "li_208_1344#" "li_208_2330#" 37.7641
+cap "li_208_5280#" "li_208_6268#" 40.3352
+cap "li_208_1344#" "li_208_360#" 38.0758
+cap "li_208_5280#" "VDPWR" 0.823352
+cap "encoder_0/FILLER_0_15/VGND" "encoder_0/clk" 195.121
+cap "encoder_0/clk" "encoder_0/FILLER_0_27/VGND" 24.9555
+cap "encoder_0/_20_/X" "encoder_0/FILLER_0_27/VGND" 1.968
+cap "encoder_0/clk" "encoder_0/_20_/X" 2.84217e-14
+cap "encoder_0/t6" "encoder_0/FILLER_0_41/VPWR" 0.0277647
+cap "encoder_0/FILLER_0_41/VGND" "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_6/inverter_p1_n0o42_1/sky130_fd_pr__nfet_01v8_PNPQML_0/a_n15_n68#" 0.0374023
+cap "encoder_0/input7/a_27_47#" "encoder_0/input7/X" -1.42109e-14
+cap "encoder_0/t5" "encoder_0/FILLER_0_41/VPWR" 0.57453
+cap "encoder_0/t6" "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_6/inverter_p1_n0o42_2/sky130_fd_pr__nfet_01v8_PNPQML_0/a_n15_n68#" 0.201711
+cap "encoder_0/FILLER_0_41/VGND" "encoder_0/input7/a_27_47#" 0.429811
+cap "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_5/inverter_p1_n0o42_2/sky130_fd_pr__nfet_01v8_PNPQML_0/a_n15_n68#" "encoder_0/input7/X" 0.0694437
+cap "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_6/VDPWR" "encoder_0/t6" 1.46759
+cap "encoder_0/FILLER_0_41/VGND" "encoder_0/input7/X" 0.776775
+cap "encoder_0/FILLER_0_41/VGND" "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_5/inverter_p1_n0o42_2/sky130_fd_pr__nfet_01v8_PNPQML_0/a_n15_n68#" 0.0758454
+cap "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_6/inverter_p1_n0o42_1/sky130_fd_pr__nfet_01v8_PNPQML_0/a_n15_n68#" "encoder_0/FILLER_0_41/VPWR" 0.00926726
+cap "encoder_0/FILLER_0_41/VGND" "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_6/in" 0.0170279
+cap "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_5/inverter_p1_n0o42_2/sky130_fd_pr__nfet_01v8_PNPQML_0/a_n15_n68#" "encoder_0/FILLER_0_41/VPWR" 0.011307
+cap "encoder_0/FILLER_0_41/VGND" "encoder_0/FILLER_0_41/VPWR" 10.6286
+cap "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_6/VDPWR" "encoder_0/input7/X" 1.81582
+cap "encoder_0/FILLER_0_41/VGND" "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_6/inverter_p1_n0o42_2/sky130_fd_pr__nfet_01v8_PNPQML_0/a_n15_n68#" 0.0768064
+cap "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_5/inverter_p1_n0o42_1/sky130_fd_pr__nfet_01v8_PNPQML_0/a_n15_n68#" "encoder_0/FILLER_0_41/VGND" 0.0153441
+cap "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_6/VDPWR" "encoder_0/FILLER_0_41/VGND" 3.91996
+cap "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_6/VDPWR" "encoder_0/FILLER_0_41/VPWR" 8.4067
+cap "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_6/inverter_p1_n0o42_2/sky130_fd_pr__nfet_01v8_PNPQML_0/a_n15_n68#" "encoder_0/FILLER_0_41/VPWR" 0.193773
+cap "encoder_0/t6" "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_6/inverter_p1_n0o42_1/sky130_fd_pr__nfet_01v8_PNPQML_0/a_n15_n68#" 0.0893603
+cap "encoder_0/t5" "encoder_0/input7/X" 0.288549
+cap "encoder_0/FILLER_0_41/VGND" "encoder_0/t6" 22.4652
+cap "encoder_0/t5" "encoder_0/FILLER_0_41/VGND" 0.701825
+cap "encoder_0/t6" "encoder_0/FILLER_0_53/VPWR" 0.0784819
+cap "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_6/VDPWR" "encoder_0/input7/X" 1.22545
+cap "encoder_0/t6" "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_6/inverter_p1_n0o42_2/sky130_fd_pr__nfet_01v8_PNPQML_0/a_n15_n68#" 16.4643
+cap "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_5/inverter_p1_n0o42_2/sky130_fd_pr__nfet_01v8_PNPQML_0/a_n15_n68#" "encoder_0/FILLER_0_53/VPWR" 0.220285
+cap "encoder_0/t5" "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_5/in" 0.141484
+cap "encoder_0/t5" "encoder_0/t6" -7.93468
+cap "encoder_0/FILLER_0_53/VGND" "encoder_0/t6" 53.3446
+cap "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_6/VDPWR" "encoder_0/t6" 26.4659
+cap "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_6/inverter_p1_n0o42_2/sky130_fd_pr__nfet_01v8_PNPQML_0/a_n15_n68#" "encoder_0/FILLER_0_53/VPWR" 0.177155
+cap "encoder_0/t5" "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_5/inverter_p1_n0o42_2/sky130_fd_pr__nfet_01v8_PNPQML_0/a_n15_n68#" 0.53205
+cap "encoder_0/FILLER_0_53/VGND" "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_5/inverter_p1_n0o42_2/sky130_fd_pr__nfet_01v8_PNPQML_0/a_n15_n68#" 0.0541591
+cap "encoder_0/t5" "encoder_0/FILLER_0_53/VPWR" 0.756933
+cap "encoder_0/FILLER_0_53/VGND" "encoder_0/FILLER_0_53/VPWR" 3.61524
+cap "encoder_0/t6" "encoder_0/input7/a_27_47#" 0.199187
+cap "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_6/VDPWR" "encoder_0/FILLER_0_53/VPWR" 16.7783
+cap "encoder_0/FILLER_0_53/VGND" "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_6/inverter_p1_n0o42_2/sky130_fd_pr__nfet_01v8_PNPQML_0/a_n15_n68#" 0.22852
+cap "encoder_0/t5" "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_5/inverter_p1_n0o42_1/sky130_fd_pr__nfet_01v8_PNPQML_0/a_n15_n68#" 0.328148
+cap "encoder_0/input7/X" "encoder_0/t6" 0.0791328
+cap "encoder_0/t5" "encoder_0/FILLER_0_53/VGND" 3.19297
+cap "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_6/VDPWR" "encoder_0/t5" 7.89527
+cap "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_6/VDPWR" "encoder_0/FILLER_0_53/VGND" 14.6378
+cap "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_6/in" "encoder_0/t6" 6.3038
+cap "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_6/VDPWR" "encoder_0/input7/a_27_47#" 0.476425
+cap "encoder_0/input7/X" "encoder_0/t5" 0.268817
+cap "encoder_0/t6" "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_6/inverter_p1_n0o42_1/sky130_fd_pr__nfet_01v8_PNPQML_0/a_n15_n68#" 6.21332
+cap "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_6/in" "encoder_0/t6" 3.89708
+cap "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_6/inverter_p1_n0o42_1/sky130_fd_pr__nfet_01v8_PNPQML_0/a_n15_n68#" "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_6/in" 3.55271e-15
+cap "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_6/inverter_p1_n0o42_2/sky130_fd_pr__nfet_01v8_PNPQML_0/a_n15_n68#" "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_6/in" 1.33227e-15
+cap "encoder_0/PHY_EDGE_ROW_0_Right_0/VNB" "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_6/in" 5.68434e-14
+cap "encoder_0/PHY_EDGE_ROW_0_Right_0/VNB" "encoder_0/t6" 0.374438
+cap "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_6/VDPWR" "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_6/in" -0.0189223
+cap "encoder_0/PHY_EDGE_ROW_0_Right_0/VNB" "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_6/inverter_p1_n0o42_1/sky130_fd_pr__nfet_01v8_PNPQML_0/a_n15_n68#" 7.10543e-15
+cap "encoder_0/FILLER_0_41/VPWR" "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_6/VDPWR" 0.449825
+cap "encoder_0/t4" "encoder_0/_11_/A" 0.0858195
+cap "encoder_0/input7/X" "encoder_0/t5" 2.18417
+cap "encoder_0/FILLER_0_41/VPWR" "encoder_0/t5" 0.21314
+cap "encoder_0/FILLER_0_41/VPWR" "encoder_0/input7/X" -3.55271e-15
+cap "encoder_0/_12_/VPB" "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_4/inverter_p1_n0o42_1/sky130_fd_pr__nfet_01v8_PNPQML_0/a_n15_n68#" 0.00926726
+cap "encoder_0/_17_/B" "encoder_0/VGND" 0.0353104
+cap "encoder_0/input5/a_27_47#" "encoder_0/_12_/B" -7.10543e-15
+cap "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_5/inverter_p1_n0o42_2/sky130_fd_pr__nfet_01v8_PNPQML_0/a_n15_n68#" "encoder_0/VGND" 0.0659412
+cap "encoder_0/t5" "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_5/inverter_p1_n0o42_1/sky130_fd_pr__nfet_01v8_PNPQML_0/a_n15_n68#" 0.0246566
+cap "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_5/inverter_p1_n0o42_2/sky130_fd_pr__nfet_01v8_PNPQML_0/a_n15_n68#" "encoder_0/t5" 0.0443922
+cap "encoder_0/FILLER_0_41/VPWR" "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_5/inverter_p1_n0o42_1/sky130_fd_pr__nfet_01v8_PNPQML_0/a_n15_n68#" 0.00463363
+cap "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_6/VDPWR" "encoder_0/_13_/B" 0.0275605
+cap "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_5/inverter_p1_n0o42_2/sky130_fd_pr__nfet_01v8_PNPQML_0/a_n15_n68#" "encoder_0/input7/X" 0.12109
+cap "encoder_0/_12_/VPB" "encoder_0/VGND" 3.48305
+cap "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_6/VDPWR" "encoder_0/_13_/Y" 1.23156
+cap "encoder_0/_12_/VPB" "encoder_0/_12_/B" 2.27374e-13
+cap "encoder_0/FILLER_0_41/VPWR" "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_5/inverter_p1_n0o42_2/sky130_fd_pr__nfet_01v8_PNPQML_0/a_n15_n68#" 0.500774
+cap "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_6/VDPWR" "encoder_0/_12_/VPB" 8.21584
+cap "encoder_0/t4" "encoder_0/_13_/Y" 0.0115273
+cap "encoder_0/t4" "encoder_0/_12_/VPB" 2.47479
+cap "encoder_0/_12_/VPB" "encoder_0/t5" 0.0104613
+cap "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_4/inverter_p1_n0o42_2/sky130_fd_pr__nfet_01v8_PNPQML_0/a_n15_n68#" "encoder_0/_12_/VPB" 0.150419
+cap "encoder_0/t4" "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_4/inverter_p1_n0o42_1/sky130_fd_pr__nfet_01v8_PNPQML_0/a_n15_n68#" 0.00314592
+cap "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_6/VDPWR" "encoder_0/_20_/VPB" 0.261405
+cap "encoder_0/VGND" "encoder_0/_12_/B" 0.42027
+cap "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_6/VDPWR" "encoder_0/VGND" 15.6904
+cap "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_6/VDPWR" "encoder_0/_12_/B" 5.22513
+cap "encoder_0/_12_/VPB" "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_5/inverter_p1_n0o42_1/sky130_fd_pr__nfet_01v8_PNPQML_0/a_n15_n68#" 0.00463363
+cap "encoder_0/t4" "encoder_0/VGND" 4.58628
+cap "encoder_0/VGND" "encoder_0/t5" 4.94594
+cap "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_4/inverter_p1_n0o42_2/sky130_fd_pr__nfet_01v8_PNPQML_0/a_n15_n68#" "encoder_0/VGND" 0.769914
+cap "encoder_0/t4" "encoder_0/_12_/B" 1.25662
+cap "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_4/inverter_p1_n0o42_2/sky130_fd_pr__nfet_01v8_PNPQML_0/a_n15_n68#" "encoder_0/_12_/B" 0.09123
+cap "encoder_0/t4" "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_6/VDPWR" 1.29285
+cap "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_6/VDPWR" "encoder_0/t5" 2.79065
+cap "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_5/inverter_p1_n0o42_2/sky130_fd_pr__nfet_01v8_PNPQML_0/a_n15_n68#" "encoder_0/_12_/VPB" 0.00668533
+cap "encoder_0/input7/X" "encoder_0/VGND" 0.00720816
+cap "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_4/inverter_p1_n0o42_2/sky130_fd_pr__nfet_01v8_PNPQML_0/a_n15_n68#" "encoder_0/t4" 0.0990646
+cap "encoder_0/input7/X" "encoder_0/_12_/B" 1.13687e-13
+cap "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_6/VDPWR" "encoder_0/_11_/A" 3.29645
+cap "encoder_0/FILLER_0_41/VPWR" "encoder_0/VGND" -1.13687e-13
+cap "encoder_0/input7/X" "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_6/VDPWR" 3.30801
+cap "encoder_0/_13_/a_191_297#" "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_6/VDPWR" 0.0283033
+cap "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_4/inverter_p1_n0o42_2/sky130_fd_pr__nfet_01v8_PNPQML_0/a_n15_n68#" "encoder_0/input5/a_27_47#" 0.00805691
+cap "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_4/in" "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_6/VDPWR" -1.8934
+cap "encoder_0/t5" "encoder_0/FILLER_0_53/VPWR" 0.821532
+cap "encoder_0/input6/a_27_47#" "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_6/VDPWR" 0.83027
+cap "encoder_0/_17_/VPB" "encoder_0/t4" 5.0271
+cap "encoder_0/_16_/B" "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_4/inverter_p1_n0o42_2/sky130_fd_pr__nfet_01v8_PNPQML_0/a_n15_n68#" 0.000507903
+cap "encoder_0/_13_/a_109_297#" "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_6/VDPWR" 0.0523129
+cap "encoder_0/max_cap8/X" "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_6/VDPWR" 0.0336476
+cap "encoder_0/_20_/a_1142_47#" "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_6/VDPWR" 0.0887745
+cap "encoder_0/FILLER_0_53/VGND" "encoder_0/_17_/VPB" 3.61485
+cap "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_6/VDPWR" "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_5/inverter_p1_n0o42_2/sky130_fd_pr__nfet_01v8_PNPQML_0/a_n15_n68#" -2.39372
+cap "encoder_0/_11_/A" "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_6/VDPWR" 3.6474
+cap "encoder_0/_13_/B" "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_6/VDPWR" 0.0550012
+cap "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_6/VDPWR" "encoder_0/_13_/Y" 1.15427
+cap "encoder_0/input7/X" "encoder_0/t4" 5.55112e-17
+cap "encoder_0/_16_/a_145_75#" "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_6/VDPWR" 0.0134029
+cap "encoder_0/FILLER_0_53/VGND" "encoder_0/t4" 8.87497
+cap "encoder_0/FILLER_0_53/VPWR" "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_5/inverter_p1_n0o42_2/sky130_fd_pr__nfet_01v8_PNPQML_0/a_n15_n68#" 0.494721
+cap "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_6/VDPWR" "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_5/in" -1.84362
+cap "encoder_0/_16_/B" "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_5/inverter_p1_n0o42_2/sky130_fd_pr__nfet_01v8_PNPQML_0/a_n15_n68#" 0.00519924
+cap "encoder_0/t5" "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_5/inverter_p1_n0o42_1/sky130_fd_pr__nfet_01v8_PNPQML_0/a_n15_n68#" 6.07919
+cap "encoder_0/_17_/VPB" "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_6/VDPWR" 13.4644
+cap "encoder_0/t4" "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_6/VDPWR" 229.534
+cap "encoder_0/_11_/A" "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_4/inverter_p1_n0o42_2/sky130_fd_pr__nfet_01v8_PNPQML_0/a_n15_n68#" 0.0054066
+cap "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_4/inverter_p1_n0o42_2/sky130_fd_pr__nfet_01v8_PNPQML_0/a_n15_n68#" "encoder_0/_13_/Y" 0.00498598
+cap "encoder_0/input7/X" "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_6/VDPWR" 2.29467
+cap "encoder_0/t3" "encoder_0/t4" -4.68455
+cap "encoder_0/FILLER_0_53/VGND" "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_6/VDPWR" 13.3314
+cap "encoder_0/t5" "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_5/inverter_p1_n0o42_2/sky130_fd_pr__nfet_01v8_PNPQML_0/a_n15_n68#" 15.7482
+cap "encoder_0/input5/a_27_47#" "encoder_0/t4" 0.204913
+cap "encoder_0/_20_/a_79_21#" "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_6/VDPWR" 0.0106314
+cap "encoder_0/t5" "encoder_0/t6" -1.63817
+cap "encoder_0/_16_/B" "encoder_0/t4" 1.1828
+cap "encoder_0/t5" "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_5/in" 6.42411
+cap "encoder_0/input6/a_27_47#" "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_5/inverter_p1_n0o42_2/sky130_fd_pr__nfet_01v8_PNPQML_0/a_n15_n68#" 0.0044031
+cap "encoder_0/_17_/VPB" "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_4/inverter_p1_n0o42_2/sky130_fd_pr__nfet_01v8_PNPQML_0/a_n15_n68#" 0.579255
+cap "encoder_0/_13_/a_297_297#" "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_6/VDPWR" 0.0135473
+cap "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_4/inverter_p1_n0o42_2/sky130_fd_pr__nfet_01v8_PNPQML_0/a_n15_n68#" "encoder_0/t4" 13.5392
+cap "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_6/VDPWR" "encoder_0/FILLER_0_53/VPWR" 0.523293
+cap "encoder_0/_20_/B1" "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_6/VDPWR" 0.00978778
+cap "encoder_0/t5" "encoder_0/t4" -9.65884
+cap "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_4/inverter_p1_n0o42_1/sky130_fd_pr__nfet_01v8_PNPQML_0/a_n15_n68#" "encoder_0/t4" 4.52831
+cap "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_4/in" "encoder_0/t4" 5.59394
+cap "encoder_0/FILLER_0_53/VGND" "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_4/inverter_p1_n0o42_2/sky130_fd_pr__nfet_01v8_PNPQML_0/a_n15_n68#" 0.874596
+cap "encoder_0/input5/a_27_47#" "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_6/VDPWR" 0.83027
+cap "encoder_0/input7/X" "encoder_0/t5" 2.36559
+cap "encoder_0/_16_/a_59_75#" "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_6/VDPWR" 0.0316373
+cap "encoder_0/_16_/B" "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_6/VDPWR" 5.15893
+cap "encoder_0/FILLER_0_53/VGND" "encoder_0/t5" 9.50355
+cap "encoder_0/_11_/A" "encoder_0/t4" 0.00105453
+cap "encoder_0/_17_/B" "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_6/VDPWR" 0.00359915
+cap "encoder_0/max_cap8/a_75_212#" "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_6/VDPWR" 0.0692202
+cap "encoder_0/FILLER_0_53/VGND" "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_5/inverter_p1_n0o42_2/sky130_fd_pr__nfet_01v8_PNPQML_0/a_n15_n68#" 0.284839
+cap "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_4/inverter_p1_n0o42_2/sky130_fd_pr__nfet_01v8_PNPQML_0/a_n15_n68#" "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_6/VDPWR" -2.41133
+cap "encoder_0/t5" "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_6/VDPWR" 227.635
+cap "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_6/VDPWR" "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_5/inverter_p1_n0o42_1/sky130_fd_pr__nfet_01v8_PNPQML_0/a_n15_n68#" -0.858002
+cap "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_4/inverter_p1_n0o42_1/sky130_fd_pr__nfet_01v8_PNPQML_0/a_n15_n68#" "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_6/VDPWR" -0.863876
+cap "encoder_0/t5" "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_5/in" 3.89339
+cap "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_6/VDPWR" "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_4/in" -1.85563
+cap "encoder_0/t4" "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_4/in" 4.05825
+cap "encoder_0/t5" "encoder_0/PHY_EDGE_ROW_0_Right_0/VNB" 0.0944206
+cap "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_4/inverter_p1_n0o42_2/sky130_fd_pr__nfet_01v8_PNPQML_0/a_n15_n68#" "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_4/in" 4.44089e-16
+cap "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_6/VDPWR" "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_5/in" -1.79692
+cap "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_5/inverter_p1_n0o42_1/sky130_fd_pr__nfet_01v8_PNPQML_0/a_n15_n68#" "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_5/in" 3.55271e-15
+cap "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_5/in" "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_5/inverter_p1_n0o42_2/sky130_fd_pr__nfet_01v8_PNPQML_0/a_n15_n68#" 1.33227e-15
+cap "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_6/VDPWR" "encoder_0/PHY_EDGE_ROW_0_Right_0/VNB" -0.125
+cap "encoder_0/t4" "encoder_0/PHY_EDGE_ROW_0_Right_0/VNB" 0.0472103
+cap "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_5/inverter_p1_n0o42_1/sky130_fd_pr__nfet_01v8_PNPQML_0/a_n15_n68#" "encoder_0/PHY_EDGE_ROW_0_Right_0/VNB" -4.44089e-16
+cap "encoder_0/o1" "encoder_0/FILLER_5_3/VGND" 0.026613
+cap "encoder_0/o1" "encoder_0/FILLER_4_3/VPB" 0.000496889
+cap "encoder_0/o1" "encoder_0/FILLER_4_3/VPWR" 0.0127387
+cap "encoder_0/_13_/B" "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_5/VDPWR" 2.72431
+cap "encoder_0/max_cap8/X" "encoder_0/_10_/C" 5.68434e-14
+cap "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_3/inverter_p1_n0o42_2/sky130_fd_pr__nfet_01v8_PNPQML_0/a_n15_n68#" "encoder_0/_10_/B" 0.00613657
+cap "encoder_0/_10_/C" "encoder_0/t3" -0.0348547
+cap "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_5/VDPWR" "encoder_0/_10_/A" 1.30159
+cap "encoder_0/VGND" "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_3/inverter_p1_n0o42_2/sky130_fd_pr__nfet_01v8_PNPQML_0/a_n15_n68#" 0.124686
+cap "encoder_0/max_cap8/X" "encoder_0/t3" 4.71158
+cap "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_3/inverter_p1_n0o42_2/sky130_fd_pr__nfet_01v8_PNPQML_0/a_n15_n68#" "encoder_0/_20_/VPB" 0.0279665
+cap "encoder_0/t3" "encoder_0/_10_/B" 0.903795
+cap "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_5/VDPWR" "encoder_0/_09_/VPWR" 1.00612
+cap "encoder_0/max_cap8/X" "encoder_0/VGND" 0.0273659
+cap "encoder_0/max_cap8/X" "encoder_0/_20_/VPB" 1.13687e-13
+cap "encoder_0/VGND" "encoder_0/_10_/B" 1.09088
+cap "encoder_0/VGND" "encoder_0/_13_/Y" 0.0250043
+cap "encoder_0/_20_/VPB" "encoder_0/_13_/Y" -5.68434e-14
+cap "encoder_0/VGND" "encoder_0/t3" 2.66595
+cap "encoder_0/_13_/B" "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_3/inverter_p1_n0o42_2/sky130_fd_pr__nfet_01v8_PNPQML_0/a_n15_n68#" 0.00414714
+cap "encoder_0/t3" "encoder_0/_20_/VPB" 4.81147
+cap "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_5/VDPWR" "encoder_0/_20_/B1" 0.631316
+cap "encoder_0/VGND" "encoder_0/_20_/VPB" 3.46734
+cap "encoder_0/_13_/B" "encoder_0/t3" 0.00408932
+cap "encoder_0/_10_/A" "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_3/inverter_p1_n0o42_2/sky130_fd_pr__nfet_01v8_PNPQML_0/a_n15_n68#" 0.506685
+cap "encoder_0/max_cap8/X" "encoder_0/_10_/A" -2.84217e-14
+cap "encoder_0/_10_/A" "encoder_0/t3" 0.373745
+cap "encoder_0/_10_/C" "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_5/VDPWR" 0.855843
+cap "encoder_0/VGND" "encoder_0/_09_/VPWR" 1.57619
+cap "encoder_0/max_cap8/X" "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_5/VDPWR" 1.25156
+cap "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_5/VDPWR" "encoder_0/_13_/Y" 1.55211
+cap "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_5/VDPWR" "encoder_0/_10_/B" 2.96549
+cap "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_5/VDPWR" "encoder_0/t3" 1.7616
+cap "encoder_0/VGND" "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_3/inverter_p1_n0o42_1/sky130_fd_pr__nfet_01v8_PNPQML_0/a_n15_n68#" 0.0205715
+cap "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_3/inverter_p1_n0o42_1/sky130_fd_pr__nfet_01v8_PNPQML_0/a_n15_n68#" "encoder_0/_20_/VPB" 0.00463363
+cap "encoder_0/VGND" "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_5/VDPWR" 15.1511
+cap "encoder_0/_13_/B" "encoder_0/_09_/VPWR" 3.55271e-15
+cap "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_5/VDPWR" "encoder_0/_20_/VPB" 6.73604
+cap "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_5/VDPWR" "encoder_0/input4/a_75_212#" 0.517305
+cap "encoder_0/FILLER_1_51/VGND" "encoder_0/_09_/VPWR" 1.94114
+cap "encoder_0/max_cap8/X" "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_5/VDPWR" 1.47139
+cap "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_5/VDPWR" "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_3/in" -1.8934
+cap "encoder_0/_20_/a_1142_47#" "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_5/VDPWR" 0.263052
+cap "encoder_0/_10_/A" "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_5/VDPWR" 1.56272
+cap "encoder_0/FILLER_1_51/VGND" "encoder_0/_20_/VPWR" 3.64342
+cap "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_5/VDPWR" "encoder_0/_14_/a_27_297#" 0.164927
+cap "encoder_0/t3" "encoder_0/_13_/B" 2.22045e-16
+cap "encoder_0/t3" "encoder_0/_10_/B" 1.37876
+cap "encoder_0/t3" "encoder_0/_10_/a_27_47#" 0.519669
+cap "encoder_0/t3" "encoder_0/t4" -4.67237
+cap "encoder_0/t3" "encoder_0/_20_/VPWR" 12.3296
+cap "encoder_0/t3" "encoder_0/FILLER_1_51/VGND" 9.40983
+cap "encoder_0/_14_/a_109_47#" "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_5/VDPWR" 0.0476313
+cap "encoder_0/_14_/a_277_47#" "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_5/VDPWR" 0.0382841
+cap "encoder_0/_11_/C" "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_5/VDPWR" 0.0999447
+cap "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_5/VDPWR" "encoder_0/_20_/B1" 0.877959
+cap "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_5/VDPWR" "encoder_0/t2" 2.6333
+cap "encoder_0/_10_/B" "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_3/inverter_p1_n0o42_2/sky130_fd_pr__nfet_01v8_PNPQML_0/a_n15_n68#" 0.00637821
+cap "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_3/inverter_p1_n0o42_2/sky130_fd_pr__nfet_01v8_PNPQML_0/a_n15_n68#" "encoder_0/_20_/VPWR" 1.26014
+cap "encoder_0/_13_/B" "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_3/inverter_p1_n0o42_2/sky130_fd_pr__nfet_01v8_PNPQML_0/a_n15_n68#" 0.00705834
+cap "encoder_0/_10_/a_27_47#" "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_3/inverter_p1_n0o42_2/sky130_fd_pr__nfet_01v8_PNPQML_0/a_n15_n68#" 0.0162718
+cap "encoder_0/FILLER_1_51/VGND" "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_3/inverter_p1_n0o42_2/sky130_fd_pr__nfet_01v8_PNPQML_0/a_n15_n68#" 0.126925
+cap "encoder_0/t3" "encoder_0/_10_/C" 0.187853
+cap "encoder_0/t3" "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_3/inverter_p1_n0o42_2/sky130_fd_pr__nfet_01v8_PNPQML_0/a_n15_n68#" 14.0802
+cap "encoder_0/_10_/a_197_47#" "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_5/VDPWR" 0.0518808
+cap "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_5/VDPWR" "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_3/inverter_p1_n0o42_1/sky130_fd_pr__nfet_01v8_PNPQML_0/a_n15_n68#" -0.863876
+cap "encoder_0/_10_/a_303_47#" "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_5/VDPWR" 0.0383769
+cap "encoder_0/_20_/a_79_21#" "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_5/VDPWR" 0.334745
+cap "encoder_0/_09_/VPWR" "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_5/VDPWR" 3.17098
+cap "encoder_0/_13_/B" "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_5/VDPWR" 2.38508
+cap "encoder_0/_10_/B" "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_5/VDPWR" 2.69209
+cap "encoder_0/t3" "encoder_0/max_cap8/X" 4.8474
+cap "encoder_0/t3" "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_3/in" 5.88541
+cap "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_5/VDPWR" "encoder_0/_10_/a_27_47#" 0.579393
+cap "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_5/VDPWR" "encoder_0/_20_/VPWR" 13.6
+cap "encoder_0/FILLER_1_51/VGND" "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_5/VDPWR" 10.3527
+cap "encoder_0/t3" "encoder_0/_10_/A" 1.13688
+cap "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_5/VDPWR" "encoder_0/max_cap8/a_75_212#" 0.774276
+cap "encoder_0/t3" "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_5/VDPWR" 272.32
+cap "encoder_0/FILLER_1_51/VGND" "encoder_0/t2" 1.20434
+cap "encoder_0/_10_/A" "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_3/inverter_p1_n0o42_2/sky130_fd_pr__nfet_01v8_PNPQML_0/a_n15_n68#" 0.526545
+cap "encoder_0/t3" "encoder_0/_11_/C" -1.11022e-16
+cap "encoder_0/_10_/C" "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_5/VDPWR" 1.06808
+cap "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_5/VDPWR" "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_3/inverter_p1_n0o42_2/sky130_fd_pr__nfet_01v8_PNPQML_0/a_n15_n68#" -2.41133
+cap "encoder_0/t3" "encoder_0/t2" -4.53176
+cap "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_5/VDPWR" "encoder_0/_20_/a_445_297#" 0.365577
+cap "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_5/VDPWR" "encoder_0/_14_/a_193_47#" 0.0425807
+cap "encoder_0/t3" "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_3/inverter_p1_n0o42_1/sky130_fd_pr__nfet_01v8_PNPQML_0/a_n15_n68#" 5.20918
+cap "encoder_0/_10_/a_109_47#" "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_5/VDPWR" 0.0335593
+cap "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_5/VDPWR" "encoder_0/_13_/Y" 1.81214
+cap "encoder_0/t3" "encoder_0/PHY_EDGE_ROW_1_Right_1/VNB" 0.0472103
+cap "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_5/VDPWR" "encoder_0/PHY_EDGE_ROW_1_Right_1/VNB" -0.0416667
+cap "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_3/in" "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_3/inverter_p1_n0o42_2/sky130_fd_pr__nfet_01v8_PNPQML_0/a_n15_n68#" 4.44089e-16
+cap "encoder_0/t3" "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_3/in" 4.17839
+cap "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_5/VDPWR" "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_3/in" -1.85563
+cap "encoder_0/FILLER_8_41/VPWR" "encoder_0/t1" 7.36056
+cap "encoder_0/_10_/B" "encoder_0/t1" 9.43398
+cap "encoder_0/_10_/B" "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_2/inverter_p1_n0o42_1/sky130_fd_pr__nfet_01v8_PNPQML_0/a_n15_n68#" 0.092854
+cap "encoder_0/_10_/B" "encoder_0/t2" 13.3773
+cap "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_4/VDPWR" "encoder_0/_10_/A" 0.855843
+cap "encoder_0/_10_/B" "encoder_0/_09_/VPWR" -5.68434e-14
+cap "encoder_0/VGND" "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_1/inverter_p1_n0o42_1/sky130_fd_pr__nfet_01v8_PNPQML_0/a_n15_n68#" 0.00374255
+cap "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_4/VDPWR" "encoder_0/FILLER_8_41/VPWR" 5.08405
+cap "encoder_0/_10_/B" "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_2/inverter_p1_n0o42_2/sky130_fd_pr__nfet_01v8_PNPQML_0/a_n15_n68#" 0.208239
+cap "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_4/VDPWR" "encoder_0/_10_/B" 5.80535
+cap "encoder_0/t1" "encoder_0/VGND" 0.309804
+cap "encoder_0/VGND" "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_2/inverter_p1_n0o42_1/sky130_fd_pr__nfet_01v8_PNPQML_0/a_n15_n68#" 0.0225319
+cap "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_1/inverter_p1_n0o42_2/sky130_fd_pr__nfet_01v8_PNPQML_0/a_n15_n68#" "encoder_0/_10_/B" 0.201723
+cap "encoder_0/FILLER_8_41/VPWR" "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_1/inverter_p1_n0o42_2/sky130_fd_pr__nfet_01v8_PNPQML_0/a_n15_n68#" 0.011307
+cap "encoder_0/VGND" "encoder_0/t2" 1.47112
+cap "encoder_0/VGND" "encoder_0/_09_/VPWR" 0.807213
+cap "encoder_0/t2" "encoder_0/_18_/Y" -0.0446727
+cap "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_4/VDPWR" "encoder_0/VGND" 11.3234
+cap "encoder_0/VGND" "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_2/inverter_p1_n0o42_2/sky130_fd_pr__nfet_01v8_PNPQML_0/a_n15_n68#" 0.241475
+cap "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_4/VDPWR" "encoder_0/_18_/Y" 1.29729
+cap "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_1/inverter_p1_n0o42_2/sky130_fd_pr__nfet_01v8_PNPQML_0/a_n15_n68#" "encoder_0/VGND" 0.240917
+cap "encoder_0/_20_/B1" "encoder_0/t2" 0.0282508
+cap "encoder_0/FILLER_8_41/VPWR" "encoder_0/_10_/B" -5.68434e-14
+cap "encoder_0/_10_/C" "encoder_0/t2" 0.0600094
+cap "encoder_0/t2" "encoder_0/_09_/VPWR" 7.01073
+cap "encoder_0/_10_/C" "encoder_0/_09_/VPWR" 2.84217e-14
+cap "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_4/VDPWR" "encoder_0/t2" 1.2529
+cap "encoder_0/_10_/C" "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_4/VDPWR" 2.25385
+cap "encoder_0/_09_/VPWR" "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_2/inverter_p1_n0o42_2/sky130_fd_pr__nfet_01v8_PNPQML_0/a_n15_n68#" 0.196945
+cap "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_4/VDPWR" "encoder_0/_09_/VPWR" 5.48651
+cap "encoder_0/FILLER_8_41/VPWR" "encoder_0/VGND" 1.1689
+cap "encoder_0/_10_/B" "encoder_0/VGND" 1.91523
+cap "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_1/inverter_p1_n0o42_2/sky130_fd_pr__nfet_01v8_PNPQML_0/a_n15_n68#" "encoder_0/t2" 0.0541761
+cap "encoder_0/_10_/A" "encoder_0/_18_/Y" 1.42109e-14
+cap "encoder_0/_10_/B" "encoder_0/_18_/Y" 7.10543e-15
+cap "encoder_0/_09_/X" "encoder_0/t2" 0.0272592
+cap "encoder_0/_10_/B" "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_1/inverter_p1_n0o42_1/sky130_fd_pr__nfet_01v8_PNPQML_0/a_n15_n68#" 0.0900823
+cap "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_4/VDPWR" "encoder_0/_09_/X" 0.807339
+cap "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_4/VDPWR" "encoder_0/t3" 0.0881589
+cap "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_4/VDPWR" "encoder_0/_09_/X" 0.895658
+cap "boosted_tiq_adc_7_0/tiq_adc_7_0/inverter_p0o47_n40_0/sky130_fd_pr__nfet_01v8_CTSNWR_1/a_n63_n693#" "encoder_0/t1" 0.0379099
+cap "encoder_0/_10_/D" "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_2/inverter_p1_n0o42_2/sky130_fd_pr__nfet_01v8_PNPQML_0/a_n15_n68#" 0.0054066
+cap "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_1/inverter_p1_n0o42_2/sky130_fd_pr__nfet_01v8_PNPQML_0/a_n15_n68#" "encoder_0/t2" 0.0541761
+cap "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_1/inverter_p1_n0o42_2/sky130_fd_pr__nfet_01v8_PNPQML_0/a_n15_n68#" "encoder_0/t1" 11.6389
+cap "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_4/VDPWR" "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_1/inverter_p1_n0o42_1/sky130_fd_pr__nfet_01v8_PNPQML_0/a_n15_n68#" -0.852127
+cap "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_2/in" "encoder_0/t2" 5.46298
+cap "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_4/VDPWR" "encoder_0/_10_/B" 2.21579
+cap "encoder_0/_10_/C" "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_4/VDPWR" 2.85425
+cap "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_2/inverter_p1_n0o42_2/sky130_fd_pr__nfet_01v8_PNPQML_0/a_n15_n68#" "encoder_0/_11_/VGND" 0.218489
+cap "boosted_tiq_adc_7_0/tiq_adc_7_0/inverter_p0o47_n40_0/sky130_fd_pr__nfet_01v8_CTSNWR_1/a_n33_n667#" "encoder_0/t1" 0.028589
+cap "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_4/VDPWR" "encoder_0/_19_/a_299_297#" 0.268616
+cap "encoder_0/_11_/VGND" "encoder_0/t2" 7.93207
+cap "encoder_0/_11_/VGND" "encoder_0/t1" 3.16006
+cap "encoder_0/_19_/a_81_21#" "encoder_0/t2" -1.11022e-16
+cap "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_4/VDPWR" "encoder_0/_14_/a_27_297#" 0.142356
+cap "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_4/VDPWR" "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_1/in" -1.79385
+cap "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_2/inverter_p1_n0o42_2/sky130_fd_pr__nfet_01v8_PNPQML_0/a_n15_n68#" "encoder_0/_09_/VPWR" 1.49653
+cap "encoder_0/FILLER_8_53/VPWR" "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_1/inverter_p1_n0o42_2/sky130_fd_pr__nfet_01v8_PNPQML_0/a_n15_n68#" 1.27825
+cap "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_2/inverter_p1_n0o42_2/sky130_fd_pr__nfet_01v8_PNPQML_0/a_n15_n68#" "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_4/VDPWR" -2.41133
+cap "encoder_0/_19_/a_384_47#" "encoder_0/t2" -2.77556e-17
+cap "encoder_0/_09_/VPWR" "encoder_0/t2" 13.5126
+cap "encoder_0/FILLER_8_53/VPWR" "encoder_0/_11_/VGND" 1.14056
+cap "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_4/VDPWR" "encoder_0/t2" 281.635
+cap "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_4/VDPWR" "encoder_0/t1" 209.977
+cap "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_2/inverter_p1_n0o42_2/sky130_fd_pr__nfet_01v8_PNPQML_0/a_n15_n68#" "encoder_0/_18_/Y" 0.0190144
+cap "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_4/VDPWR" "encoder_0/_18_/a_109_297#" 0.24062
+cap "encoder_0/_18_/Y" "encoder_0/t2" -1.33227e-15
+cap "encoder_0/_09_/X" "encoder_0/t2" 1.11022e-16
+cap "encoder_0/t2" "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_2/inverter_p1_n0o42_1/sky130_fd_pr__nfet_01v8_PNPQML_0/a_n15_n68#" 4.53705
+cap "encoder_0/t3" "encoder_0/t2" -4.43897
+cap "encoder_0/input3/a_75_212#" "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_1/inverter_p1_n0o42_2/sky130_fd_pr__nfet_01v8_PNPQML_0/a_n15_n68#" 0.0147064
+cap "boosted_tiq_adc_7_0/tiq_adc_7_0/inverter_p0o47_n40_0/sky130_fd_pr__nfet_01v8_CTSNWR_1/a_n63_n693#" "encoder_0/t1" 0.0379099
+cap "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_4/VDPWR" "encoder_0/input4/a_75_212#" 0.219635
+cap "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_4/VDPWR" "encoder_0/FILLER_8_53/VPWR" 12.4108
+cap "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_1/inverter_p1_n0o42_1/sky130_fd_pr__nfet_01v8_PNPQML_0/a_n15_n68#" "encoder_0/t1" 3.69358
+cap "encoder_0/_09_/a_27_47#" "encoder_0/t2" -2.77556e-17
+cap "encoder_0/_10_/B" "encoder_0/t1" 9.32722
+cap "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_2/inverter_p1_n0o42_2/sky130_fd_pr__nfet_01v8_PNPQML_0/a_n15_n68#" "encoder_0/_19_/a_299_297#" 0.0133378
+cap "encoder_0/_11_/VGND" "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_1/inverter_p1_n0o42_2/sky130_fd_pr__nfet_01v8_PNPQML_0/a_n15_n68#" 0.235518
+cap "encoder_0/_10_/B" "encoder_0/t2" 13.6689
+cap "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_4/VDPWR" "encoder_0/_10_/A" 1.1203
+cap "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_4/VDPWR" "encoder_0/max_cap8/X" 0.0476114
+cap "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_1/in" "encoder_0/t1" 4.93839
+cap "encoder_0/_10_/D" "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_4/VDPWR" 0.101695
+cap "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_4/VDPWR" "encoder_0/input3/a_75_212#" 0.836813
+cap "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_2/inverter_p1_n0o42_2/sky130_fd_pr__nfet_01v8_PNPQML_0/a_n15_n68#" "encoder_0/t2" 13.3266
+cap "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_4/VDPWR" "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_1/inverter_p1_n0o42_2/sky130_fd_pr__nfet_01v8_PNPQML_0/a_n15_n68#" -2.37611
+cap "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_4/VDPWR" "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_2/in" -1.8934
+cap "encoder_0/_11_/VGND" "encoder_0/_09_/VPWR" 0.855282
+cap "encoder_0/t1" "encoder_0/t2" -4.95544
+cap "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_4/VDPWR" "encoder_0/_11_/VGND" 8.17641
+cap "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_4/VDPWR" "encoder_0/_19_/a_81_21#" 0.123753
+cap "encoder_0/t0" "encoder_0/t1" -1.6314
+cap "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_2/inverter_p1_n0o42_2/sky130_fd_pr__nfet_01v8_PNPQML_0/a_n15_n68#" "encoder_0/input4/a_75_212#" 0.0044031
+cap "encoder_0/FILLER_8_53/VPWR" "encoder_0/t1" 12.0496
+cap "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_4/VDPWR" "encoder_0/_19_/a_384_47#" 0.0401478
+cap "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_4/VDPWR" "encoder_0/_09_/VPWR" 10.263
+cap "encoder_0/_10_/C" "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_1/inverter_p1_n0o42_2/sky130_fd_pr__nfet_01v8_PNPQML_0/a_n15_n68#" 0.0145562
+cap "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_4/VDPWR" "encoder_0/_18_/Y" 1.7697
+cap "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_4/VDPWR" "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_2/inverter_p1_n0o42_1/sky130_fd_pr__nfet_01v8_PNPQML_0/a_n15_n68#" -0.863876
+cap "encoder_0/t2" "encoder_0/PHY_EDGE_ROW_3_Right_3/VNB" 0.184781
+cap "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_2/in" "boosted_tiq_adc_7_0/VDPWR" -1.85563
+cap "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_1/in" "encoder_0/t1" 3.89155
+cap "encoder_0/PHY_EDGE_ROW_3_Right_3/VNB" "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_1/inverter_p1_n0o42_2/sky130_fd_pr__nfet_01v8_PNPQML_0/a_n15_n68#" 5.55112e-17
+cap "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_1/inverter_p1_n0o42_1/sky130_fd_pr__nfet_01v8_PNPQML_0/a_n15_n68#" "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_1/in" -1.77636e-15
+cap "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_2/in" "encoder_0/t2" 4.05483
+cap "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_2/in" "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_2/inverter_p1_n0o42_2/sky130_fd_pr__nfet_01v8_PNPQML_0/a_n15_n68#" 4.44089e-16
+cap "encoder_0/t1" "encoder_0/PHY_EDGE_ROW_3_Right_3/VNB" 0.141631
+cap "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_1/in" "boosted_tiq_adc_7_0/VDPWR" -1.7382
+cap "encoder_0/t1" "boosted_tiq_adc_7_0/Vin" 0.010273
+cap "boosted_tiq_adc_7_0/VDPWR" "encoder_0/PHY_EDGE_ROW_3_Right_3/VNB" -0.166667
+cap "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_2/inverter_p1_n0o42_1/sky130_fd_pr__nfet_01v8_PNPQML_0/a_n15_n68#" "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_2/in" 1.77636e-15
+cap "boosted_tiq_adc_7_0/VDPWR" "boosted_tiq_adc_7_0/Vin" 0.00242072
+cap "boosted_tiq_adc_7_0/VDPWR" "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_0/in" 0.00186557
+cap "encoder_0/o2" "encoder_0/FILLER_6_15/VPWR" 3.99742
+cap "encoder_0/FILLER_6_15/VPWR" "encoder_0/FILLER_7_15/VGND" 9.86894
+cap "encoder_0/FILLER_6_27/VPWR" "encoder_0/FILLER_7_27/VGND" 32.4332
+cap "encoder_0/o2" "encoder_0/FILLER_6_27/VPWR" 0.357963
+cap "encoder_0/t1" "encoder_0/_18_/A" 7.68852
+cap "encoder_0/_18_/A" "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_2/VDPWR" 3.6968
+cap "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_2/VDPWR" "encoder_0/input2/a_27_47#" 0.610271
+cap "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_0/inverter_p1_n0o42_2/sky130_fd_pr__nfet_01v8_PNPQML_0/a_n15_n68#" "encoder_0/t0" 0.0606999
+cap "encoder_0/t1" "encoder_0/t0" 0.00909382
+cap "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_2/VDPWR" "encoder_0/t0" 73.0697
+cap "encoder_0/FILLER_10_41/VPWR" "encoder_0/t0" 6.15915
+cap "encoder_0/t1" "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_0/inverter_p1_n0o42_1/sky130_fd_pr__nfet_01v8_PNPQML_0/a_n15_n68#" 0.00376599
+cap "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_2/VDPWR" "encoder_0/input1/a_27_47#" 0.610271
+cap "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_2/VDPWR" "encoder_0/_09_/A" 0.308666
+cap "encoder_0/t1" "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_0/inverter_p1_n0o42_2/sky130_fd_pr__nfet_01v8_PNPQML_0/a_n15_n68#" 0.0293336
+cap "encoder_0/t1" "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_2/VDPWR" 3.01636
+cap "encoder_0/_18_/A" "encoder_0/FILLER_8_41/VPWR" 7.10543e-15
+cap "encoder_0/_18_/A" "encoder_0/_09_/VGND" 0.589525
+cap "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_2/VDPWR" "encoder_0/FILLER_10_41/VPWR" 328.909
+cap "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_1/inverter_p1_n0o42_1/sky130_fd_pr__nfet_01v8_PNPQML_0/a_n15_n68#" "encoder_0/_09_/VGND" 0.000891083
+cap "encoder_0/_09_/VGND" "encoder_0/t0" 0.481642
+cap "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_1/inverter_p1_n0o42_2/sky130_fd_pr__nfet_01v8_PNPQML_0/a_n15_n68#" "encoder_0/FILLER_8_41/VPWR" 0.00934281
+cap "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_0/inverter_p1_n0o42_1/sky130_fd_pr__nfet_01v8_PNPQML_0/a_n15_n68#" "encoder_0/_09_/VGND" 0.0175429
+cap "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_1/inverter_p1_n0o42_2/sky130_fd_pr__nfet_01v8_PNPQML_0/a_n15_n68#" "encoder_0/_09_/VGND" 0.198817
+cap "encoder_0/t1" "encoder_0/FILLER_8_41/VPWR" 1.44119
+cap "encoder_0/_18_/A" "encoder_0/t0" -7.10543e-15
+cap "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_0/inverter_p1_n0o42_2/sky130_fd_pr__nfet_01v8_PNPQML_0/a_n15_n68#" "encoder_0/_09_/VGND" 0.23962
+cap "encoder_0/t1" "encoder_0/_09_/VGND" 0.772826
+cap "encoder_0/input2/a_27_47#" "encoder_0/t0" -1.42109e-14
+cap "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_2/VDPWR" "encoder_0/FILLER_8_41/VPWR" 3.40043
+cap "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_2/VDPWR" "encoder_0/_09_/VGND" 14.5251
+cap "encoder_0/_09_/VGND" "encoder_0/FILLER_10_41/VPWR" 0.194194
+cap "encoder_0/FILLER_8_53/VPWR" "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_2/VDPWR" 4.28623
+cap "boosted_tiq_adc_7_0/tiq_adc_7_0/inverter_p0o47_n40_0/sky130_fd_pr__nfet_01v8_CTSNWR_0/a_n63_n693#" "encoder_0/t1" 0.128089
+cap "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_2/VDPWR" "encoder_0/_14_/A1" 0.240375
+cap "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_2/VDPWR" "encoder_0/t1" 86.3546
+cap "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_2/VDPWR" "encoder_0/t0" 335.542
+cap "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_0/inverter_p1_n0o42_2/sky130_fd_pr__nfet_01v8_PNPQML_0/a_n15_n68#" "encoder_0/input1/a_27_47#" 0.0155881
+cap "encoder_0/t2" "encoder_0/t1" -3.38246
+cap "encoder_0/t2" "encoder_0/t0" 0.0415184
+cap "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_1/inverter_p1_n0o42_1/sky130_fd_pr__nfet_01v8_PNPQML_0/a_n15_n68#" "encoder_0/t1" 0.269833
+cap "encoder_0/_18_/A" "encoder_0/t1" 8.33333
+cap "encoder_0/_18_/A" "encoder_0/t0" 0.424294
+cap "encoder_0/_09_/VGND" "encoder_0/t0" 2.73784
+cap "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_2/VDPWR" "encoder_0/input2/a_27_47#" 0.716514
+cap "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_2/VDPWR" "encoder_0/FILLER_10_53/VPWR" 8.66454
+cap "encoder_0/_09_/VGND" "encoder_0/t1" 11.3526
+cap "boosted_tiq_adc_7_0/tiq_adc_7_0/inverter_p0o47_n40_0/sky130_fd_pr__nfet_01v8_CTSNWR_0/a_n33_n667#" "encoder_0/t1" 0.290059
+cap "encoder_0/FILLER_8_53/VPWR" "encoder_0/t1" 5.13449
+cap "boosted_tiq_adc_7_0/tiq_adc_7_0/inverter_p0o47_n40_0/sky130_fd_pr__nfet_01v8_CTSNWR_0/a_n63_n693#" "encoder_0/t1" 0.397404
+cap "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_2/VDPWR" "encoder_0/input1/a_27_47#" 0.447413
+cap "encoder_0/_14_/A1" "encoder_0/t1" -2.77556e-17
+cap "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_1/in" "encoder_0/t1" 0.113269
+cap "encoder_0/t0" "encoder_0/t1" -3.1928
+cap "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_2/VDPWR" "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_0/in" -1.88579
+cap "encoder_0/t0" "encoder_0/input2/a_27_47#" 0.77703
+cap "encoder_0/FILLER_10_53/VPWR" "encoder_0/t0" 14.1322
+cap "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_2/VDPWR" "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_0/inverter_p1_n0o42_2/sky130_fd_pr__nfet_01v8_PNPQML_0/a_n15_n68#" -1.50915
+cap "encoder_0/t0" "encoder_0/input1/a_27_47#" 0.0370664
+cap "encoder_0/_18_/A" "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_0/inverter_p1_n0o42_2/sky130_fd_pr__nfet_01v8_PNPQML_0/a_n15_n68#" 0.0264092
+cap "encoder_0/t0" "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_0/in" 5.51779
+cap "encoder_0/_09_/VGND" "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_0/inverter_p1_n0o42_2/sky130_fd_pr__nfet_01v8_PNPQML_0/a_n15_n68#" 0.210241
+cap "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_2/VDPWR" "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_0/inverter_p1_n0o42_1/sky130_fd_pr__nfet_01v8_PNPQML_0/a_n15_n68#" 0.038306
+cap "encoder_0/_09_/VGND" "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_1/inverter_p1_n0o42_2/sky130_fd_pr__nfet_01v8_PNPQML_0/a_n15_n68#" 0.197531
+cap "encoder_0/FILLER_8_53/VPWR" "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_1/inverter_p1_n0o42_2/sky130_fd_pr__nfet_01v8_PNPQML_0/a_n15_n68#" 0.0551983
+cap "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_0/inverter_p1_n0o42_2/sky130_fd_pr__nfet_01v8_PNPQML_0/a_n15_n68#" "encoder_0/t0" 13.2763
+cap "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_0/inverter_p1_n0o42_2/sky130_fd_pr__nfet_01v8_PNPQML_0/a_n15_n68#" "encoder_0/t1" 0.0180587
+cap "encoder_0/_18_/A" "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_2/VDPWR" 1.76805
+cap "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_1/inverter_p1_n0o42_2/sky130_fd_pr__nfet_01v8_PNPQML_0/a_n15_n68#" "encoder_0/t1" 0.523943
+cap "encoder_0/_09_/VGND" "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_2/VDPWR" 8.12404
+cap "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_0/inverter_p1_n0o42_1/sky130_fd_pr__nfet_01v8_PNPQML_0/a_n15_n68#" "encoder_0/t0" 4.63864
+cap "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_0/inverter_p1_n0o42_2/sky130_fd_pr__nfet_01v8_PNPQML_0/a_n15_n68#" "encoder_0/input2/a_27_47#" 0.0243854
+cap "encoder_0/FILLER_10_53/VPWR" "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_0/inverter_p1_n0o42_2/sky130_fd_pr__nfet_01v8_PNPQML_0/a_n15_n68#" 1.18608
+cap "boosted_tiq_adc_7_0/VDPWR" "encoder_0/PHY_EDGE_ROW_7_Right_7/VNB" 0.400015
+cap "boosted_tiq_adc_7_0/VDPWR" "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_1/in" 0.000140223
+cap "boosted_tiq_adc_7_0/tiq_adc_7_0/inverter_p0o47_n40_0/sky130_fd_pr__nfet_01v8_CTSNWR_2/a_n63_n693#" "encoder_0/t1" 0.0514865
+cap "encoder_0/t0" "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_0/in" 4.0541
+cap "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_0/in" "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_0/inverter_p1_n0o42_2/sky130_fd_pr__nfet_01v8_PNPQML_0/a_n15_n68#" 4.44089e-16
+cap "boosted_tiq_adc_7_0/VDPWR" "boosted_tiq_adc_7_0/tiq_adc_7_0/inverter_p0o47_n40_0/sky130_fd_pr__nfet_01v8_CTSNWR_2/a_n63_n693#" 0.00293422
+cap "encoder_0/PHY_EDGE_ROW_7_Right_7/VNB" "encoder_0/t1" 0.0327159
+cap "boosted_tiq_adc_7_0/VDPWR" "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_0/in" -0.369682
+cap "boosted_tiq_adc_7_0/tiq_adc_7_0/inverter_p0o47_n40_0/sky130_fd_pr__nfet_01v8_CTSNWR_2/a_n63_n693#" "boosted_tiq_adc_7_0/VDPWR" 0.0515113
+cap "boosted_tiq_adc_7_0/VDPWR" "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_0/in" 0.435816
+cap "boosted_tiq_adc_7_0/VDPWR" "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_2/inverter_p1_n0o42_1/a_n80_n228#" 0.110816
+merge "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_2/VDPWR" "encoder_0/FILLER_6_27/VPWR" -4336.78 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -891504 -10532 -2296 -306 0 0 0 -640 0 0 0 0
+merge "encoder_0/FILLER_6_27/VPWR" "encoder_0/FILLER_6_15/VPWR"
+merge "encoder_0/FILLER_6_15/VPWR" "encoder_0/FILLER_6_3/VPWR"
+merge "encoder_0/FILLER_6_3/VPWR" "boosted_tiq_adc_7_0/VDPWR"
+merge "boosted_tiq_adc_7_0/VDPWR" "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_4/VDPWR"
+merge "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_4/VDPWR" "encoder_0/VPWR"
+merge "encoder_0/VPWR" "VDPWR"
+merge "VDPWR" "encoder_0/FILLER_0_27/VPWR"
+merge "encoder_0/FILLER_0_27/VPWR" "encoder_0/FILLER_0_15/VPWR"
+merge "encoder_0/FILLER_0_15/VPWR" "encoder_0/clk"
+merge "encoder_0/clk" "encoder_0/FILLER_0_3/VPWR"
+merge "encoder_0/FILLER_0_3/VPWR" "m2_n3818_324#"
+merge "encoder_0/o2" "o2" -227.992 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -48000 -1040 0 0 0 0 0 0
+merge "boosted_tiq_adc_7_0/VSUBS" "encoder_0/VSUBS" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "encoder_0/VSUBS" "VSUBS"
+merge "encoder_0/t2" "boosted_tiq_adc_7_0/t2" -321.042 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -400 -100 0 0 0 0 -9604 -392 0 0 0 0 0 0
+merge "boosted_tiq_adc_7_0/t2" "li_208_4298#"
+merge "boosted_tiq_adc_7_0/t0" "encoder_0/t0" -365.346 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -400 -100 0 0 0 0 -9604 -392 0 0 0 0 0 0
+merge "encoder_0/t0" "li_208_6268#"
+merge "boosted_tiq_adc_7_0/t5" "encoder_0/t5" -257.67 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -400 -100 0 0 0 0 -9604 -392 0 0 0 0 0 0
+merge "encoder_0/t5" "li_208_1344#"
+merge "boosted_tiq_adc_7_0/t3" "encoder_0/t3" -300.307 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -400 -100 0 0 0 0 -9604 -392 0 0 0 0 0 0
+merge "encoder_0/t3" "li_208_3314#"
+merge "encoder_0/o0" "o0" -227.992 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -48000 -1040 0 0 0 0 0 0
+merge "encoder_0/o1" "o1" -227.968 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -47880 -1040 0 0 0 0 0 0
+merge "encoder_0/VGND" "boosted_tiq_adc_7_0/VGND" -1147.59 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -640 0 0 0 0
+merge "boosted_tiq_adc_7_0/VGND" "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_6/VGND"
+merge "boosted_tiq_adc_7_0/gain_stage_7_0/gain_stage_6/VGND" "encoder_0/FILLER_0_41/VGND"
+merge "encoder_0/FILLER_0_41/VGND" "encoder_0/FILLER_0_27/VGND"
+merge "encoder_0/FILLER_0_27/VGND" "encoder_0/FILLER_0_15/VGND"
+merge "encoder_0/FILLER_0_15/VGND" "encoder_0/FILLER_0_3/VGND"
+merge "encoder_0/FILLER_0_3/VGND" "VGND"
+merge "boosted_tiq_adc_7_0/Vin" "Vin" -74.8494 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -5372 -384 0 0 0 0 0 0 0 0
+merge "boosted_tiq_adc_7_0/t6" "encoder_0/t6" -221.411 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -400 -100 0 0 0 0 -9604 -392 0 0 0 0 0 0
+merge "encoder_0/t6" "li_208_360#"
+merge "boosted_tiq_adc_7_0/t1" "encoder_0/t1" -349.769 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -400 -100 0 0 0 0 -9604 -392 0 0 0 0 0 0
+merge "encoder_0/t1" "li_208_5280#"
+merge "boosted_tiq_adc_7_0/t4" "encoder_0/t4" -261.679 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -400 -100 0 0 0 0 -9604 -392 0 0 0 0 0 0
+merge "encoder_0/t4" "li_208_2330#"

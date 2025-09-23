@@ -1,0 +1,8 @@
+** sch_path: /foss/designs/tt_um_3v_inverter_SiliconeGuide/xschem/double_inverter.sch
+.subckt double_inverter VDD VSS output input
+*.PININFO input:I output:O VDD:B VSS:B
+XM1 net1 input VDD VDD sky130_fd_pr__pfet_g5v0d10v5 L=0.5 W=1 nf=1 m=1
+XM3 output net1 VDD VDD sky130_fd_pr__pfet_g5v0d10v5 L=0.5 W=20 nf=20 m=1
+XM5 net1 input VSS VSS sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=1 nf=1 m=1
+XM2 output net1 VSS VSS sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=20 nf=20 m=1
+.ends
