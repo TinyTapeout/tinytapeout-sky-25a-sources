@@ -90,22 +90,25 @@ jobs:
 
       - name: Install klayout
         run: |
-          wget https://github.com/TinyTapeout/klayout/releases/download/klayout_${KLAYOUT_VERSION}-1_amd64.deb
+          wget https://github.com/TinyTapeout/klayout/releases/download/v${KLAYOUT_VERSION}/klayout_${KLAYOUT_VERSION}-1_amd64.deb
           sudo apt-get update
           sudo apt-get install -y ./klayout_${KLAYOUT_VERSION}-1_amd64.deb
 
-      - name: Run tiny tapeout prechecks
+      - name: Run Tiny Tapeout prechecks
         working-directory: ${{ matrix.project }}/tt/precheck
         run: |
           set -o pipefail
           pip install -r requirements.txt
-          python precheck.py --gds $GDS --lef $LEF
+          cp $LEF `dirname $GDS`
+          cp $GL `dirname $GDS`/${{ matrix.project }}.v
+          python precheck.py --gds $GDS 
           cp -R reports ${PROJECT_DIR}/precheck
           cat reports/results.md | tee -a $GITHUB_STEP_SUMMARY
         env:
           PROJECT_DIR: ${{ github.workspace }}/${{ matrix.project }}
           GDS: ${{ github.workspace }}/${{ matrix.project }}/runs/wokwi/final/gds/${{ matrix.project }}.gds
           LEF: ${{ github.workspace }}/${{ matrix.project }}/runs/wokwi/final/lef/${{ matrix.project }}.lef
+          GL: ${{ github.workspace }}/${{ matrix.project }}/runs/wokwi/final/pnl/${{ matrix.project }}.pnl.v
 
       - name: Publish build logs
         if: failure()
