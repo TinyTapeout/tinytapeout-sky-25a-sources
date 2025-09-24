@@ -287,6 +287,10 @@ jobs:
         run: |
           pip install openlane==$OPENLANE_TAG
 
+      - name: Install hs cell library
+        if: ${{ matrix.project == 'tt_um_MichaelBell_hs_mul' }}
+        run: volare enable 0fe599b2afb6708d281543108caf8310912f54af --include-libraries sky130_fd_sc_hs
+
       - name: Make GDS with OpenLane
         working-directory: ${{ matrix.project }}
         run: |
